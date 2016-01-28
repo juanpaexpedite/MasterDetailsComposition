@@ -152,7 +152,7 @@ namespace MasterDetailsComposition.Attached
         }
 
         public static readonly DependencyProperty FallProperty = DependencyProperty.RegisterAttached("Fall",
-         typeof(bool), typeof(Effects), new PropertyMetadata(false, OnFallChanged));
+         typeof(bool), typeof(Effects), new PropertyMetadata(DependencyProperty.., OnFallChanged));
 
         private static void OnFallChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
