@@ -1,0 +1,108 @@
+﻿<Page
+    x:Class="MasterDetailsComposition.Views.MasterView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MasterDetailsComposition.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:w2d="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    xmlns:i="using:Microsoft.Xaml.Interactivity"
+    xmlns:a="using:MasterDetailsComposition.Attached"
+    xmlns:c="using:MasterDetailsComposition.Converter"
+    xmlns:vm="using:MasterDetailsComposition.ViewModels"
+    
+    mc:Ignorable="d">
+    <Page.Resources>
+        <c:GameImageConverter x:Key="GameImageConverter"/>
+        <c:DetailsImageConverter x:Key="DetailsImageConverter"/>
+
+        <Style x:Key="ItemsStyle" TargetType="ItemsControl">
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <ItemsStackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="DetailsItemsStyle" TargetType="ItemsControl">
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <ItemsWrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Page.DataContext>
+        <vm:MainViewModel/>
+    </Page.DataContext>
+    <Grid>
+
+    
+        
+        <Grid x:Name="TitleBackground" Background="Black"  a:Effects.BlendForeground="Assets/Backgrounds/masterbackground.jpg"/>
+
+        <Button x:Name="BackButton" Visibility="Collapsed" Tapped="BackButton_Tapped" Background="Transparent" BorderThickness="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="48,24,0,0">
+            <FontIcon FontSize="48" Glyph="&#xE0A6;"/>
+        </Button>
+
+        <TextBlock Text="id Software Games" x:Name="TitleLabel" FontWeight="Bold" FontSize="48" Margin="48,120,0,0" Foreground="White" a:Effects.DropText="id Software Games"/>
+
+        <Grid x:Name="DetailsGrid" Grid.Column="1" a:Effects.Slide="False" HorizontalAlignment="Right" Background="White" Width="480" Padding="24">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height=" 1*"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Text="ABOUT" Foreground="Black" FontWeight="Bold"/>
+
+            <TextBlock  Foreground="Black" Margin="0,24,0,24" TextWrapping="Wrap" >
+Aliquam dictum mi quis sapien aliquet, sit amet tincidunt purus fermentum. Fusce ultricies vehicula blandit. Suspendisse varius, enim in varius finibus, justo purus maximus velit, et lobortis ligula lacus non ipsum. Cras vitae dictum quam. Nullam ultrices facilisis tellus, quis interdum dolor mattis bibendum. Proin vestibulum placerat ligula, sed vestibulum ante laoreet et. Vivamus luctus enim nisi, eu ultricies augue posuere eu. Fusce id dictum sapien, sit amet congue nulla. Nullam mollis malesuada ipsum, et interdum nisi accumsan nec. Mauris et orci ut libero porttitor imperdiet vel vel nulla. Vivamus ultrices consequat rutrum. Nunc ut purus consectetur, tincidunt orci ut, molestie tellus. Proin et urna vestibulum, fermentum felis et, elementum erat. 
+
+            </TextBlock>
+
+            <ScrollViewer  Grid.Row="1" VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Auto">
+            <ItemsControl  Style="{StaticResource DetailsItemsStyle}" ItemsSource="{Binding DetailScreenshots}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Width="200" Height="132" Margin="0,0,4,4">
+                            <Grid.Background>
+                                <ImageBrush  AlignmentY="Top" ImageSource="{Binding Converter={StaticResource DetailsImageConverter}}" Stretch="UniformToFill"/>
+                            </Grid.Background>
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+
+
+            <ScrollViewer x:Name="MainScroller" HorizontalScrollBarVisibility="Hidden" HorizontalScrollMode="Enabled" VerticalScrollMode="Disabled" VerticalScrollBarVisibility="Hidden" VerticalAlignment="Bottom" Margin="48,0,0,48">
+        <ItemsControl  ItemsSource="{Binding Games}" Style="{StaticResource ItemsStyle}" >
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Background="White"  Margin="0,0,12,24" x:Name="ItemGrid" Loaded="ItemGrid_Loaded" a:Effects.Fall="False" Tapped="ItemGrid_Tapped">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="320"/>
+                            <RowDefinition Height="64"/>
+                        </Grid.RowDefinitions>
+                        <Grid  Width="256">
+                            <Grid.Background>
+                                <ImageBrush  AlignmentY="Top" ImageSource="{Binding Code, Converter={StaticResource GameImageConverter}}" Stretch="UniformToFill"/>
+                            </Grid.Background>
+                        </Grid>
+                        <TextBlock Grid.Row="1" Text="{Binding Name}" Typography.Capitals="AllSmallCaps" Foreground="Black" FontWeight="Bold" Margin="12,12,0,0"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+
+
+</Page>
