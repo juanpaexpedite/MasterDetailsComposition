@@ -57,7 +57,7 @@ namespace MasterDetailsComposition.Views
             {
                 if (!item.Equals(selecteditem))
                 {
-                    await Task.Delay(10);
+                    await Task.Delay(15);
                     item.SetValue(Effects.FallProperty, true);
                 }
             }
