@@ -16,7 +16,7 @@ To keep XAML simple I created several attached properties that when are attached
 <li>EffectComposition: Is a dummy/tag property to save the Composition Effect using in a UIElement.</li>
 <li>BlendForeground: Activates the effect in a Panel to change a background with the arithmetic effect.</li>
 <li>DropText: Activates the effect that the Text falls and then appears the new one from the top.</li>
-<li>Slide: Activates the effect having a Panel that appears from the left.</li>
+<li>Slide: Activates the effect having a Panel that appears from the right.</li>
 <li>Fall: Activates the effect for UIElements to fall down and then you can fall 'up'.</li>
 </ul>
 
@@ -36,7 +36,7 @@ and so on.
 
 I have seen that setting 
 ```
-new PropertyMetadata(DependencyProperty.UnsetValue
+new PropertyMetadata(DependencyProperty.UnsetValue...)
 ```
 does not fire the first time, that's why I keep the first slide on, to check if in a new SDK release is solved.
 
@@ -50,7 +50,7 @@ I have extracted the methods from the Composition Effects Editor Example to give
 <b>Notes</b>
 
 You cannot set the Children of the ContainerVisual of an Element directly you must use something like CreateContainerVisual.
-I simplfiy the method ResizeImage from the example setting Stretch UniformToFill in the SpriteVisual!.
+I simplify the method ResizeImage from the example setting Stretch UniformToFill in the SpriteVisual.
 
 <h2>Animation Composition Manager</h3>
 
@@ -61,7 +61,7 @@ I would like to make an expansion when I tap an Image from the details and expan
 
 Hope you find useful and fun, and remember Composition does not use Dependency Properties, that's is one of the many things that makes it bettar than Storyboards
 
-@juanpaexpedite
+<a hef="https://twitter.com/juanpaexpedite">@juanpaexpedite</a>
 
 
 
