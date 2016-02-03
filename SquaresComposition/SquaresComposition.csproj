@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{11829E3E-22CD-47D1-8400-8C27212D35F9}</ProjectGuid>
+    <ProjectGuid>{BCB62394-F47B-419A-A704-D11407BEEB64}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MasterDetailsComposition</RootNamespace>
-    <AssemblyName>MasterDetailsComposition</AssemblyName>
+    <RootNamespace>SquaresComposition</RootNamespace>
+    <AssemblyName>SquaresComposition</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
@@ -16,7 +16,7 @@
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>MasterDetailsComposition_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>SquaresComposition_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -96,47 +96,18 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Attached\Effects.cs" />
-    <Compile Include="Behaviors\AritmeticEffectBehavior.cs" />
-    <Compile Include="Converter\DetailsImageConverter.cs" />
-    <Compile Include="Converter\GameImageConverter.cs" />
-    <Compile Include="Managers\CompositionManager.cs" />
-    <Compile Include="Models\Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\MainViewModel.cs" />
-    <Compile Include="Views\MasterView.xaml.cs">
-      <DependentUpon>MasterView.xaml</DependentUpon>
+    <Compile Include="Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="MasterDetailsComposition_TemporaryKey.pfx" />
+    <None Include="SquaresComposition_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Backgrounds\doom1.jpg" />
-    <Content Include="Assets\Backgrounds\doom2.jpg" />
-    <Content Include="Assets\Backgrounds\doom3.jpg" />
-    <Content Include="Assets\Backgrounds\doom4.jpg" />
-    <Content Include="Assets\Backgrounds\masterbackground.jpg" />
-    <Content Include="Assets\Backgrounds\quake1.jpg" />
-    <Content Include="Assets\Backgrounds\quake2.jpg" />
-    <Content Include="Assets\Backgrounds\quake3.jpg" />
-    <Content Include="Assets\Backgrounds\rage.jpg" />
-    <Content Include="Assets\Covers\doom1.jpg" />
-    <Content Include="Assets\Covers\doom2.jpg" />
-    <Content Include="Assets\Covers\doom3.jpg" />
-    <Content Include="Assets\Covers\doom4.jpg" />
-    <Content Include="Assets\Covers\quake1.jpg" />
-    <Content Include="Assets\Covers\quake2.jpg" />
-    <Content Include="Assets\Covers\quake3.jpg" />
-    <Content Include="Assets\Covers\rage.jpg" />
-    <Content Include="Assets\Details\details0.jpg" />
-    <Content Include="Assets\Details\details1.jpg" />
-    <Content Include="Assets\Details\details3.jpg" />
-    <Content Include="Assets\Details\details4.jpg" />
-    <Content Include="Assets\Details\details5.jpg" />
-    <Content Include="Assets\Details\details2.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -145,15 +116,21 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
-    <Content Include="readme.jpg" />
-    <Content Include="readme0.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Views\MasterView.xaml">
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UniversalComposition\UniversalComposition.csproj">
+      <Project>{79692bfd-6be5-4c0f-8822-a082da2e87ad}</Project>
+      <Name>UniversalComposition</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Views\MainView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
