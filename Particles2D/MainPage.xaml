@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Particles2D.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Particles2D"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:win2d="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d">
+
+    <Grid x:Name="MainRoot" >
+        <Grid.Background>
+            <ImageBrush ImageSource="https://c2.staticflickr.com/6/5255/5489215221_0b51a9aae5_b.jpg" Stretch="UniformToFill" AlignmentX="Left"/>
+        </Grid.Background>
+
+        <!--https://www.flickr.com/photos/odfw/5489215221-->
+        <TextBlock FontSize="48" Margin="24" FontWeight="Bold" Text="Oregon Department of Fish &amp; Wildlife" VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0,0"/>
+        <TextBlock Text="https://www.flickr.com/photos/odfw/5489215221" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="Black" Margin="12"/>
+        <win2d:CanvasAnimatedControl x:Name="MainCanvas" Margin="0"  Background="Transparent"/>
+
+        
+
+    </Grid>
+</Page>
