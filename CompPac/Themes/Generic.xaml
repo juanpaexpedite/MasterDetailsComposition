@@ -1,0 +1,31 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CompPac"
+    xmlns:c="using:CompPac.Characters"
+    >
+
+    <Style TargetType="c:PacmanCharacter" >
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="c:PacmanCharacter">
+                    <Image x:Name="PacCanvas" Width="60" Height="60" Source="ms-appx:///Assets/pacman.png" Stretch="Fill"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style TargetType="c:PacmanCharacter"  x:Key="VectorPacman">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="c:PacmanCharacter">
+                    <Canvas Width="60" Height="60" x:Name="PacCanvas" VerticalAlignment="Top" HorizontalAlignment="Left" >
+                        <Path Width="60" Height="51.77" Canvas.Top="4.115" Stretch="Fill" Fill="Yellow" Data="F1 M 101.568,-0.000701904C 119.302,16.9072 124.938,42.9078 115.846,65.677C 106.828,88.4463 84.8103,103.476 60.3127,103.551C 35.8151,103.701 13.6469,88.8972 4.40396,66.203C -4.91416,43.5089 0.496365,17.5084 18.0806,0.375031L 60.0121,43.4338L 101.568,-0.000701904 Z "/>
+                    </Canvas>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    
+</ResourceDictionary>

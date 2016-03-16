@@ -1,0 +1,14 @@
+﻿<Page
+    x:Class="CompPac.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CompPac"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:characters="using:CompPac.Characters"
+    mc:Ignorable="d">
+
+    <Grid x:Name="GameGrid" Background="Black" >
+        <characters:PacmanCharacter x:Name="Pacman" VerticalAlignment="Top" HorizontalAlignment="Left" />
+    </Grid>
+</Page>
