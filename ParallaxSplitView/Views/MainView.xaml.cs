@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using UniversalComposition;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System;
 using Windows.UI;
 using Windows.UI.Composition;
 using Windows.UI.Xaml;
@@ -118,12 +119,19 @@ namespace ParallaxSplitView.Views
             CurrentSession = (sender as FrameworkElement).DataContext as Session;
         }
 
-        private void InitializeSession()
+        private async void InitializeSession()
         {
-            SessionWaiting.IsActive = true;
-            SessionMedia.Source = new Uri(CurrentSession.VideoUri);
-            currentgrid = 4;
-            Scroll();
+            if (CurrentSession.VideoUri == null)
+            {
+                await Launcher.LaunchUriAsync(new Uri(CurrentSession.WebUri));
+            }
+            else
+            {
+                SessionWaiting.IsActive = true;
+                SessionMedia.Source = new Uri(CurrentSession.VideoUri);
+                currentgrid = 4;
+                Scroll();
+            }
         }
 
         private void InitializeMedia()

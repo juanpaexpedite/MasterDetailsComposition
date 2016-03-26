@@ -78,11 +78,11 @@
                 <Grid Width="480" Margin="0,48,0,0">
                         <StackPanel a:Effects.Delay="2" a:Effects.Appear="True" >
                             <TextBlock Text="Build" Style="{StaticResource TitleBox}" />
-                            <TextBlock Text="2015" Margin="0,-48,0,0" Style="{StaticResource TitleBox}" />
+                            <TextBlock Text="2016" Margin="0,-48,0,0" Style="{StaticResource TitleBox}" />
                             <TextBlock Text="The Moscone Center" Style="{StaticResource TitleBox}" FontSize="32" FontWeight="Thin" Margin="0,-18,0,0"/>
                             <TextBlock Text="SAN FRANCISCO, CA" Style="{StaticResource TitleBox}" FontSize="32" FontWeight="Thin" Margin="0,0,0,0"/>
-                            <TextBlock Text="April 29 - May 1" Style="{StaticResource TitleBox}" FontSize="24" FontWeight="ExtraLight" Margin="0,0,0,0"/>
-                            <Button x:Name="FirstButton" Content="REMEMBER" Style="{StaticResource TitleButton}" a:Effects.Delay="5" a:Effects.FadeOut="True" Margin="0,4,0,0"/>
+                            <TextBlock Text="March 30 - April 1" Style="{StaticResource TitleBox}" FontSize="24" FontWeight="ExtraLight" Margin="0,0,0,0"/>
+                            <Button x:Name="FirstButton" Content="LET'S GO" Style="{StaticResource TitleButton}" a:Effects.Delay="5" a:Effects.FadeOut="True" Margin="0,4,0,0"/>
                         </StackPanel>
 
                         <StackPanel  a:Effects.Delay="1" a:Effects.BoolEffectParameter="False" a:Effects.Disappear="True" VerticalAlignment="Top"  IsHitTestVisible="False">
@@ -99,8 +99,8 @@
                 <Border Grid.Column="1" >
                     <Grid Width="480">
                         <StackPanel Margin="0,78,0,0" a:Effects.Column="1" a:Effects.Appear="True">
-                            <TextBlock  TextAlignment="Justify" FontWeight="Thin"  Style="{StaticResource TitleBox}" FontSize="28" Text="Build 2015 marked an important step in our journey with developers "/>
-                            <TextBlock  TextAlignment="Justify"  Style="{StaticResource ParagraphBox}" FontSize="18" Text="Build will cover all Microsoft Platforms - expect rich new content and information on Windows, Azure, Office 365 and more. Developers will receive deep training, allowing them to take advantage of the incredible advances in our platforms, including Windows 10, and providing access to over 1.5 billion devices." />
+                            <TextBlock  TextAlignment="Justify" FontWeight="Thin"  Style="{StaticResource TitleBox}" FontSize="28" Text="Build 2016, An important step in our journey with developers "/>
+                            <TextBlock  TextAlignment="Justify"  Style="{StaticResource ParagraphBox}" FontSize="18" Text="Microsoft continues to focus on enabling developers to do amazing work as businesses and industries transform in support of the shift to a cloud-first, mobile-first world. At Build 2016 we will present the latest tools and technologies and how they can help today's developers be their most creative and productive. As always, Build is filled with strong technical sessions as well as opportunities to meet and learn from others in the industry. We'll make sure the schedule is filled with solid content, and will strive to deliver some fun surprises along the way." />
                             <Button x:Name="SecondButton" a:Effects.Delay="1" a:Effects.Column="1" a:Effects.Appear="True" Content="GALLERY" Style="{StaticResource TitleButton}" />
                             <Button x:Name="ThirdButton" a:Effects.Delay="1.2" a:Effects.Column="1" a:Effects.Appear="True" Content="SESSIONS" Style="{StaticResource TitleButton}" />
                         </StackPanel>
@@ -164,7 +164,7 @@
                                             <TextBlock Grid.RowSpan="2" HorizontalAlignment="Center" Margin="4,0,0,0" VerticalAlignment="Center" Text="{x:Bind Code}" Foreground="White" FontWeight="Light" FontSize="24"/>
 
                                             <TextBlock Grid.Column="1" TextWrapping="Wrap" TextTrimming="WordEllipsis"  Text="{x:Bind Title}" FontSize="16" Margin="12,12,0,0"/>
-                                            <TextBlock Grid.Column="1" Grid.Row="1" Margin="12,0,0,12" Text="{x:Bind Speaker}" FontWeight="Light" FontSize="18"/>
+                                            <TextBlock Grid.Column="1" Grid.Row="1" Margin="12,0,0,12" Text="{x:Bind Speaker}" FontWeight="Light" FontSize="14"/>
                                         </Grid>
                                 </DataTemplate>
                             </ItemsControl.ItemTemplate>

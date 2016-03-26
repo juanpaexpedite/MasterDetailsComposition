@@ -15,5 +15,7 @@ namespace ParallaxSplitView.Models
         public String Code { get; set; }
 
         public String VideoUri { get; set; }
+
+        public String WebUri { get; set; }
     }
 }

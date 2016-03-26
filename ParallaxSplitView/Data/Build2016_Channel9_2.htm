@@ -1,0 +1,2168 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0088)https://channel9.msdn.com/Events/Build/2016 -->
+<!DOCTYPE html PUBLIC "" ""><HTML class=" lang-en" lang="en" 
+dir="ltr"><HEAD><META content="IE=11.0000" http-equiv="X-UA-Compatible">
+	 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	 <TITLE>Build 2016 | Channel 9</TITLE>	 
+<META http-equiv="X-UA-Compatible" content="IE=edge">
+<SCRIPT type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"a59d48e8ab","applicationID":"2686449","transactionName":"Y1JUbUpTXBFZUUYPC1oYclZMfFcWe11cEhZbW1pcSh13FF1cRkkhQlJYTQ==","queueTime":0,"applicationTime":171,"ttGuid":"8B2E9BF31F2C387","agent":""}</SCRIPT>
+
+<SCRIPT type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcHVV9XGwEGXFdWAwg="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(11),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(12),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(5),t(4),"addEventListener"in window&&t(3),c.xhrWrappable&&t(6),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty("addEventListener");)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,["addEventListener","removeEventListener"],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(13)(a),c=t("gos");e.exports=a,o(window),"getPrototypeOf"in Object?(r(document),r(XMLHttpRequest.prototype)):XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&o(XMLHttpRequest.prototype),a.on("addEventListener-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],4:[function(t,e,n){var r=t("ee").get("raf"),o=t(13)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],5:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(13)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],6:[function(t,e,n){function r(t,e){e=e||this;var n=a.context(e);e.readyState>3&&!n.resolved&&(n.resolved=!0,a.emit("xhr-resolved",[],e));try{f.inPlace(e,p,"fn-",o)}catch(r){}}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").get("xhr"),s=t(3),c=t(13),f=c(a),u=c(s),d=NREUM.o,l=d.XHR,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout","onreadystatechange"];e.exports=a,window.XMLHttpRequest=function(t){var e=new l(t);try{a.emit("new-xhr",[e],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",r,!1)}catch(n){try{a.emit("internal-error",[n])}catch(i){}}return e},i(l,XMLHttpRequest),XMLHttpRequest.prototype=l.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{}],7:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(8),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(10),m=window.XMLHttpRequest;s.features.xhr=!0,t(3),t(6),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],8:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],9:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(11),a=t(12);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],10:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],11:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],12:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],13:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(12),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([y,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},y={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return y}function i(){return new r}var a="nr@context",s=t("gos"),c=t(11),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(11),f=window,u=f.document;NREUM.o={ST:setTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(9);var d=(""+location).split("?")[0],l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-892.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,7]);</SCRIPT>
+	 
+<META name="viewport" content="width=device-width, initial-scale=1.0">	 
+<META name="GENERATOR" content="MSHTML 11.00.10586.162">	 
+<META name="WT.z_bdb" content="1">     
+<META name="C9ID" content="0d94e573d6f34e589fdd2f774398ecd5">     
+<META name="MRCID" content="">
+<META name="WT.signedin" content="0">	 
+<META name="msapplication-task" content="name=Coffeehouse;action-uri=/forums/coffeehouse;icon-uri=/favicon.ico">
+	 
+<META name="msapplication-task" content="name=Browse All Content;action-uri=/Browse;icon-uri=/favicon.ico">
+	 
+<META name="msapplication-task" content="name=Shows;action-uri=/Browse/Shows;icon-uri=/favicon.ico"> 
+<META name="application-name" content="Build 2016"> 
+<META name="msapplication-TileImage" content="https://f.ch9.ms/thumbnail/6e4297c6-c81d-4534-a721-173685334613.png"> 
+<META name="msapplication-square70x70logo" content="https://f.ch9.ms/thumbnail/6e4297c6-c81d-4534-a721-173685334613.png"> 
+<META name="msapplication-square150x150logo" content="https://f.ch9.ms/thumbnail/6e4297c6-c81d-4534-a721-173685334613.png"> 
+<META name="msapplication-square310x310logo" content="https://f.ch9.ms/thumbnail/dc1f8b69-a4a3-422c-b7a7-b29a9183bc79.jpg"> 
+<META name="msapplication-wide310x150logo" content="https://f.ch9.ms/thumbnail/dc1f8b69-a4a3-422c-b7a7-b29a9183bc79.jpg"> 
+<META name="msapplication-TileColor" content="#f3ab00"> 
+<META name="msapplication-notification" content="frequency=60; &#10;        polling-uri=https://channel9.msdn.com/livetile/event/e1d21e0e-fb86-4871-a359-a59b015bbab6/1.xml; &#10;        polling-uri2=https://channel9.msdn.com/livetile/event/e1d21e0e-fb86-4871-a359-a59b015bbab6/2.xml; &#10;        polling-uri3=https://channel9.msdn.com/livetile/event/e1d21e0e-fb86-4871-a359-a59b015bbab6/3.xml; &#10;        polling-uri4=https://channel9.msdn.com/livetile/event/e1d21e0e-fb86-4871-a359-a59b015bbab6/4.xml; &#10;        polling-uri5=https://channel9.msdn.com/livetile/event/e1d21e0e-fb86-4871-a359-a59b015bbab6/5.xml; cycle=1"> 
+<META name="msApplication-ID" content="App"> <!-- View Code on Win 8 app package.appxmanifest, <Application Id="App" StartPage="default.html"> --> 
+<META name="msApplication-PackageFamilyName" content="Microsoft.Channel9_8wekyb3d8bbwe"> 
+<LINK href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"> 
+<LINK href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"> 
+<LINK href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"> 
+<LINK href="/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"> 
+<LINK href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"> 
+<LINK href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"> 
+<LINK href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"> 
+<LINK href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"> 
+<LINK href="/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"> 
+<LINK href="/favicon-192x192.png" rel="icon" type="image/png" sizes="192x192"> 
+<LINK href="/favicon-160x160.png" rel="icon" type="image/png" sizes="160x160"> 
+<LINK href="/favicon-96x96.png" rel="icon" type="image/png" sizes="96x96"> <LINK 
+href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16"> <LINK href="/favicon-32x32.png" 
+rel="icon" type="image/png" sizes="32x32">		 <!--[if lte IE 8]>
+			<link href="https://s.ch9.ms/styles/site.css?v=IuUFD3SkHZuM7eGLnu7dONVmEjF4ISnsMaqAzGzVS7k1" rel="stylesheet" type="text/css"/>
+		<![endif]-->
+		 <!--[if gt IE 8]-->			 <LINK href="Build2016_Channel9_2_files/siteR.css" rel="stylesheet" 
+type="text/css">		 <!--[endif]-->   <LINK href="Build2016_Channel9_2_files/print.css" 
+rel="stylesheet" type="text/css" media="print">   <LINK href="Build2016_Channel9_2_files/handheld.css" 
+rel="stylesheet" type="text/css" media="handheld">	 <LINK href="Build2016_Channel9_2_files/event.css" 
+rel="stylesheet" type="text/css">																																													
+	 <LINK href="Build2016_Channel9_2_files/paging.css" rel="stylesheet" type="text/css">
+	 <LINK href="Build2016_Channel9_2_files/eventHomepage.css" rel="stylesheet" 
+type="text/css">	 
+<META content="Build 2016 (Channel 9)" property="og:title">	 
+<META content="Microsoft continues to focus on enabling developers to do amazing work as businesses and industries transform in support of the shift to a cloud-first, mobile-first world. At Build 2016 we will presen" 
+property="og:description">	 
+<META content="website" property="og:type">	 
+<META content="http://files.channel9.msdn.com/thumbnail/6e4297c6-c81d-4534-a721-173685334613.png" 
+property="og:image">	 
+<META content="https://channel9.msdn.com/Events/Build/2016" property="og:url">	 
+<META content="Channel 9" property="og:site_name">                          
+	<LINK title="Build 2016 - RSS - Channel 9" href="/Events/Build/2016/RSS" rel="alternate" 
+type="application/rss+xml">	 <LINK title="Build 2016 - RSS (MP4 Low) - Channel 9" 
+href="/Events/Build/2016/RSS/mp4" rel="alternate" type="application/rss+xml">
+	 <LINK title="Build 2016 - RSS (MP4 HD) - Channel 9" href="/Events/Build/2016/RSS/mp4high" 
+rel="alternate" type="application/rss+xml">	 <LINK title="Build 2016 - RSS (Audio) - Channel 9" 
+href="/Events/Build/2016/RSS/mp3" rel="alternate" type="application/rss+xml">	 
+<META name="WT.entryid" 
+content="Event:WebView:e1d21e0efb864871a359a59b015bbab6">	 
+<META name="WT.cg_n" content="Events">	 
+<META name="WT.cg_s" content="Build_2016">	 
+<META name="Search.PageType" content="List">	 
+<META name="Search.SectionType" content="Events">	 
+<META name="Search.Section" content="Build_2016">	 
+<META name="Search.Title" content="Build 2016">	 
+<META name="Search.ID" content="e1d21e0e-fb86-4871-a359-a59b015bbab6">	 
+<META name="Search.ListType" content="Event">	 
+<META name="title" content="Build 2016">	 
+<META name="description" content="Microsoft continues to focus on enabling developers to do amazing work as businesses and industries transform in support of the shift to a cloud-first, mobile-first world. At Build 2016 we will presen">
+	 
+<META name="msApplication-Arguments" content="e.e1d21e0e-fb86-4871-a359-a59b015bbab6">
+	 <NOSCRIPT>&lt;link 
+href="https://s.ch9.ms/styles/noscript.css?v=XQoHdvOP1ie46IDoKbXjojkC02I1" 
+rel="stylesheet" type="text/css"/&gt;</NOSCRIPT>	 <!--[if IE 9]><link href="https://s.ch9.ms/styles/ie9.css?v=XQoHdvOP1ie46IDoKbXjojkC02I1" rel="stylesheet" type="text/css"/><![endif]-->
+	 <!--[if IE 8]><link href="https://s.ch9.ms/styles/ie8.css?v=XQoHdvOP1ie46IDoKbXjojkC02I1" rel="stylesheet" type="text/css"/><![endif]-->
+	 <!--[if lt IE 8]><link href="https://s.ch9.ms/styles/ie7_6.css?v=XQoHdvOP1ie46IDoKbXjojkC02I1" rel="stylesheet" type="text/css"/><![endif]-->
+	 <!--[if lt IE 7]><link href="https://s.ch9.ms/styles/ie6.css?v=XQoHdvOP1ie46IDoKbXjojkC02I1" rel="stylesheet" type="text/css"/><![endif]-->
+	 <!--[if IEMobile 7]> <link href="https://s.ch9.ms/styles/ieMobile7.css?v=XQoHdvOP1ie46IDoKbXjojkC02I1" rel="stylesheet" type="text/css"/><![endif]-->
+	 
+<SCRIPT src="https://s.ch9.ms/scripts/responsiveFix.js?v=XQoHdvOP1ie46IDoKbXjojkC02I1"></SCRIPT>
+
+<SCRIPT>
+	if(!ch9){
+		var ch9={data:{},functions:{},value:{}};
+	}
+	ch9.value.CDNRoot='https://s.ch9.ms/';
+	ch9.value.rnd='XQoHdvOP1ie46IDoKbXjojkC02I1';
+	ch9.data.culture = "en";
+</SCRIPT>
+ <!--[if lte IE 8]><script src="https://s.ch9.ms/scripts/global/iso8601parse.js?v=XQoHdvOP1ie46IDoKbXjojkC02I1"></script><![endif]-->
+		 
+<SCRIPT src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.11.3.min.js" type="text/javascript"></SCRIPT>
+	 
+<SCRIPT src="https://s.ch9.ms/scripts/globals_en.js?v=XQoHdvOP1ie46IDoKbXjojkC02I1"></SCRIPT>
+	 
+<SCRIPT src="/localization/strings/Js/en?callback=ch9.functions.Resources.ch9ResourcesCallback" type="text/javascript"></SCRIPT>
+	 <!--[if lt IE 7]><script>ch9.data.isIE6=true;</script><![endif]-->	 
+<SCRIPT src="https://s.ch9.ms/scripts/event-page.js?v=XQoHdvOP1ie46IDoKbXjojkC02I1"></SCRIPT>
+	 
+<SCRIPT src="https://s.ch9.ms/scripts/timeHelper.js?v=XQoHdvOP1ie46IDoKbXjojkC02I1"></SCRIPT>
+	 
+<SCRIPT>
+		ch9.data.evalQuestions = {};
+
+			ch9.data.evalQuestions.session = ["session",
+					"* How satisfied were you with the session?",
+					"* How satisfied were you with the speaker?",
+					"Please provide any relevant feedback regarding this session"
+			];
+
+			ch9.data.evalQuestions.lab = ["lab",
+				"* a four star question for labs",
+				"* a five star question for labs",
+				"Please provide any relevant feedback regarding this lab"
+			];
+
+	</SCRIPT>
+	 
+<SCRIPT src="https://s.ch9.ms/scripts/event-eval.js?v=XQoHdvOP1ie46IDoKbXjojkC02I1"></SCRIPT>
+	 
+<SCRIPT src="https://s.ch9.ms/scripts/event-countdown.js?v=XQoHdvOP1ie46IDoKbXjojkC02I1"></SCRIPT>
+		 
+<SCRIPT src="//nexus.ensighten.com/msdn/ch9prod/Bootstrap.js"></SCRIPT>
+ </HEAD> 
+<BODY class=" hasTopContent event event-page noRating canHaveSchedule hasSidebar">
+<DIV class="branding">
+<DIV class="toolbar">
+<DIV class="container">
+<UL>
+  <LI class="followus"><A href="https://twitter.com/ch9">Follow us @ch9</A></LI>
+  <LI class="subscribe site"><A 
+  href="https://channel9.msdn.com/Feeds/RSS">Subscribe to Channel 9</A></LI><!--IE7 needs a return here-->
+  		 
+  <LI class="signIn"><A href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=12&amp;ct=1458975216&amp;rver=6.7.6626.0&amp;wp=MBI_SSL&amp;wreply=https:%2F%2Fchannel9.msdn.com%2FEvents%2FBuild%2F2016%3Fsort%3Dstatus%26direction%3Dasc%26page%3D2&amp;id=47159">Sign 
+  In</A></LI></UL></DIV></DIV>
+<DIV class="navigation">
+<DIV class="container">
+<DIV class="logo"><A href="https://channel9.msdn.com/">Channel&nbsp;9</A></DIV>
+<DIV class="search bing">
+<FORM class="siteSearch" action="/Search" 
+autocomplete="off"><INPUT name="term" class="text inactive" type="text" value="Search">
+		 <INPUT class="theSubmit" type="submit" alt="Submit" value="Submit Query">
+	 </FORM></DIV>
+<UL class="mainNav aNav" role="navigation">
+  <LI class="browse"><A class="ch9_chMain" href="https://channel9.msdn.com/Browse">Browse</A>
+  		 
+  <UL class="rounded ch9_chSub">
+    <LI><A href="https://channel9.msdn.com/Browse/Tags">Tags</A></LI>
+    <LI><A href="https://channel9.msdn.com/Browse/Shows">Shows</A></LI>
+    <LI><A href="https://channel9.msdn.com/Browse/Series">Series</A></LI>
+    <LI><A href="https://channel9.msdn.com/Browse/Blogs">Blogs</A></LI>
+    <LI><A href="https://channel9.msdn.com/Browse/Authors">Authors</A></LI>
+    <LI><A 
+  href="https://channel9.msdn.com/Browse/Events">Events</A></LI></UL></LI>	 
+  <LI class="topics"><SPAN class="ch9_chMain likeAlink">Topics</SPAN>		 
+  <UL class="rounded ch9_chSub">
+    <LI><A 
+    href="https://channel9.msdn.com/coding4fun">Coding<SPAN>4</SPAN>Fun</A></LI>
+    <LI><A href="https://channel9.msdn.com/Windows">Windows</A></LI>
+    <LI><A href="https://channel9.msdn.com/Azure">Azure</A></LI>
+    <LI><A href="https://channel9.msdn.com/VisualStudio">Visual Studio</A></LI>
+    <LI><A href="https://channel9.msdn.com/DevOps">DevOps</A></LI>
+    <LI><A href="https://channel9.msdn.com/Mechanics">Microsoft 
+    Mechanics</A></LI>
+    <LI><A href="https://channel9.msdn.com/Community/MVP">MVPs</A></LI></UL></LI>
+  	 <LI class="forums"><A class="ch9_chMain" href="https://channel9.msdn.com/Forums">Forums</A>
+  		 
+  <UL class="rounded ch9_chSub">
+    <LI><A 
+    href="https://channel9.msdn.com/Forums/Coffeehouse">Coffeehouse</A></LI>
+    <LI><A href="https://channel9.msdn.com/Forums/Feedback">Site 
+    Feedback</A></LI>
+    <LI><A href="https://channel9.msdn.com/Forums/TechOff">Tech Off</A></LI>
+    <LI><A href="https://channel9.msdn.com/Forums/Build">Build</A></LI>
+    <LI><A href="https://channel9.msdn.com/Forums/MicrosoftIgnite">Microsoft 
+    Ignite</A></LI>
+    <LI><A href="https://channel9.msdn.com/Forums/TechEdEU">TechEd 
+    Europe</A></LI></UL></LI>	 
+  <LI class="events"><A class="ch9_chMain" href="https://channel9.msdn.com/Events">Events</A>
+  		 
+  <UL class="rounded ch9_chSub">
+    <LI><A href="https://channel9.msdn.com/Events/WinHEC/2015">WinHEC</A></LI>
+    <LI><A href="https://channel9.msdn.com/Events/Visual-Studio">Visual 
+    Studio</A></LI>
+    <LI><A href="https://channel9.msdn.com/Events/TechEd">TechEd</A></LI>
+    <LI><A href="https://channel9.msdn.com/Events/Build">Build</A></LI>
+    <LI><A href="https://channel9.msdn.com/Events/Ignite">Microsoft 
+    Ignite</A></LI>
+    <LI><A 
+href="https://channel9.msdn.com/Events/Microsoft-Azure">Azure</A></LI>
+    <LI><A 
+  href="https://channel9.msdn.com/Events/Speakers">Speakers</A></LI></UL></LI> 
+</UL></DIV></DIV></DIV>
+<DIV class="firstContent text"><picture><SOURCE media="(max-width: 959px)" 
+srcset="https://s.ch9.ms/styles/images/1998/shim.gif">		 <IMG src="Build2016_Channel9_2_files/be1b9a2a-6ad4-4bcd-91d4-238ebb1f0c88.png">
+	 </picture> </DIV>
+<DIV class="mainHolder">
+<DIV class="mainContent text">
+<DIV class="breadcrumbs">
+<UL>
+  <LI class="first"><A href="https://channel9.msdn.com/Events">Events</A></LI>
+  <LI class="last"><A 
+  href="https://channel9.msdn.com/Events/Build">Build</A></LI></UL></DIV><picture><SOURCE 
+media="(min-width: 960px)" 
+srcset="https://s.ch9.ms/styles/images/1998/shim.gif">	 <IMG class="smallLogo" 
+src="Build2016_Channel9_2_files/6e4297c6-c81d-4534-a721-173685334613.png"></picture>
+	 
+<DIV class="area-header item-header">
+<H1>Build 2016</H1>
+<UL class="rss">
+  <LI class="subscribe multi"><A href="https://channel9.msdn.com/Events/Build/2016/RSS">
+  				Subscribe to this event			 </A>		 </LI></UL>
+<UL class="area-data item-data">
+  <LI class="sharelinks">
+  <DIV class="redditHolder" data-target="programming" data-title="Build 2016 (Channel 9)" 
+  data-href="https://channel9.msdn.com/Events/Build/2016">
+  <DIV class="sharingPositioner"><A class="redditButton" href="http://www.reddit.com/r/programming/submit?url=https://channel9.msdn.com/Events/Build/2016&amp;title=Build 2016 (Channel 9)" 
+  target="_blank">reddit</A>		 </DIV></DIV>
+  <DIV class="twitterHolder">
+  <DIV class="sharingPositioner"><A class="twitter-share-button" href="https://twitter.com/share" 
+  data-hashtags="" data-related="ch9" data-via="ch9" data-text="Build 2016 (Channel 9)" 
+  data-url="https://channel9.msdn.com/Events/Build/2016">Tweet</A>
+		 </DIV></DIV>
+  <DIV class="facebookLikeHolder">
+  <DIV class="sharingPositioner">
+  <DIV class="fb-like" data-href="https://channel9.msdn.com/Events/Build/2016" 
+  data-font="arial" data-show-faces="false" data-width="90" data-layout="button_count" 
+  data-send="false"></DIV></DIV></DIV></LI>
+  <LI class="location">San Francisco, CA</LI>
+  <LI class="date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/ics"><time 
+  datetime="2016-03-30 15:30:00Z/2016-04-01 22:00:00Z">Mar 30, 2016–Apr 01, 
+  2016</time>				 </A>		 </LI>
+  <LI class="allSpeakers"><A href="https://channel9.msdn.com/Events/Build/2016/Speakers">Speakers</A> 
+  at Build 2016		 </LI></UL></DIV>
+<DIV class="eventCountdown alert info">Keynote broadcast starts in 
+<DIV class="player-text" data-countto="376583570">
+<DIV class="countdown"></DIV></DIV>! </DIV>
+<DIV class="description">
+<P>Microsoft continues to focus on enabling developers to do amazing work as 
+businesses and industries transform in support of the shift to a cloud-first, 
+mobile-first world. At Build 2016 we will present the latest tools and 
+technologies and how they can help today's developers be their most creative and 
+productive. <BR><BR>As always, Build is filled with strong technical sessions as 
+well as opportunities to meet and learn from others in the industry. We'll make 
+sure the schedule is filled with solid content, and will strive to deliver some 
+fun surprises along the way.</P></DIV>
+<DIV class="area-content" id="theSessions">
+<UL class="tabs">
+  <LI id="tab_sortBy_day"><A href="https://channel9.msdn.com/Events/Build/2016?direction=asc#tab_sortBy_day">List</A></LI>
+  <LI id="tab_sortBy_schedule"><A href="https://channel9.msdn.com/Events/Build/2016?sort=schedule&amp;direction=asc#tab_sortBy_schedule">Schedule</A></LI>
+  <LI id="tab_sortBy_viewed"><A href="https://channel9.msdn.com/Events/Build/2016?sort=viewed&amp;direction=asc#tab_sortBy_viewed">Most 
+  Viewed</A></LI>
+  <LI class="selected" id="tab_sortBy_status"><SPAN>All</SPAN></LI></UL>
+<DIV class="tab-content allSessions">
+<DIV class="filterStatus"><A class="showFilters download button" href="https://channel9.msdn.com/Events/Build/2016?sort=status&amp;direction=asc&amp;page=2#sessionFilter">Filter 
+Sessions</A>	 </DIV>
+<UL class="entries sessions sessionList">
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L724-R2">UWP 
+  Development 1: Building an Adaptive&nbsp;UI</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/shawn-henry">Shawn 
+    Henry</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/kelsey-huebner">Kelsey 
+    Huebner</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Hans-Hugli">Hans 
+    Hugli</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/jason-short">Jason 
+    Short</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Mike-Taulty">Mike 
+    Taulty</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/juliette-weiss">Juliette 
+    Weiss</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Andy-Wigley">Andy 
+    Wigley</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L724-R2">L724-R2</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2009</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L724-R2/ics"><time 
+    class="timeHelper" datetime="2016-03-31 18:45:00Z/2016-03-31 19:45:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 11:45AM (UTC-07:00) and end Mar 31, 2016 at 12:45PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 6:45PM (UTC+00:00) and end Mar 31, 2016 at 7:45PM (UTC+00:00).">Mar 
+    31, 2016 11:45AM–12:45PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L724-R2#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L724-R3">UWP 
+  Development 1: Building an Adaptive&nbsp;UI</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/shawn-henry">Shawn 
+    Henry</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/kelsey-huebner">Kelsey 
+    Huebner</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Hans-Hugli">Hans 
+    Hugli</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/jason-short">Jason 
+    Short</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Mike-Taulty">Mike 
+    Taulty</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/juliette-weiss">Juliette 
+    Weiss</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Andy-Wigley">Andy 
+    Wigley</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L724-R3">L724-R3</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2009</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L724-R3/ics"><time 
+    class="timeHelper" datetime="2016-04-01 16:00:00Z/2016-04-01 17:00:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 9:00AM (UTC-07:00) and end Apr 01, 2016 at 10:00AM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 4:00PM (UTC+00:00) and end Apr 01, 2016 at 5:00PM (UTC+00:00).">Apr 
+    01, 2016 9:00AM–10:00AM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L724-R3#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L725-R1">UWP 
+  Development 2: More Personal&nbsp;Computing</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/paul-bloom">Paul 
+    Bloom</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/kelsey-huebner">Kelsey 
+    Huebner</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Hans-Hugli">Hans 
+    Hugli</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/jason-short">Jason 
+    Short</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Mike-Taulty">Mike 
+    Taulty</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/juliette-weiss">Juliette 
+    Weiss</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Andy-Wigley">Andy 
+    Wigley</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/francis-zhou">Francis 
+    Zhou</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L725-R1">L725-R1</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2009</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L725-R1/ics"><time 
+    class="timeHelper" datetime="2016-03-30 21:00:00Z/2016-03-30 22:00:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 2:00PM (UTC-07:00) and end Mar 30, 2016 at 3:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 30, 2016 at 9:00PM (UTC+00:00) and end Mar 30, 2016 at 10:00PM (UTC+00:00).">Mar 
+    30, 2016 2:00PM–3:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L725-R1#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L725-R2">UWP 
+  Development 2: More Personal&nbsp;Computing</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/paul-bloom">Paul 
+    Bloom</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/kelsey-huebner">Kelsey 
+    Huebner</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Hans-Hugli">Hans 
+    Hugli</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/jason-short">Jason 
+    Short</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Mike-Taulty">Mike 
+    Taulty</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/juliette-weiss">Juliette 
+    Weiss</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Andy-Wigley">Andy 
+    Wigley</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/francis-zhou">Francis 
+    Zhou</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L725-R2">L725-R2</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2009</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L725-R2/ics"><time 
+    class="timeHelper" datetime="2016-03-31 21:00:00Z/2016-03-31 22:00:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 2:00PM (UTC-07:00) and end Mar 31, 2016 at 3:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 9:00PM (UTC+00:00) and end Mar 31, 2016 at 10:00PM (UTC+00:00).">Mar 
+    31, 2016 2:00PM–3:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L725-R2#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L725-R3">UWP 
+  Development 2: More Personal&nbsp;Computing</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/cory-hendrixson">Cory 
+    Hendrixson</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/kelsey-huebner">Kelsey 
+    Huebner</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Hans-Hugli">Hans 
+    Hugli</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/jason-short">Jason 
+    Short</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Mike-Taulty">Mike 
+    Taulty</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/juliette-weiss">Juliette 
+    Weiss</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Andy-Wigley">Andy 
+    Wigley</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L725-R3">L725-R3</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2009</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L725-R3/ics"><time 
+    class="timeHelper" datetime="2016-04-01 17:30:00Z/2016-04-01 18:30:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 10:30AM (UTC-07:00) and end Apr 01, 2016 at 11:30AM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 5:30PM (UTC+00:00) and end Apr 01, 2016 at 6:30PM (UTC+00:00).">Apr 
+    01, 2016 10:30AM–11:30AM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L725-R3#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L726-R1">UWP 
+  Development 3: Building Connected Mobile Experiences: Cloud and App 
+  to&nbsp;App</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/cory-hendrixson">Cory 
+    Hendrixson</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/kelsey-huebner">Kelsey 
+    Huebner</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Hans-Hugli">Hans 
+    Hugli</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/jason-short">Jason 
+    Short</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Mike-Taulty">Mike 
+    Taulty</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/juliette-weiss">Juliette 
+    Weiss</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Andy-Wigley">Andy 
+    Wigley</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L726-R1">L726-R1</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2009</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L726-R1/ics"><time 
+    class="timeHelper" datetime="2016-03-30 22:30:00Z/2016-03-30 23:30:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 3:30PM (UTC-07:00) and end Mar 30, 2016 at 4:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 30, 2016 at 10:30PM (UTC+00:00) and end Mar 30, 2016 at 11:30PM (UTC+00:00).">Mar 
+    30, 2016 3:30PM–4:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L726-R1#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L726-R2">UWP 
+  Development 3: Building Connected Mobile Experiences: Cloud and App 
+  to&nbsp;App</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/cory-hendrixson">Cory 
+    Hendrixson</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/kelsey-huebner">Kelsey 
+    Huebner</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Hans-Hugli">Hans 
+    Hugli</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/jason-short">Jason 
+    Short</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Mike-Taulty">Mike 
+    Taulty</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/juliette-weiss">Juliette 
+    Weiss</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Andy-Wigley">Andy 
+    Wigley</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L726-R2">L726-R2</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2009</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L726-R2/ics"><time 
+    class="timeHelper" datetime="2016-03-31 22:30:00Z/2016-03-31 23:30:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 3:30PM (UTC-07:00) and end Mar 31, 2016 at 4:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 10:30PM (UTC+00:00) and end Mar 31, 2016 at 11:30PM (UTC+00:00).">Mar 
+    31, 2016 3:30PM–4:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L726-R2#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L726-R3">UWP 
+  Development 3: Building Connected Mobile Experiences: Cloud and App 
+  to&nbsp;App</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/cory-hendrixson">Cory 
+    Hendrixson</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/kelsey-huebner">Kelsey 
+    Huebner</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Hans-Hugli">Hans 
+    Hugli</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/jason-short">Jason 
+    Short</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Mike-Taulty">Mike 
+    Taulty</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/juliette-weiss">Juliette 
+    Weiss</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Andy-Wigley">Andy 
+    Wigley</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L726-R3">L726-R3</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2009</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L726-R3/ics"><time 
+    class="timeHelper" datetime="2016-04-01 19:30:00Z/2016-04-01 20:30:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 12:30PM (UTC-07:00) and end Apr 01, 2016 at 1:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 7:30PM (UTC+00:00) and end Apr 01, 2016 at 8:30PM (UTC+00:00).">Apr 
+    01, 2016 12:30PM–1:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L726-R3#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L727-R1">Web 
+  Development 1: Intro to ASP.NET Core&nbsp;1.0</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/christopher-harrison">Christopher 
+    Harrison</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/pranav-krishnamoorthy">Pranav 
+    Krishnamoorthy</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/cephas-lin">Cephas 
+    Lin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/eilon-lipton">Eilon 
+    Lipton</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sourabh-shirhatti">Sourabh 
+    Shirhatti</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-stanton-nurse">Andrew 
+    Stanton-Nurse</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L727-R1">L727-R1</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2011</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L727-R1/ics"><time 
+    class="timeHelper" datetime="2016-03-30 18:30:00Z/2016-03-30 19:30:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 11:30AM (UTC-07:00) and end Mar 30, 2016 at 12:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 30, 2016 at 6:30PM (UTC+00:00) and end Mar 30, 2016 at 7:30PM (UTC+00:00).">Mar 
+    30, 2016 11:30AM–12:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L727-R1#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L727-R2">Web 
+  Development 1: Intro to ASP.NET Core&nbsp;1.0</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/christopher-harrison">Christopher 
+    Harrison</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/pranav-krishnamoorthy">Pranav 
+    Krishnamoorthy</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/cephas-lin">Cephas 
+    Lin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/eilon-lipton">Eilon 
+    Lipton</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sourabh-shirhatti">Sourabh 
+    Shirhatti</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-stanton-nurse">Andrew 
+    Stanton-Nurse</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L727-R2">L727-R2</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2011</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L727-R2/ics"><time 
+    class="timeHelper" datetime="2016-03-31 18:45:00Z/2016-03-31 19:45:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 11:45AM (UTC-07:00) and end Mar 31, 2016 at 12:45PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 6:45PM (UTC+00:00) and end Mar 31, 2016 at 7:45PM (UTC+00:00).">Mar 
+    31, 2016 11:45AM–12:45PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L727-R2#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L727-R3">Web 
+  Development 1: Intro to ASP.NET Core&nbsp;1.0</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/christopher-harrison">Christopher 
+    Harrison</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/pranav-krishnamoorthy">Pranav 
+    Krishnamoorthy</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/cephas-lin">Cephas 
+    Lin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/eilon-lipton">Eilon 
+    Lipton</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sourabh-shirhatti">Sourabh 
+    Shirhatti</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-stanton-nurse">Andrew 
+    Stanton-Nurse</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L727-R3">L727-R3</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2011</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L727-R3/ics"><time 
+    class="timeHelper" datetime="2016-04-01 16:00:00Z/2016-04-01 17:00:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 9:00AM (UTC-07:00) and end Apr 01, 2016 at 10:00AM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 4:00PM (UTC+00:00) and end Apr 01, 2016 at 5:00PM (UTC+00:00).">Apr 
+    01, 2016 9:00AM–10:00AM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L727-R3#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L728-R1">Web 
+  Development 2: Deeper on ASP.NET Core&nbsp;1.0</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/rachel-appel">Rachel 
+    Appel</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/pranav-krishnamoorthy">Pranav 
+    Krishnamoorthy</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/cephas-lin">Cephas 
+    Lin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/eilon-lipton">Eilon 
+    Lipton</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sourabh-shirhatti">Sourabh 
+    Shirhatti</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-stanton-nurse">Andrew 
+    Stanton-Nurse</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L728-R1">L728-R1</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2011</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L728-R1/ics"><time 
+    class="timeHelper" datetime="2016-03-30 21:00:00Z/2016-03-30 22:00:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 2:00PM (UTC-07:00) and end Mar 30, 2016 at 3:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 30, 2016 at 9:00PM (UTC+00:00) and end Mar 30, 2016 at 10:00PM (UTC+00:00).">Mar 
+    30, 2016 2:00PM–3:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L728-R1#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L728-R2">Web 
+  Development 2: Deeper on ASP.NET Core&nbsp;1.0</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/Jon-Galloway">Jon 
+    Galloway</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/pranav-krishnamoorthy">Pranav 
+    Krishnamoorthy</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/cephas-lin">Cephas 
+    Lin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/eilon-lipton">Eilon 
+    Lipton</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sourabh-shirhatti">Sourabh 
+    Shirhatti</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-stanton-nurse">Andrew 
+    Stanton-Nurse</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L728-R2">L728-R2</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2011</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L728-R2/ics"><time 
+    class="timeHelper" datetime="2016-03-31 21:00:00Z/2016-03-31 22:00:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 2:00PM (UTC-07:00) and end Mar 31, 2016 at 3:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 9:00PM (UTC+00:00) and end Mar 31, 2016 at 10:00PM (UTC+00:00).">Mar 
+    31, 2016 2:00PM–3:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L728-R2#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L728-R3">Web 
+  Development 2: Deeper on ASP.NET Core&nbsp;1.0</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/Jon-Galloway">Jon 
+    Galloway</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/pranav-krishnamoorthy">Pranav 
+    Krishnamoorthy</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/cephas-lin">Cephas 
+    Lin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/eilon-lipton">Eilon 
+    Lipton</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sourabh-shirhatti">Sourabh 
+    Shirhatti</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-stanton-nurse">Andrew 
+    Stanton-Nurse</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L728-R3">L728-R3</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2011</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L728-R3/ics"><time 
+    class="timeHelper" datetime="2016-04-01 17:30:00Z/2016-04-01 18:30:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 10:30AM (UTC-07:00) and end Apr 01, 2016 at 11:30AM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 5:30PM (UTC+00:00) and end Apr 01, 2016 at 6:30PM (UTC+00:00).">Apr 
+    01, 2016 10:30AM–11:30AM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L728-R3#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L729-R1">Web 
+  Development 3: Deployment and Azure with ASP.NET Core&nbsp;1.0</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/rachel-appel">Rachel 
+    Appel</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/pranav-krishnamoorthy">Pranav 
+    Krishnamoorthy</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/cephas-lin">Cephas 
+    Lin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/eilon-lipton">Eilon 
+    Lipton</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sourabh-shirhatti">Sourabh 
+    Shirhatti</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-stanton-nurse">Andrew 
+    Stanton-Nurse</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L729-R1">L729-R1</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2011</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L729-R1/ics"><time 
+    class="timeHelper" datetime="2016-03-30 22:30:00Z/2016-03-30 23:30:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 3:30PM (UTC-07:00) and end Mar 30, 2016 at 4:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 30, 2016 at 10:30PM (UTC+00:00) and end Mar 30, 2016 at 11:30PM (UTC+00:00).">Mar 
+    30, 2016 3:30PM–4:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L729-R1#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L729-R2">Web 
+  Development 3: Deployment and Azure with ASP.NET Core&nbsp;1.0</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/rachel-appel">Rachel 
+    Appel</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/pranav-krishnamoorthy">Pranav 
+    Krishnamoorthy</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/cephas-lin">Cephas 
+    Lin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/eilon-lipton">Eilon 
+    Lipton</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sourabh-shirhatti">Sourabh 
+    Shirhatti</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-stanton-nurse">Andrew 
+    Stanton-Nurse</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L729-R2">L729-R2</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2011</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L729-R2/ics"><time 
+    class="timeHelper" datetime="2016-04-01 00:00:00Z/2016-04-01 01:00:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 5:00PM (UTC-07:00) and end Mar 31, 2016 at 6:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 12:00AM (UTC+00:00) and end Apr 01, 2016 at 1:00AM (UTC+00:00).">Mar 
+    31, 2016 5:00PM–6:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L729-R2#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L729-R3">Web 
+  Development 3: Deployment and Azure with ASP.NET Core&nbsp;1.0</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/rachel-appel">Rachel 
+    Appel</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/pranav-krishnamoorthy">Pranav 
+    Krishnamoorthy</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/cephas-lin">Cephas 
+    Lin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/eilon-lipton">Eilon 
+    Lipton</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sourabh-shirhatti">Sourabh 
+    Shirhatti</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-stanton-nurse">Andrew 
+    Stanton-Nurse</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L729-R3">L729-R3</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2011</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L729-R3/ics"><time 
+    class="timeHelper" datetime="2016-04-01 19:30:00Z/2016-04-01 20:30:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 12:30PM (UTC-07:00) and end Apr 01, 2016 at 1:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 7:30PM (UTC+00:00) and end Apr 01, 2016 at 8:30PM (UTC+00:00).">Apr 
+    01, 2016 12:30PM–1:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L729-R3#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L730-R1">Web 
+  Development 4: Front End Web&nbsp;Development</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/pranav-krishnamoorthy">Pranav 
+    Krishnamoorthy</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/cephas-lin">Cephas 
+    Lin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/eilon-lipton">Eilon 
+    Lipton</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/rami-sayar">Rami 
+    Sayar</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sourabh-shirhatti">Sourabh 
+    Shirhatti</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-stanton-nurse">Andrew 
+    Stanton-Nurse</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L730-R1">L730-R1</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2011</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L730-R1/ics"><time 
+    class="timeHelper" datetime="2016-03-31 00:00:00Z/2016-03-31 01:00:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 5:00PM (UTC-07:00) and end Mar 30, 2016 at 6:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 12:00AM (UTC+00:00) and end Mar 31, 2016 at 1:00AM (UTC+00:00).">Mar 
+    30, 2016 5:00PM–6:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L730-R1#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L730-R2">Web 
+  Development 4: Front End Web&nbsp;Development</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/pranav-krishnamoorthy">Pranav 
+    Krishnamoorthy</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/cephas-lin">Cephas 
+    Lin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/eilon-lipton">Eilon 
+    Lipton</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/rami-sayar">Rami 
+    Sayar</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sourabh-shirhatti">Sourabh 
+    Shirhatti</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-stanton-nurse">Andrew 
+    Stanton-Nurse</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L730-R2">L730-R2</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2011</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L730-R2/ics"><time 
+    class="timeHelper" datetime="2016-04-01 01:30:00Z/2016-04-01 02:30:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 6:30PM (UTC-07:00) and end Mar 31, 2016 at 7:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 1:30AM (UTC+00:00) and end Apr 01, 2016 at 2:30AM (UTC+00:00).">Mar 
+    31, 2016 6:30PM–7:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L730-R2#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L730-R3">Web 
+  Development 4: Front End Web&nbsp;Development</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/pranav-krishnamoorthy">Pranav 
+    Krishnamoorthy</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/cephas-lin">Cephas 
+    Lin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/eilon-lipton">Eilon 
+    Lipton</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/rami-sayar">Rami 
+    Sayar</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sourabh-shirhatti">Sourabh 
+    Shirhatti</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-stanton-nurse">Andrew 
+    Stanton-Nurse</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L730-R3">L730-R3</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2011</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L730-R3/ics"><time 
+    class="timeHelper" datetime="2016-04-01 21:00:00Z/2016-04-01 22:00:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 2:00PM (UTC-07:00) and end Apr 01, 2016 at 3:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 9:00PM (UTC+00:00) and end Apr 01, 2016 at 10:00PM (UTC+00:00).">Apr 
+    01, 2016 2:00PM–3:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L730-R3#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/L731">Data 
+  Development 4: Take a Modern Approach to Data in Your Apps Using Azure 
+  Data&nbsp;Services</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/jesus-aguilar">Jesus 
+    Aguilar</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/rob-bagby">Rob 
+    Bagby</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/debra-dove">Debra 
+    Dove</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/tara-shankar-jana">Tara 
+    Shankar Jana</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/mustafa-kasap">Mustafa 
+    Kasap</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/andrew-moll">Andrew 
+    Moll</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Code%20Lab">Code 
+    Lab</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/L731">L731</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Room 2016</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/L731/ics"><time 
+    class="timeHelper" datetime="2016-03-31 00:00:00Z/2016-03-31 01:00:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 5:00PM (UTC-07:00) and end Mar 30, 2016 at 6:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 12:00AM (UTC+00:00) and end Mar 31, 2016 at 1:00AM (UTC+00:00).">Mar 
+    30, 2016 5:00PM–6:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/L731#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C901">To 
+  Be&nbsp;Announced</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/derrick-connell">Derrick 
+    Connell</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/mark-miller">Mark 
+    Miller</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/ben-tamblyn">Ben 
+    Tamblyn</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C901">C901</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C901/ics"><time 
+    class="timeHelper" datetime="2016-03-30 18:00:00Z/2016-03-30 18:30:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 11:00AM (UTC-07:00) and end Mar 30, 2016 at 11:30AM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 30, 2016 at 6:00PM (UTC+00:00) and end Mar 30, 2016 at 6:30PM (UTC+00:00).">Mar 
+    30, 2016 11:00AM–11:30AM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C901#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C902">Conversation 
+  as a&nbsp;Platform</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/yasmin-khan">Yasmin 
+    Khan</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Gurdeep-Singh-Pall">Gurdeep 
+    Singh Pall</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/lilian-rincon">Lilian 
+    Rincon</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C902">C902</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C902/ics"><time 
+    class="timeHelper" datetime="2016-03-30 20:00:00Z/2016-03-30 20:30:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 1:00PM (UTC-07:00) and end Mar 30, 2016 at 1:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 30, 2016 at 8:00PM (UTC+00:00) and end Mar 30, 2016 at 8:30PM (UTC+00:00).">Mar 
+    30, 2016 1:00PM–1:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C902#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C903">Visual 
+  Studio Tool&nbsp;Box</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/robert-green">Robert 
+    Green</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C903">C903</A>
+    		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C903#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C904">Kevin&nbsp;Gallo</A>
+	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/kevin-gallo">Kevin 
+    Gallo</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C904">C904</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C904/ics"><time 
+    class="timeHelper" datetime="2016-03-30 22:00:00Z/2016-03-30 22:30:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 3:00PM (UTC-07:00) and end Mar 30, 2016 at 3:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 30, 2016 at 10:00PM (UTC+00:00) and end Mar 30, 2016 at 10:30PM (UTC+00:00).">Mar 
+    30, 2016 3:00PM–3:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C904#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C905">C++</A>
+	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/charles-torre">Charles 
+    Torre</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/ankit-asthana">Ankit 
+    Asthana</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Marian-Luparu">Marian 
+    Luparu</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C905">C905</A>
+    		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C905#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C906">Something 
+  Awesome This Way&nbsp;Comes!</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/russ-alexander">Russ 
+    Alexander</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Ben-Armstrong">Ben 
+    Armstrong</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/scott-hanselman">Scott 
+    Hanselman</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Mike-Harsh">Mike 
+    Harsh</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C906">C906</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C906/ics"><time 
+    class="timeHelper" datetime="2016-03-30 23:30:00Z/2016-03-31 00:00:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 4:30PM (UTC-07:00) and end Mar 30, 2016 at 5:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 30, 2016 at 11:30PM (UTC+00:00) and end Mar 31, 2016 at 12:00AM (UTC+00:00).">Mar 
+    30, 2016 4:30PM–5:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C906#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C907">Anders&nbsp;Live</A>
+	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/Anders-Hejlsberg">Anders 
+    Hejlsberg</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C907">C907</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C907/ics"><time 
+    class="timeHelper" datetime="2016-03-31 01:00:00Z/2016-03-31 01:30:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 6:00PM (UTC-07:00) and end Mar 30, 2016 at 6:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 1:00AM (UTC+00:00) and end Mar 31, 2016 at 1:30AM (UTC+00:00).">Mar 
+    30, 2016 6:00PM–6:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C907#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C908">The 
+  Future of Visual&nbsp;Studio</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/amanda-silver">Amanda 
+    Silver</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C908">C908</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=1">
+    				Day 1			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C908/ics"><time 
+    class="timeHelper" datetime="2016-03-31 01:30:00Z/2016-03-31 02:00:00Z" 
+    data-message="This session is scheduled to begin Mar 30, 2016 at 6:30PM (UTC-07:00) and end Mar 30, 2016 at 7:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 1:30AM (UTC+00:00) and end Mar 31, 2016 at 2:00AM (UTC+00:00).">Mar 
+    30, 2016 6:30PM–7:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C908#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C910">Developing 
+  with&nbsp;HoloLens</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/vanessa-arnauld">Vanessa 
+    Arnauld</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/michael-felice">Michael 
+    Felice</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/karim-luccin">Karim 
+    Luccin</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/bj-malicoat-xbox">BJ 
+    Malicoat (XBOX)</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C910">C910</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C910/ics"><time 
+    class="timeHelper" datetime="2016-03-31 18:15:00Z/2016-03-31 18:45:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 11:15AM (UTC-07:00) and end Mar 31, 2016 at 11:45AM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 6:15PM (UTC+00:00) and end Mar 31, 2016 at 6:45PM (UTC+00:00).">Mar 
+    31, 2016 11:15AM–11:45AM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C910#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C911">Guggs&nbsp;Live</A>
+	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/steven-guggenheimer">Steven 
+    Guggenheimer</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C911">C911</A>
+    		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C911#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C912">To 
+  be&nbsp;Announced</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/Miguel-de-Icaza">Miguel 
+    de Icaza</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/nat-friedman">Nat 
+    Friedman</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/amanda-silver">Amanda 
+    Silver</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C912">C912</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C912/ics"><time 
+    class="timeHelper" datetime="2016-03-31 19:45:00Z/2016-03-31 20:20:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 12:45PM (UTC-07:00) and end Mar 31, 2016 at 1:20PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 7:45PM (UTC+00:00) and end Mar 31, 2016 at 8:20PM (UTC+00:00).">Mar 
+    31, 2016 12:45PM–1:20PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C912#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C913">Gabriel 
+  Aul&nbsp;Live</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/gabriel-aul">Gabriel 
+    Aul</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C913">C913</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C913/ics"><time 
+    class="timeHelper" datetime="2016-03-31 20:20:00Z/2016-03-31 21:00:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 1:20PM (UTC-07:00) and end Mar 31, 2016 at 2:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 8:20PM (UTC+00:00) and end Mar 31, 2016 at 9:00PM (UTC+00:00).">Mar 
+    31, 2016 1:20PM–2:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C913#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C914">Windows 
+  Bridge for&nbsp;iOS</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/Salmaan-Ahmed">Salmaan 
+    Ahmed</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/nick-gerard">Nick 
+    Gerard</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/ryan-haning">Ryan 
+    Haning</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/dustin-howett">Dustin 
+    Howett</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C914">C914</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C914/ics"><time 
+    class="timeHelper" datetime="2016-03-31 22:00:00Z/2016-03-31 22:30:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 3:00PM (UTC-07:00) and end Mar 31, 2016 at 3:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 10:00PM (UTC+00:00) and end Mar 31, 2016 at 10:30PM (UTC+00:00).">Mar 
+    31, 2016 3:00PM–3:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C914#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C915">Bringing 
+  Your Desktop App to Use the Universal Windows&nbsp;Platform</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/john-sheehan">John 
+    Sheehan</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/david-tepper">David 
+    Tepper</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/stefan-wick">Stefan 
+    Wick</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C915">C915</A>
+    		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C915#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C916">ASP.NET&nbsp;vNext</A>
+	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/Jon-Galloway">Jon 
+    Galloway</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/mads-kristensen">Mads 
+    Kristensen</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/richard-lander">​Richard 
+    Lander</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C916">C916</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C916/ics"><time 
+    class="timeHelper" datetime="2016-03-31 23:30:00Z/2016-04-01 00:00:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 4:30PM (UTC-07:00) and end Mar 31, 2016 at 5:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Mar 31, 2016 at 11:30PM (UTC+00:00) and end Apr 01, 2016 at 12:00AM (UTC+00:00).">Mar 
+    31, 2016 4:30PM–5:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C916#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C917">Azure&nbsp;AD</A>
+	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/vittorio-bertocci">Vittorio 
+    Bertocci</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C917">C917</A>
+    		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C917#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C918">Mark 
+  Russinovich&nbsp;Live</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Mark-Russinovich">Mark 
+    Russinovich</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C918">C918</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C918/ics"><time 
+    class="timeHelper" datetime="2016-04-01 01:30:00Z/2016-04-01 02:00:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 6:30PM (UTC-07:00) and end Mar 31, 2016 at 7:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 1:30AM (UTC+00:00) and end Apr 01, 2016 at 2:00AM (UTC+00:00).">Mar 
+    31, 2016 6:30PM–7:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C918#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C919">Data 
+  Science on&nbsp;Azure</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/lara-rubbelke">Lara 
+    Rubbelke</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/matthew-winkler">Matthew 
+    Winkler</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C919">C919</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=2">
+    				Day 2			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C919/ics"><time 
+    class="timeHelper" datetime="2016-04-01 02:00:00Z/2016-04-01 02:30:00Z" 
+    data-message="This session is scheduled to begin Mar 31, 2016 at 7:00PM (UTC-07:00) and end Mar 31, 2016 at 7:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 2:00AM (UTC+00:00) and end Apr 01, 2016 at 2:30AM (UTC+00:00).">Mar 
+    31, 2016 7:00PM–7:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C919#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C920">The 
+  Future of .Net&nbsp;Languages</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/Dustin-Campbell">Dustin 
+    Campbell</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Anthony-Green">Anthony 
+    D. Green</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/david-stephens">David 
+    Stephens</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Mads-Torgersen">Mads 
+    Torgersen</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C920">C920</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C920/ics"><time 
+    class="timeHelper" datetime="2016-04-01 17:00:00Z/2016-04-01 17:30:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 10:00AM (UTC-07:00) and end Apr 01, 2016 at 10:30AM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 5:00PM (UTC+00:00) and end Apr 01, 2016 at 5:30PM (UTC+00:00).">Apr 
+    01, 2016 10:00AM–10:30AM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C920#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C921">DevOps 
+  and Visual Studio Team&nbsp;Services</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/donovan-brown">Donovan 
+    Brown</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C921">C921</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C921/ics"><time 
+    class="timeHelper" datetime="2016-04-01 17:30:00Z/2016-04-01 18:30:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 10:30AM (UTC-07:00) and end Apr 01, 2016 at 11:30AM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 5:30PM (UTC+00:00) and end Apr 01, 2016 at 6:30PM (UTC+00:00).">Apr 
+    01, 2016 10:30AM–11:30AM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C921#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C922">Bing 
+  Developer&nbsp;AI</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/gurpreet-pall">Gurpreet 
+    Pall</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C922">C922</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C922/ics"><time 
+    class="timeHelper" datetime="2016-04-01 18:30:00Z/2016-04-01 19:00:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 11:30AM (UTC-07:00) and end Apr 01, 2016 at 12:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 6:30PM (UTC+00:00) and end Apr 01, 2016 at 7:00PM (UTC+00:00).">Apr 
+    01, 2016 11:30AM–12:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C922#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C923">Office 
+  Dev Show&nbsp;Live</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/yina-arenas">Yina 
+    Arenas</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/sonya-koptyev">Sonya 
+    Koptyev</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Jeremy-Thake">Jeremy 
+    Thake</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C923">C923</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C923/ics"><time 
+    class="timeHelper" datetime="2016-04-01 19:00:00Z/2016-04-01 19:30:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 12:00PM (UTC-07:00) and end Apr 01, 2016 at 12:30PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 7:00PM (UTC+00:00) and end Apr 01, 2016 at 7:30PM (UTC+00:00).">Apr 
+    01, 2016 12:00PM–12:30PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C923#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C924">.NET&nbsp;Core</A>
+	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/Scott-Hunter">Scott 
+    Hunter</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/richard-lander">​Richard 
+    Lander</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/beth-massi">Beth 
+    Massi</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C924">C924</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C924/ics"><time 
+    class="timeHelper" datetime="2016-04-01 20:30:00Z/2016-04-01 21:00:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 1:30PM (UTC-07:00) and end Apr 01, 2016 at 2:00PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 8:30PM (UTC+00:00) and end Apr 01, 2016 at 9:00PM (UTC+00:00).">Apr 
+    01, 2016 1:30PM–2:00PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C924#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI>
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C925">The 
+  Future of&nbsp;XAML</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/james-clarke">James 
+    Clarke</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Ryan-Demopoulos">Ryan 
+    Demopoulos</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A><SPAN class="comma">,</SPAN>				 <A href="https://channel9.msdn.com/Events/Speakers/Unni-Ravindranathan">Unni 
+    Ravindranathan</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C925">C925</A>
+    		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C925#comments">0</A>
+    		 </LI></UL></DIV></LI>
+  <LI class="odd">
+  <DIV class="entry-meta"><A class="title" href="https://channel9.msdn.com/Events/Build/2016/C926">Close 
+  of&nbsp;Build</A>	 <!--spans + , are required for ie7, and no comments can be placed after the span-->
+	 
+  <UL class="details">
+    <LI class="grouping speaker"><A href="https://channel9.msdn.com/Events/Speakers/seth-juarez">Seth 
+    Juarez</A>		 </LI>
+    <LI class="grouping sessionType"><A href="https://channel9.msdn.com/Events/Build/2016?y=Channel%209%20Live">Channel 
+    9 Live</A>		 </LI>
+    <LI class="grouping level"><A href="https://channel9.msdn.com/Events/Build/2016?l=200%20-%20Intermediate">200 
+    - Intermediate</A>		 </LI>
+    <LI class="timing code"><A href="https://channel9.msdn.com/Events/Build/2016/C926">C926</A>
+    		 </LI>
+    <LI class="timing day"><A href="https://channel9.msdn.com/Events/Build/2016?d=3">
+    				Day 3			 </A>		 </LI>
+    <LI class="timing room"><SPAN>Channel 9 Stage</SPAN>		 </LI>
+    <LI class="timing date"><A class="add-to-calendar" href="https://channel9.msdn.com/Events/Build/2016/C926/ics"><time 
+    class="timeHelper" datetime="2016-04-01 22:00:00Z/2016-04-01 22:15:00Z" 
+    data-message="This session is scheduled to begin Apr 01, 2016 at 3:00PM (UTC-07:00) and end Apr 01, 2016 at 3:15PM (UTC-07:00).&#10;Based on your computer’s local time settings, this session is scheduled to begin Apr 01, 2016 at 10:00PM (UTC+00:00) and end Apr 01, 2016 at 10:15PM (UTC+00:00).">Apr 
+    01, 2016 3:00PM–3:15PM</time>				 </A>		 </LI>
+    <LI class="c9interaction comments"><IMG alt="Comments" src="Build2016_Channel9_2_files/icon-communication_sm.png">
+    			 <A class="commentJump" href="https://channel9.msdn.com/Events/Build/2016/C926#comments">0</A>
+    		 </LI></UL></DIV></LI></UL>
+<UL class="paging">
+  <LI class="prev"><A href="https://channel9.msdn.com/Events/Build/2016?sort=status&amp;direction=asc#theSessions">previous</A></LI>
+  <LI><A href="https://channel9.msdn.com/Events/Build/2016?sort=status&amp;direction=asc#theSessions">1</A></LI>
+  <LI><SPAN class="current">2</SPAN>					 </LI></UL></DIV></DIV></DIV>
+<DIV class="pageNavHolder"></DIV>
+<DIV class="sidebarHolder">
+<DIV class="sidebar">
+<DIV class="eventHome external">
+<H3>Event Homepage</H3><A class="title" href="https://build.microsoft.com/">
+					Build 2016			 </A>		 </DIV>
+<DIV class="search">
+<FORM id="sessionFilter" action="#theSessions" autocomplete="off">
+<DIV class="filterHolder"><INPUT name="sort" type="hidden" value="status">
+						 <INPUT name="direction" type="hidden" value="asc">						 
+<H3>Filter Sessions</H3>
+<FIELDSET class="term default"><LEGEND><SPAN class="title">Term:</SPAN>
+							 </LEGEND>							 <INPUT name="term" id="term" type="text">
+						 </FIELDSET>
+<FIELDSET class="sessionType default checkboxSet"><LEGEND><SPAN 
+class="title">Session Type:</SPAN>							 </LEGEND>							 
+<DIV><INPUT name="y" id="y_Breakout" type="checkbox" value="Breakout">
+									 <LABEL class="likeAlink" for="y_Breakout">Breakout</LABEL><INPUT name="y" 
+id="y_Channel9Live" type="checkbox" value="Channel 9 Live">									 <LABEL 
+class="likeAlink" for="y_Channel9Live">Channel 9 Live</LABEL><INPUT name="y" id="y_CodeLab" 
+type="checkbox" value="Code Lab">									 <LABEL class="likeAlink" for="y_CodeLab">Code 
+Lab</LABEL><INPUT name="y" id="y_Keynote" type="checkbox" value="Keynote">
+									 <LABEL class="likeAlink" 
+for="y_Keynote">Keynote</LABEL></DIV></FIELDSET>
+<FIELDSET class="tag default checkboxSet"><LEGEND><SPAN 
+class="title">Tag:</SPAN>							 </LEGEND>							 
+<DIV><INPUT name="tag" id="t_net" type="checkbox" value=".net">									 <LABEL 
+class="likeAlink" for="t_net">.NET</LABEL><INPUT name="tag" id="t_analytics" 
+type="checkbox" value="analytics">									 <LABEL class="likeAlink" for="t_analytics">Analytics</LABEL><INPUT 
+name="tag" id="t_analyticstelemetry" type="checkbox" value="analyticstelemetry">
+									 <LABEL class="likeAlink" 
+for="t_analyticstelemetry">Analytics/​Telemetry</LABEL><INPUT name="tag" id="t_android" 
+type="checkbox" value="android">									 <LABEL class="likeAlink" for="t_android">Android</LABEL><INPUT 
+name="tag" id="t_appmodel" type="checkbox" value="app-model">									 <LABEL 
+class="likeAlink" for="t_appmodel">App Model</LABEL><INPUT name="tag" id="t_applicationinsights" 
+type="checkbox" value="application-insights">									 <LABEL class="likeAlink" 
+for="t_applicationinsights">Application Insights</LABEL><INPUT name="tag" id="t_applicationlifecyclemanagement" 
+type="checkbox" value="application-lifecycle-management">									 <LABEL class="likeAlink" 
+for="t_applicationlifecyclemanagement">Application Lifecycle 
+Management</LABEL><INPUT name="tag" id="t_aspnet" type="checkbox" value="asp.net">
+									 <LABEL class="likeAlink" for="t_aspnet">ASP.NET</LABEL><INPUT name="tag" 
+id="t_azure" type="checkbox" value="azure">									 <LABEL class="likeAlink" 
+for="t_azure">Azure</LABEL><INPUT name="tag" id="t_csharp" type="checkbox" 
+value="csharp">									 <LABEL class="likeAlink" 
+for="t_csharp">C#</LABEL><INPUT name="tag" id="t_c" type="checkbox" value="c++">
+									 <LABEL class="likeAlink" for="t_c">C++</LABEL><INPUT name="tag" id="t_cordova" 
+type="checkbox" value="cordova">									 <LABEL class="likeAlink" for="t_cordova">Cordova</LABEL><INPUT 
+name="tag" id="t_cortana" type="checkbox" value="cortana">									 <LABEL 
+class="likeAlink" for="t_cortana">Cortana</LABEL><INPUT name="tag" id="t_crossplatformdevelopment" 
+type="checkbox" value="cross-platform-development">									 <LABEL class="likeAlink" 
+for="t_crossplatformdevelopment">Cross-Platform Development</LABEL><INPUT name="tag" 
+id="t_data" type="checkbox" value="data">									 <LABEL class="likeAlink" for="t_data">Data</LABEL><INPUT 
+name="tag" id="t_design" type="checkbox" value="design">									 <LABEL class="likeAlink" 
+for="t_design">Design</LABEL><INPUT name="tag" id="t_devcenter" type="checkbox" 
+value="dev-center">									 <LABEL class="likeAlink" for="t_devcenter">Dev 
+Center</LABEL><INPUT name="tag" id="t_devops" type="checkbox" value="devops">
+									 <LABEL class="likeAlink" for="t_devops">DevOps</LABEL><INPUT name="tag" 
+id="t_diagnostics" type="checkbox" value="diagnostics">									 <LABEL class="likeAlink" 
+for="t_diagnostics">Diagnostics</LABEL><INPUT name="tag" id="t_effectsandanimation" 
+type="checkbox" value="effects--and--animation">									 <LABEL class="likeAlink" 
+for="t_effectsandanimation">Effects &amp; Animation</LABEL><INPUT name="tag" id="t_enterprise" 
+type="checkbox" value="enterprise">									 <LABEL class="likeAlink" for="t_enterprise">Enterprise</LABEL><INPUT 
+name="tag" id="t_gamedevelopment" type="checkbox" value="game-development">
+									 <LABEL class="likeAlink" for="t_gamedevelopment">Game 
+Development</LABEL><INPUT name="tag" id="t_hockeyapp" type="checkbox" value="hockeyapp">
+									 <LABEL class="likeAlink" for="t_hockeyapp">HockeyApp</LABEL><INPUT 
+name="tag" id="t_hololens" type="checkbox" value="hololens">									 <LABEL 
+class="likeAlink" for="t_hololens">HoloLens</LABEL><INPUT name="tag" id="t_input" 
+type="checkbox" value="input">									 <LABEL class="likeAlink" 
+for="t_input">Input</LABEL><INPUT name="tag" id="t_intelligentapp" type="checkbox" 
+value="intelligent-app">									 <LABEL class="likeAlink" for="t_intelligentapp">Intelligent 
+ App</LABEL><INPUT name="tag" id="t_internetofthings" type="checkbox" value="internet-of-things">
+									 <LABEL class="likeAlink" for="t_internetofthings">Internet of 
+Things</LABEL><INPUT name="tag" id="t_ios" type="checkbox" value="ios">
+									 <LABEL class="likeAlink" for="t_ios">iOS</LABEL><INPUT name="tag" id="t_javascript" 
+type="checkbox" value="javascript">									 <LABEL class="likeAlink" for="t_javascript">JavaScript</LABEL><INPUT 
+name="tag" id="t_machinelearning" type="checkbox" value="machine-learning">
+									 <LABEL class="likeAlink" for="t_machinelearning">Machine 
+Learning</LABEL><INPUT name="tag" id="t_managedlanguages" type="checkbox" value="managed-languages">
+									 <LABEL class="likeAlink" for="t_managedlanguages">Managed 
+Languages</LABEL><INPUT name="tag" id="t_media" type="checkbox" value="media">
+									 <LABEL class="likeAlink" for="t_media">Media</LABEL><INPUT name="tag" 
+id="t_monetization" type="checkbox" value="monetization">									 <LABEL class="likeAlink" 
+for="t_monetization">Monetization</LABEL><INPUT name="tag" id="t_nodejs" type="checkbox" 
+value="node.js">									 <LABEL class="likeAlink" 
+for="t_nodejs">Node.js</LABEL><INPUT name="tag" id="t_opensource" type="checkbox" 
+value="open-source">									 <LABEL class="likeAlink" for="t_opensource">Open 
+Source</LABEL><INPUT name="tag" id="t_security" type="checkbox" 
+value="security">									 <LABEL class="likeAlink" 
+for="t_security">Security</LABEL><INPUT name="tag" id="t_teamfoundationserver" 
+type="checkbox" value="team-foundation-server">									 <LABEL class="likeAlink" 
+for="t_teamfoundationserver">Team Foundation Server</LABEL><INPUT name="tag" id="t_testing" 
+type="checkbox" value="testing">									 <LABEL class="likeAlink" for="t_testing">Testing</LABEL><INPUT 
+name="tag" id="t_tools" type="checkbox" value="tools">									 <LABEL class="likeAlink" 
+for="t_tools">Tools</LABEL><INPUT name="tag" id="t_typescript" type="checkbox" 
+value="typescript">									 <LABEL class="likeAlink" 
+for="t_typescript">TypeScript</LABEL><INPUT name="tag" id="t_universalwindowsplatformuwp" 
+type="checkbox" value="universal-windows-platform-uwp">									 <LABEL class="likeAlink" 
+for="t_universalwindowsplatformuwp">Universal Windows Platform 
+(UWP)</LABEL><INPUT name="tag" id="t_visualstudio" type="checkbox" value="visual-studio">
+									 <LABEL class="likeAlink" for="t_visualstudio">Visual 
+Studio</LABEL><INPUT name="tag" id="t_visualstudiocode" type="checkbox" value="visual-studio-code">
+									 <LABEL class="likeAlink" for="t_visualstudiocode">Visual Studio 
+Code</LABEL><INPUT name="tag" id="t_visualstudioteamservices" type="checkbox" 
+value="visual-studio-team-services">									 <LABEL class="likeAlink" for="t_visualstudioteamservices">Visual 
+Studio Team Services</LABEL><INPUT name="tag" id="t_webplatform" type="checkbox" 
+value="web-platform">									 <LABEL class="likeAlink" for="t_webplatform">Web 
+Platform</LABEL><INPUT name="tag" id="t_windowspresentationfoundation" type="checkbox" 
+value="windows-presentation-foundation">									 <LABEL class="likeAlink" for="t_windowspresentationfoundation">Windows 
+Presentation Foundation</LABEL><INPUT name="tag" id="t_windowsstore" type="checkbox" 
+value="windows-store">									 <LABEL class="likeAlink" 
+for="t_windowsstore">Windows Store</LABEL><INPUT name="tag" id="t_xamarin" type="checkbox" 
+value="xamarin">									 <LABEL class="likeAlink" 
+for="t_xamarin">Xamarin</LABEL><INPUT name="tag" id="t_xamlux" type="checkbox" 
+value="xamlux">									 <LABEL class="likeAlink" 
+for="t_xamlux">XAML/UX</LABEL><INPUT name="tag" id="t_xbox" type="checkbox" 
+value="xbox">									 <LABEL class="likeAlink" 
+for="t_xbox">Xbox</LABEL></DIV></FIELDSET>
+<FIELDSET class="speaker default checkboxSet"><LEGEND><SPAN 
+class="title">Speaker:</SPAN>							 </LEGEND>							 
+<DIV><INPUT name="s" id="s_richardlander" type="checkbox" 
+value="richard-lander">									 <LABEL class="likeAlink" 
+for="s_richardlander">​Richard Lander</LABEL><INPUT name="s" id="s_abhishekagrawal" 
+type="checkbox" value="abhishek-agrawal">									 <LABEL class="likeAlink" for="s_abhishekagrawal">Abhishek 
+Agrawal</LABEL><INPUT name="s" id="s_adamtuliper" type="checkbox" value="adam-tuliper">
+									 <LABEL class="likeAlink" for="s_adamtuliper">Adam 
+Tuliper</LABEL><INPUT name="s" id="s_adamwilsonappmodel" type="checkbox" value="adam-wilson-appmodel">
+									 <LABEL class="likeAlink" for="s_adamwilsonappmodel">Adam Wilson 
+(APPMODEL)</LABEL><INPUT name="s" id="s_adrianmaziak" type="checkbox" value="adrian-maziak">
+									 <LABEL class="likeAlink" for="s_adrianmaziak">Adrian 
+Maziak</LABEL><INPUT name="s" id="s_allisonbuchholtzau" type="checkbox" value="allison-buchholtz-au">
+									 <LABEL class="likeAlink" for="s_allisonbuchholtzau">Allison 
+Buchholtz-Au</LABEL><INPUT name="s" id="s_amandasilver" type="checkbox" value="amanda-silver">
+									 <LABEL class="likeAlink" for="s_amandasilver">Amanda 
+Silver</LABEL><INPUT name="s" id="s_AmirShevat" type="checkbox" value="Amir-Shevat">
+									 <LABEL class="likeAlink" for="s_AmirShevat">Amir Shevat</LABEL><INPUT 
+name="s" id="s_anandsubbaraj" type="checkbox" value="anand-subbaraj">
+									 <LABEL class="likeAlink" for="s_anandsubbaraj">Anand 
+Subbaraj</LABEL><INPUT name="s" id="s_AndersHejlsberg" type="checkbox" value="Anders-Hejlsberg">
+									 <LABEL class="likeAlink" for="s_AndersHejlsberg">Anders 
+Hejlsberg</LABEL><INPUT name="s" id="s_andrewbares" type="checkbox" value="andrew-bares">
+									 <LABEL class="likeAlink" for="s_andrewbares">Andrew 
+Bares</LABEL><INPUT name="s" id="s_AndrewBybee" type="checkbox" value="Andrew-Bybee">
+									 <LABEL class="likeAlink" for="s_AndrewBybee">Andrew 
+Bybee</LABEL><INPUT name="s" id="s_andrewclinick" type="checkbox" value="andrew-clinick">
+									 <LABEL class="likeAlink" for="s_andrewclinick">Andrew 
+Clinick</LABEL><INPUT name="s" id="s_AndrewCoates" type="checkbox" value="Andrew-Coates">
+									 <LABEL class="likeAlink" for="s_AndrewCoates">Andrew 
+Coates</LABEL><INPUT name="s" id="s_andrewhall" type="checkbox" value="andrew-hall">
+									 <LABEL class="likeAlink" for="s_andrewhall">Andrew Hall</LABEL><INPUT 
+name="s" id="s_AndrewMason" type="checkbox" value="Andrew-Mason">
+									 <LABEL class="likeAlink" for="s_AndrewMason">Andrew 
+Mason</LABEL><INPUT name="s" id="s_andrewmoll" type="checkbox" value="andrew-moll">
+									 <LABEL class="likeAlink" for="s_andrewmoll">Andrew Moll</LABEL><INPUT 
+name="s" id="s_andrewsalamatov" type="checkbox" value="andrew-salamatov">
+									 <LABEL class="likeAlink" for="s_andrewsalamatov">Andrew 
+Salamatov</LABEL><INPUT name="s" id="s_andrewstantonnurse" type="checkbox" 
+value="andrew-stanton-nurse">									 <LABEL class="likeAlink" for="s_andrewstantonnurse">Andrew 
+Stanton-Nurse</LABEL><INPUT name="s" id="s_AndyWigley" type="checkbox" value="Andy-Wigley">
+									 <LABEL class="likeAlink" for="s_AndyWigley">Andy Wigley</LABEL><INPUT 
+name="s" id="s_anirudhagarwal" type="checkbox" value="anirudh-agarwal">
+									 <LABEL class="likeAlink" for="s_anirudhagarwal">Anirudh 
+Agarwal</LABEL><INPUT name="s" id="s_ankitasthana" type="checkbox" value="ankit-asthana">
+									 <LABEL class="likeAlink" for="s_ankitasthana">Ankit 
+Asthana</LABEL><INPUT name="s" id="s_AnthonyGreen" type="checkbox" value="Anthony-Green">
+									 <LABEL class="likeAlink" for="s_AnthonyGreen">Anthony D. 
+Green</LABEL><INPUT name="s" id="s_apurvathanky" type="checkbox" value="apurva-thanky">
+									 <LABEL class="likeAlink" for="s_apurvathanky">Apurva 
+Thanky</LABEL><INPUT name="s" id="s_ashishbabbar" type="checkbox" value="ashish-babbar">
+									 <LABEL class="likeAlink" for="s_ashishbabbar">Ashish 
+Babbar</LABEL><INPUT name="s" id="s_benadams" type="checkbox" value="ben-adams">
+									 <LABEL class="likeAlink" for="s_benadams">Ben Adams</LABEL><INPUT 
+name="s" id="s_BenArmstrong" type="checkbox" value="Ben-Armstrong">
+									 <LABEL class="likeAlink" for="s_BenArmstrong">Ben 
+Armstrong</LABEL><INPUT name="s" id="s_benlackey" type="checkbox" value="ben-lackey">
+									 <LABEL class="likeAlink" for="s_benlackey">Ben Lackey</LABEL><INPUT 
+name="s" id="s_bentamblyn" type="checkbox" value="ben-tamblyn">									 <LABEL 
+class="likeAlink" for="s_bentamblyn">Ben Tamblyn</LABEL><INPUT name="s" id="s_bethmassi" 
+type="checkbox" value="beth-massi">									 <LABEL class="likeAlink" for="s_bethmassi">Beth 
+Massi</LABEL><INPUT name="s" id="s_billlinzbach" type="checkbox" value="bill-linzbach">
+									 <LABEL class="likeAlink" for="s_billlinzbach">Bill 
+Linzbach</LABEL><INPUT name="s" id="s_bjmalicoatxbox" type="checkbox" value="bj-malicoat-xbox">
+									 <LABEL class="likeAlink" for="s_bjmalicoatxbox">BJ Malicoat 
+(XBOX)</LABEL><INPUT name="s" id="s_BorisBaryshnikov" type="checkbox" value="Boris-Baryshnikov">
+									 <LABEL class="likeAlink" for="s_BorisBaryshnikov">Boris 
+Baryshnikov</LABEL><INPUT name="s" id="s_BradMcCabe" type="checkbox" value="Brad-McCabe">
+									 <LABEL class="likeAlink" for="s_BradMcCabe">Brad McCabe</LABEL><INPUT 
+name="s" id="s_bradwethington" type="checkbox" value="brad-wethington">
+									 <LABEL class="likeAlink" for="s_bradwethington">Brad 
+Wethington</LABEL><INPUT name="s" id="s_brettbentsen" type="checkbox" value="brett-bentsen">
+									 <LABEL class="likeAlink" for="s_brettbentsen">Brett 
+Bentsen</LABEL><INPUT name="s" id="s_brettpolen" type="checkbox" value="brett-polen">
+									 <LABEL class="likeAlink" for="s_brettpolen">Brett Polen</LABEL><INPUT 
+name="s" id="s_brianjones" type="checkbox" value="brian-jones">									 <LABEL 
+class="likeAlink" for="s_brianjones">Brian Jones</LABEL><INPUT name="s" id="s_BrianKeller" 
+type="checkbox" value="Brian-Keller">									 <LABEL class="likeAlink" for="s_BrianKeller">Brian 
+Keller</LABEL><INPUT name="s" id="s_brianpeek" type="checkbox" value="brian-peek">
+									 <LABEL class="likeAlink" for="s_brianpeek">Brian Peek</LABEL><INPUT 
+name="s" id="s_burzinpatel" type="checkbox" value="burzin-patel">
+									 <LABEL class="likeAlink" for="s_burzinpatel">Burzin 
+Patel</LABEL><INPUT name="s" id="s_CameronSkinner" type="checkbox" value="Cameron-Skinner">
+									 <LABEL class="likeAlink" for="s_CameronSkinner">Cameron 
+Skinner</LABEL><INPUT name="s" id="s_cephaslin" type="checkbox" value="cephas-lin">
+									 <LABEL class="likeAlink" for="s_cephaslin">Cephas Lin</LABEL><INPUT 
+name="s" id="s_charlesmorris" type="checkbox" value="charles-morris">
+									 <LABEL class="likeAlink" for="s_charlesmorris">Charles 
+Morris</LABEL><INPUT name="s" id="s_charlestorre" type="checkbox" value="charles-torre">
+									 <LABEL class="likeAlink" for="s_charlestorre">Charles 
+Torre</LABEL><INPUT name="s" id="s_ChrisAnderson" type="checkbox" value="Chris-Anderson">
+									 <LABEL class="likeAlink" for="s_ChrisAnderson">Chris 
+Anderson</LABEL><INPUT name="s" id="s_chriscortes" type="checkbox" value="chris-cortes">
+									 <LABEL class="likeAlink" for="s_chriscortes">Chris 
+Cortes</LABEL><INPUT name="s" id="s_christopherharrison" type="checkbox" value="christopher-harrison">
+									 <LABEL class="likeAlink" for="s_christopherharrison">Christopher 
+Harrison</LABEL><INPUT name="s" id="s_clauderemillard" type="checkbox" value="claude-remillard">
+									 <LABEL class="likeAlink" for="s_clauderemillard">Claude 
+Remillard</LABEL><INPUT name="s" id="s_coreysanders" type="checkbox" value="corey-sanders">
+									 <LABEL class="likeAlink" for="s_coreysanders">Corey 
+Sanders</LABEL><INPUT name="s" id="s_coryhendrixson" type="checkbox" value="cory-hendrixson">
+									 <LABEL class="likeAlink" for="s_coryhendrixson">Cory 
+Hendrixson</LABEL><INPUT name="s" id="s_dalestammen" type="checkbox" value="dale-stammen">
+									 <LABEL class="likeAlink" for="s_dalestammen">Dale 
+Stammen</LABEL><INPUT name="s" id="s_dandriscoll" type="checkbox" value="dan-driscoll">
+									 <LABEL class="likeAlink" for="s_dandriscoll">Dan 
+Driscoll</LABEL><INPUT name="s" id="s_DanKershaw" type="checkbox" value="Dan-Kershaw">
+									 <LABEL class="likeAlink" for="s_DanKershaw">Dan Kershaw</LABEL><INPUT 
+name="s" id="s_danrosenstein" type="checkbox" value="dan-rosenstein">
+									 <LABEL class="likeAlink" for="s_danrosenstein">Dan 
+Rosenstein</LABEL><INPUT name="s" id="s_danielgrecoe" type="checkbox" value="daniel-grecoe">
+									 <LABEL class="likeAlink" for="s_danielgrecoe">Daniel 
+Grecoe</LABEL><INPUT name="s" id="s_danielroth" type="checkbox" value="daniel-roth">
+									 <LABEL class="likeAlink" for="s_danielroth">Daniel Roth</LABEL><INPUT 
+name="s" id="s_danielledean" type="checkbox" value="danielle-dean">
+									 <LABEL class="likeAlink" for="s_danielledean">Danielle 
+Dean</LABEL><INPUT name="s" id="s_darrenjefford" type="checkbox" value="darren-jefford">
+									 <LABEL class="likeAlink" for="s_darrenjefford">Darren 
+Jefford</LABEL><INPUT name="s" id="s_davedriver" type="checkbox" value="dave-driver">
+									 <LABEL class="likeAlink" for="s_davedriver">Dave Driver</LABEL><INPUT 
+name="s" id="s_davelindsay" type="checkbox" value="dave-lindsay">
+									 <LABEL class="likeAlink" for="s_davelindsay">Dave 
+Lindsay</LABEL><INPUT name="s" id="s_davidbennett" type="checkbox" value="david-bennett">
+									 <LABEL class="likeAlink" for="s_davidbennett">David 
+Bennett</LABEL><INPUT name="s" id="s_davidcatuhe" type="checkbox" value="david-catuhe">
+									 <LABEL class="likeAlink" for="s_davidcatuhe">David 
+Catuhe</LABEL><INPUT name="s" id="s_davidjustice" type="checkbox" value="david-justice">
+									 <LABEL class="likeAlink" for="s_davidjustice">David 
+Justice</LABEL><INPUT name="s" id="s_davidstephens" type="checkbox" value="david-stephens">
+									 <LABEL class="likeAlink" for="s_davidstephens">David 
+Stephens</LABEL><INPUT name="s" id="s_davidtepper" type="checkbox" value="david-tepper">
+									 <LABEL class="likeAlink" for="s_davidtepper">David 
+Tepper</LABEL><INPUT name="s" id="s_debradove" type="checkbox" value="debra-dove">
+									 <LABEL class="likeAlink" for="s_debradove">Debra Dove</LABEL><INPUT 
+name="s" id="s_derrickconnell" type="checkbox" value="derrick-connell">
+									 <LABEL class="likeAlink" for="s_derrickconnell">Derrick 
+Connell</LABEL><INPUT name="s" id="s_dharmashukla" type="checkbox" value="dharma-shukla">
+									 <LABEL class="likeAlink" for="s_dharmashukla">Dharma 
+Shukla</LABEL><INPUT name="s" id="s_donovanbrown" type="checkbox" value="donovan-brown">
+									 <LABEL class="likeAlink" for="s_donovanbrown">Donovan 
+Brown</LABEL><INPUT name="s" id="s_dorrenebrown" type="checkbox" value="dorrene-brown">
+									 <LABEL class="likeAlink" for="s_dorrenebrown">Dorrene 
+Brown</LABEL><INPUT name="s" id="s_dougperkes" type="checkbox" value="doug-perkes">
+									 <LABEL class="likeAlink" for="s_dougperkes">Doug Perkes</LABEL><INPUT 
+name="s" id="s_DustinCampbell" type="checkbox" value="Dustin-Campbell">
+									 <LABEL class="likeAlink" for="s_DustinCampbell">Dustin 
+Campbell</LABEL><INPUT name="s" id="s_dustinhowett" type="checkbox" value="dustin-howett">
+									 <LABEL class="likeAlink" for="s_dustinhowett">Dustin 
+Howett</LABEL><INPUT name="s" id="s_edithharbaugh" type="checkbox" value="edith-harbaugh">
+									 <LABEL class="likeAlink" for="s_edithharbaugh">Edith 
+Harbaugh</LABEL><INPUT name="s" id="s_eilonlipton" type="checkbox" value="eilon-lipton">
+									 <LABEL class="likeAlink" for="s_eilonlipton">Eilon 
+Lipton</LABEL><INPUT name="s" id="s_franciszhou" type="checkbox" value="francis-zhou">
+									 <LABEL class="likeAlink" for="s_franciszhou">Francis 
+Zhou</LABEL><INPUT name="s" id="s_gabrielaul" type="checkbox" value="gabriel-aul">
+									 <LABEL class="likeAlink" for="s_gabrielaul">Gabriel Aul</LABEL><INPUT 
+name="s" id="s_garethjones" type="checkbox" value="gareth-jones">
+									 <LABEL class="likeAlink" for="s_garethjones">Gareth 
+Jones</LABEL><INPUT name="s" id="s_geoffrobertson" type="checkbox" value="geoff-robertson">
+									 <LABEL class="likeAlink" for="s_geoffrobertson">Geoff 
+Robertson</LABEL><INPUT name="s" id="s_giampaolobattaglia" type="checkbox" 
+value="giampaolo-battaglia">									 <LABEL class="likeAlink" for="s_giampaolobattaglia">Giampaolo 
+Battaglia</LABEL><INPUT name="s" id="s_gregdegruy" type="checkbox" value="greg-degruy">
+									 <LABEL class="likeAlink" for="s_gregdegruy">Greg Degruy</LABEL><INPUT 
+name="s" id="s_GurdeepSinghPall" type="checkbox" value="Gurdeep-Singh-Pall">
+									 <LABEL class="likeAlink" for="s_GurdeepSinghPall">Gurdeep Singh 
+Pall</LABEL><INPUT name="s" id="s_gurpreetpall" type="checkbox" value="gurpreet-pall">
+									 <LABEL class="likeAlink" for="s_gurpreetpall">Gurpreet 
+Pall</LABEL><INPUT name="s" id="s_gusissa" type="checkbox" value="gus-issa">
+									 <LABEL class="likeAlink" for="s_gusissa">Gus Issa</LABEL><INPUT name="s" 
+id="s_guybowerman" type="checkbox" value="guy-bowerman">									 <LABEL class="likeAlink" 
+for="s_guybowerman">Guy Bowerman</LABEL><INPUT name="s" id="s_HansHugli" type="checkbox" 
+value="Hans-Hugli">									 <LABEL class="likeAlink" for="s_HansHugli">Hans 
+Hugli</LABEL><INPUT name="s" id="s_HarryShum" type="checkbox" 
+value="Harry-Shum">									 <LABEL class="likeAlink" for="s_HarryShum">Harry 
+Shum</LABEL><INPUT name="s" id="s_HeikeRitter" type="checkbox" value="Heike-Ritter">
+									 <LABEL class="likeAlink" for="s_HeikeRitter">Heike 
+Ritter</LABEL><INPUT name="s" id="s_hongfeiguo" type="checkbox" value="hongfei-guo">
+									 <LABEL class="likeAlink" for="s_hongfeiguo">Hongfei Guo</LABEL><INPUT 
+name="s" id="s_IgalFiglin" type="checkbox" value="Igal-Figlin">									 <LABEL 
+class="likeAlink" for="s_IgalFiglin">Igal Figlin</LABEL><INPUT name="s" id="s_igorsedukhin" 
+type="checkbox" value="igor-sedukhin">									 <LABEL class="likeAlink" for="s_igorsedukhin">Igor 
+Sedukhin</LABEL><INPUT name="s" id="s_jacobrossi" type="checkbox" value="jacob-rossi">
+									 <LABEL class="likeAlink" for="s_jacobrossi">Jacob Rossi</LABEL><INPUT 
+name="s" id="s_JaimeRodriguez" type="checkbox" value="Jaime-Rodriguez">
+									 <LABEL class="likeAlink" for="s_JaimeRodriguez">Jaime 
+Rodriguez</LABEL><INPUT name="s" id="s_jakepoznanski" type="checkbox" value="jake-poznanski">
+									 <LABEL class="likeAlink" for="s_jakepoznanski">Jake 
+Poznanski</LABEL><INPUT name="s" id="s_jamesclarke" type="checkbox" value="james-clarke">
+									 <LABEL class="likeAlink" for="s_jamesclarke">James 
+Clarke</LABEL><INPUT name="s" id="s_jasonfox" type="checkbox" value="jason-fox">
+									 <LABEL class="likeAlink" for="s_jasonfox">Jason Fox</LABEL><INPUT 
+name="s" id="s_JasonHenderson" type="checkbox" value="Jason-Henderson">
+									 <LABEL class="likeAlink" for="s_JasonHenderson">Jason 
+Henderson</LABEL><INPUT name="s" id="s_jasonhogg" type="checkbox" value="jason-hogg">
+									 <LABEL class="likeAlink" for="s_jasonhogg">Jason Hogg</LABEL><INPUT 
+name="s" id="s_jasonronald" type="checkbox" value="jason-ronald">
+									 <LABEL class="likeAlink" for="s_jasonronald">Jason 
+Ronald</LABEL><INPUT name="s" id="s_jasonshort" type="checkbox" value="jason-short">
+									 <LABEL class="likeAlink" for="s_jasonshort">Jason Short</LABEL><INPUT 
+name="s" id="s_jasonyoung" type="checkbox" value="jason-young">									 <LABEL 
+class="likeAlink" for="s_jasonyoung">Jason Young</LABEL><INPUT name="s" id="s_jeffburtoft" 
+type="checkbox" value="jeff-burtoft">									 <LABEL class="likeAlink" for="s_jeffburtoft">Jeff 
+Burtoft</LABEL><INPUT name="s" id="s_jeffreyrichter" type="checkbox" value="jeffrey-richter">
+									 <LABEL class="likeAlink" for="s_jeffreyrichter">Jeffrey 
+Richter</LABEL><INPUT name="s" id="s_jeremyepling" type="checkbox" value="jeremy-epling">
+									 <LABEL class="likeAlink" for="s_jeremyepling">Jeremy 
+Epling</LABEL><INPUT name="s" id="s_JeremyThake" type="checkbox" value="Jeremy-Thake">
+									 <LABEL class="likeAlink" for="s_JeremyThake">Jeremy 
+Thake</LABEL><INPUT name="s" id="s_jessicawong" type="checkbox" value="jessica-wong">
+									 <LABEL class="likeAlink" for="s_jessicawong">Jessica 
+Wong</LABEL><INPUT name="s" id="s_jesusaguilar" type="checkbox" value="jesus-aguilar">
+									 <LABEL class="likeAlink" for="s_jesusaguilar">Jesus 
+Aguilar</LABEL><INPUT name="s" id="s_jillbender" type="checkbox" value="jill-bender">
+									 <LABEL class="likeAlink" for="s_jillbender">Jill Bender</LABEL><INPUT 
+name="s" id="s_JoeStegman" type="checkbox" value="Joe-Stegman">									 <LABEL 
+class="likeAlink" for="s_JoeStegman">Joe Stegman</LABEL><INPUT name="s" id="s_johnbrochue" 
+type="checkbox" value="john-brochue">									 <LABEL class="likeAlink" for="s_johnbrochue">John 
+Brochue</LABEL><INPUT name="s" id="s_JohnLam" type="checkbox" value="John-Lam">
+									 <LABEL class="likeAlink" for="s_JohnLam">John Lam</LABEL><INPUT name="s" 
+id="s_johnmacintyre" type="checkbox" value="john-macintyre">									 <LABEL 
+class="likeAlink" for="s_johnmacintyre">John Macintyre</LABEL><INPUT name="s" 
+id="s_johnpsaroudakis" type="checkbox" value="john-psaroudakis">									 <LABEL 
+class="likeAlink" for="s_johnpsaroudakis">John Psaroudakis</LABEL><INPUT name="s" 
+id="s_johnsheehan" type="checkbox" value="john-sheehan">									 <LABEL class="likeAlink" 
+for="s_johnsheehan">John Sheehan</LABEL><INPUT name="s" id="s_JohnVintzel" type="checkbox" 
+value="John-Vintzel">									 <LABEL class="likeAlink" for="s_JohnVintzel">John 
+Vintzel</LABEL><INPUT name="s" id="s_JonGalloway" type="checkbox" value="Jon-Galloway">
+									 <LABEL class="likeAlink" for="s_JonGalloway">Jon 
+Galloway</LABEL><INPUT name="s" id="s_JonathanCarter" type="checkbox" value="Jonathan-Carter">
+									 <LABEL class="likeAlink" for="s_JonathanCarter">Jonathan 
+Carter</LABEL><INPUT name="s" id="s_jonathangarrigues" type="checkbox" value="jonathan-garrigues">
+									 <LABEL class="likeAlink" for="s_jonathangarrigues">Jonathan 
+Garrigues</LABEL><INPUT name="s" id="s_jonathanwiedemann" type="checkbox" value="jonathan-wiedemann">
+									 <LABEL class="likeAlink" for="s_jonathanwiedemann">Jonathan 
+Wiedemann</LABEL><INPUT name="s" id="s_josemiguelparrella" type="checkbox" 
+value="jose-miguel-parrella">									 <LABEL class="likeAlink" for="s_josemiguelparrella">Jose 
+Miguel Parrella</LABEL><INPUT name="s" id="s_JoshCaplan" type="checkbox" value="Josh-Caplan">
+									 <LABEL class="likeAlink" for="s_JoshCaplan">Josh Caplan</LABEL><INPUT 
+name="s" id="s_judymeyer" type="checkbox" value="judy-meyer">									 <LABEL 
+class="likeAlink" for="s_judymeyer">Judy Meyer</LABEL><INPUT name="s" id="s_jukkasilvennoinen" 
+type="checkbox" value="jukka-silvennoinen">									 <LABEL class="likeAlink" 
+for="s_jukkasilvennoinen">Jukka Silvennoinen</LABEL><INPUT name="s" id="s_julietteweiss" 
+type="checkbox" value="juliette-weiss">									 <LABEL class="likeAlink" for="s_julietteweiss">Juliette 
+Weiss</LABEL><INPUT name="s" id="s_karenkesler" type="checkbox" value="karen-kesler">
+									 <LABEL class="likeAlink" for="s_karenkesler">Karen 
+Kesler</LABEL><INPUT name="s" id="s_karimluccin" type="checkbox" value="karim-luccin">
+									 <LABEL class="likeAlink" for="s_karimluccin">Karim 
+Luccin</LABEL><INPUT name="s" id="s_kayceeanderson" type="checkbox" value="kaycee-anderson">
+									 <LABEL class="likeAlink" for="s_kayceeanderson">Kaycee 
+Anderson</LABEL><INPUT name="s" id="s_keithherold" type="checkbox" value="keith-herold">
+									 <LABEL class="likeAlink" for="s_keithherold">Keith 
+Herold</LABEL><INPUT name="s" id="s_kelseyhuebner" type="checkbox" value="kelsey-huebner">
+									 <LABEL class="likeAlink" for="s_kelseyhuebner">Kelsey 
+Huebner</LABEL><INPUT name="s" id="s_kevinashley" type="checkbox" value="kevin-ashley">
+									 <LABEL class="likeAlink" for="s_kevinashley">Kevin 
+Ashley</LABEL><INPUT name="s" id="s_kevingallo" type="checkbox" value="kevin-gallo">
+									 <LABEL class="likeAlink" for="s_kevingallo">Kevin Gallo</LABEL><INPUT 
+name="s" id="s_kirilseksenov" type="checkbox" value="kiril-seksenov">
+									 <LABEL class="likeAlink" for="s_kirilseksenov">Kiril 
+Seksenov</LABEL><INPUT name="s" id="s_krupapoobalachandran" type="checkbox" 
+value="krupa-poobala-chandran">									 <LABEL class="likeAlink" for="s_krupapoobalachandran">Krupa 
+Poobala-Chandran</LABEL><INPUT name="s" id="s_kundanapalagiri" type="checkbox" 
+value="kundana-palagiri">									 <LABEL class="likeAlink" for="s_kundanapalagiri">Kundana 
+Palagiri</LABEL><INPUT name="s" id="s_lanceolson" type="checkbox" value="lance-olson">
+									 <LABEL class="likeAlink" for="s_lanceolson">Lance Olson</LABEL><INPUT 
+name="s" id="s_lararubbelke" type="checkbox" value="lara-rubbelke">
+									 <LABEL class="likeAlink" for="s_lararubbelke">Lara 
+Rubbelke</LABEL><INPUT name="s" id="s_leixu" type="checkbox" value="lei-xu">
+									 <LABEL class="likeAlink" for="s_leixu">Lei Xu</LABEL><INPUT name="s" 
+id="s_lilianrincon" type="checkbox" value="lilian-rincon">									 <LABEL 
+class="likeAlink" for="s_lilianrincon">Lilian Rincon</LABEL><INPUT name="s" id="s_LindseyAllen" 
+type="checkbox" value="Lindsey-Allen">									 <LABEL class="likeAlink" for="s_LindseyAllen">Lindsey 
+Allen</LABEL><INPUT name="s" id="s_LizThrelkeld" type="checkbox" value="Liz-Threlkeld">
+									 <LABEL class="likeAlink" for="s_LizThrelkeld">Liz 
+Threlkeld</LABEL><INPUT name="s" id="s_LoriLamkin" type="checkbox" value="Lori-Lamkin">
+									 <LABEL class="likeAlink" for="s_LoriLamkin">Lori Lamkin</LABEL><INPUT 
+name="s" id="s_luiscabreracordon" type="checkbox" value="luis-cabrera-cordon">
+									 <LABEL class="likeAlink" for="s_luiscabreracordon">Luis 
+Cabrera-Cordon</LABEL><INPUT name="s" id="s_lukaszpawlowski" type="checkbox" 
+value="lukasz-pawlowski">									 <LABEL class="likeAlink" for="s_lukaszpawlowski">Lukasz 
+Pawlowski</LABEL><INPUT name="s" id="s_lynnettereed" type="checkbox" value="lynnette-reed">
+									 <LABEL class="likeAlink" for="s_lynnettereed">Lynnette 
+Reed</LABEL><INPUT name="s" id="s_madskristensen" type="checkbox" value="mads-kristensen">
+									 <LABEL class="likeAlink" for="s_madskristensen">Mads 
+Kristensen</LABEL><INPUT name="s" id="s_MadsTorgersen" type="checkbox" value="Mads-Torgersen">
+									 <LABEL class="likeAlink" for="s_MadsTorgersen">Mads 
+Torgersen</LABEL><INPUT name="s" id="s_MarianLuparu" type="checkbox" value="Marian-Luparu">
+									 <LABEL class="likeAlink" for="s_MarianLuparu">Marian 
+Luparu</LABEL><INPUT name="s" id="s_MarkFussell" type="checkbox" value="Mark-Fussell">
+									 <LABEL class="likeAlink" for="s_MarkFussell">Mark 
+Fussell</LABEL><INPUT name="s" id="s_markmiller" type="checkbox" value="mark-miller">
+									 <LABEL class="likeAlink" for="s_markmiller">Mark Miller</LABEL><INPUT 
+name="s" id="s_MarkRussinovich" type="checkbox" value="Mark-Russinovich">
+									 <LABEL class="likeAlink" for="s_MarkRussinovich">Mark 
+Russinovich</LABEL><INPUT name="s" id="s_MarkSouza" type="checkbox" value="Mark-Souza">
+									 <LABEL class="likeAlink" for="s_MarkSouza">Mark Souza</LABEL><INPUT 
+name="s" id="s_MatVelloso" type="checkbox" value="Mat-Velloso">									 <LABEL 
+class="likeAlink" for="s_MatVelloso">Mat Velloso</LABEL><INPUT name="s" id="s_matthidinger" 
+type="checkbox" value="matt-hidinger">									 <LABEL class="likeAlink" for="s_matthidinger">Matt 
+Hidinger</LABEL><INPUT name="s" id="s_matthewrollender" type="checkbox" value="matthew-rollender">
+									 <LABEL class="likeAlink" for="s_matthewrollender">Matthew 
+Rollender</LABEL><INPUT name="s" id="s_matthewwinkler" type="checkbox" value="matthew-winkler">
+									 <LABEL class="likeAlink" for="s_matthewwinkler">Matthew 
+Winkler</LABEL><INPUT name="s" id="s_meravdavidson" type="checkbox" value="merav-davidson">
+									 <LABEL class="likeAlink" for="s_meravdavidson">Merav 
+Davidson</LABEL><INPUT name="s" id="s_michaelfelice" type="checkbox" value="michael-felice">
+									 <LABEL class="likeAlink" for="s_michaelfelice">Michael 
+Felice</LABEL><INPUT name="s" id="s_michaelshalev" type="checkbox" value="michael-shalev">
+									 <LABEL class="likeAlink" for="s_michaelshalev">Michael 
+Shalev</LABEL><INPUT name="s" id="s_MigueldeIcaza" type="checkbox" value="Miguel-de-Icaza">
+									 <LABEL class="likeAlink" for="s_MigueldeIcaza">Miguel de 
+Icaza</LABEL><INPUT name="s" id="s_MikeClark" type="checkbox" 
+value="Mike-Clark">									 <LABEL class="likeAlink" for="s_MikeClark">Mike 
+Clark</LABEL><INPUT name="s" id="s_MikeHall" type="checkbox" value="Mike-Hall">
+									 <LABEL class="likeAlink" for="s_MikeHall">Mike Hall</LABEL><INPUT 
+name="s" id="s_MikeHarsh" type="checkbox" value="Mike-Harsh">									 <LABEL 
+class="likeAlink" for="s_MikeHarsh">Mike Harsh</LABEL><INPUT name="s" id="s_MikeTaulty" 
+type="checkbox" value="Mike-Taulty">									 <LABEL class="likeAlink" for="s_MikeTaulty">Mike 
+Taulty</LABEL><INPUT name="s" id="s_mustafakasap" type="checkbox" value="mustafa-kasap">
+									 <LABEL class="likeAlink" for="s_mustafakasap">Mustafa 
+Kasap</LABEL><INPUT name="s" id="s_nageshpabbisetty" type="checkbox" value="nagesh-pabbisetty">
+									 <LABEL class="likeAlink" for="s_nageshpabbisetty">Nagesh 
+Pabbisetty</LABEL><INPUT name="s" id="s_narayanannamalai" type="checkbox" value="narayan-annamalai">
+									 <LABEL class="likeAlink" for="s_narayanannamalai">Narayan 
+Annamalai</LABEL><INPUT name="s" id="s_natfriedman" type="checkbox" value="nat-friedman">
+									 <LABEL class="likeAlink" for="s_natfriedman">Nat 
+Friedman</LABEL><INPUT name="s" id="s_naterose" type="checkbox" value="nate-rose">
+									 <LABEL class="likeAlink" for="s_naterose">Nate Rose</LABEL><INPUT 
+name="s" id="s_navitsaxena" type="checkbox" value="navit-saxena">
+									 <LABEL class="likeAlink" for="s_navitsaxena">Navit 
+Saxena</LABEL><INPUT name="s" id="s_neerajkhanchandani" type="checkbox" value="neeraj-khanchandani">
+									 <LABEL class="likeAlink" for="s_neerajkhanchandani">Neeraj 
+Khanchandani</LABEL><INPUT name="s" id="s_nickgerard" type="checkbox" value="nick-gerard">
+									 <LABEL class="likeAlink" for="s_nickgerard">Nick Gerard</LABEL><INPUT 
+name="s" id="s_nickkramer" type="checkbox" value="nick-kramer">									 <LABEL 
+class="likeAlink" for="s_nickkramer">Nick Kramer</LABEL><INPUT name="s" id="s_nicklandry" 
+type="checkbox" value="nick-landry">									 <LABEL class="likeAlink" for="s_nicklandry">Nick 
+Landry</LABEL><INPUT name="s" id="s_nickwaggoner" type="checkbox" value="nick-waggoner">
+									 <LABEL class="likeAlink" for="s_nickwaggoner">Nick 
+Waggoner</LABEL><INPUT name="s" id="s_nishanil" type="checkbox" value="nish-anil">
+									 <LABEL class="likeAlink" for="s_nishanil">Nish Anil</LABEL><INPUT 
+name="s" id="s_OlivierBloch" type="checkbox" value="Olivier-Bloch">
+									 <LABEL class="likeAlink" for="s_OlivierBloch">Olivier 
+Bloch</LABEL><INPUT name="s" id="s_PabloCastro" type="checkbox" value="Pablo-Castro">
+									 <LABEL class="likeAlink" for="s_PabloCastro">Pablo 
+Castro</LABEL><INPUT name="s" id="s_paulbloom" type="checkbox" value="paul-bloom">
+									 <LABEL class="likeAlink" for="s_paulbloom">Paul Bloom</LABEL><INPUT 
+name="s" id="s_paulgusmorino" type="checkbox" value="paul-gusmorino">
+									 <LABEL class="likeAlink" for="s_paulgusmorino">Paul 
+Gusmorino</LABEL><INPUT name="s" id="s_PeteBrown" type="checkbox" value="Pete-Brown">
+									 <LABEL class="likeAlink" for="s_PeteBrown">Pete Brown</LABEL><INPUT 
+name="s" id="s_petritapiowilhelmsen" type="checkbox" value="petri-tapio-wilhelmsen">
+									 <LABEL class="likeAlink" for="s_petritapiowilhelmsen">Petri Tapio 
+Wilhelmsen</LABEL><INPUT name="s" id="s_peymanzanjani" type="checkbox" value="peyman-zanjani">
+									 <LABEL class="likeAlink" for="s_peymanzanjani">Peyman 
+Zanjani</LABEL><INPUT name="s" id="s_pierceboggan" type="checkbox" value="pierce-boggan">
+									 <LABEL class="likeAlink" for="s_pierceboggan">Pierce 
+Boggan</LABEL><INPUT name="s" id="s_pranavkrishnamoorthy" type="checkbox" value="pranav-krishnamoorthy">
+									 <LABEL class="likeAlink" for="s_pranavkrishnamoorthy">Pranav 
+Krishnamoorthy</LABEL><INPUT name="s" id="s_pretishabraham" type="checkbox" 
+value="pretish-abraham">									 <LABEL class="likeAlink" for="s_pretishabraham">Pretish 
+Abraham</LABEL><INPUT name="s" id="s_rachelappel" type="checkbox" value="rachel-appel">
+									 <LABEL class="likeAlink" for="s_rachelappel">Rachel 
+Appel</LABEL><INPUT name="s" id="s_radumocanita" type="checkbox" value="radu-mocanita">
+									 <LABEL class="likeAlink" for="s_radumocanita">Radu 
+Mocanita</LABEL><INPUT name="s" id="s_rahulbagaria" type="checkbox" value="rahul-bagaria">
+									 <LABEL class="likeAlink" for="s_rahulbagaria">Rahul 
+Bagaria</LABEL><INPUT name="s" id="s_ramisayar" type="checkbox" value="rami-sayar">
+									 <LABEL class="likeAlink" for="s_ramisayar">Rami Sayar</LABEL><INPUT 
+name="s" id="s_richarddizerega" type="checkbox" value="richard-dizerega">
+									 <LABEL class="likeAlink" for="s_richarddizerega">Richard 
+diZerega</LABEL><INPUT name="s" id="s_rickybrundritt" type="checkbox" value="ricky-brundritt">
+									 <LABEL class="likeAlink" for="s_rickybrundritt">Ricky 
+Brundritt</LABEL><INPUT name="s" id="s_robbagby" type="checkbox" value="rob-bagby">
+									 <LABEL class="likeAlink" for="s_robbagby">Rob Bagby</LABEL><INPUT 
+name="s" id="s_robcameron" type="checkbox" value="rob-cameron">									 <LABEL 
+class="likeAlink" for="s_robcameron">Rob Cameron</LABEL><INPUT name="s" id="s_roblefferts" 
+type="checkbox" value="rob-lefferts">									 <LABEL class="likeAlink" for="s_roblefferts">Rob 
+Lefferts</LABEL><INPUT name="s" id="s_robertgreen" type="checkbox" value="robert-green">
+									 <LABEL class="likeAlink" for="s_robertgreen">Robert 
+Green</LABEL><INPUT name="s" id="s_roberthkarman" type="checkbox" value="roberth-karman">
+									 <LABEL class="likeAlink" for="s_roberthkarman">Roberth 
+Karman</LABEL><INPUT name="s" id="s_rolandojimenezsalgado" type="checkbox" 
+value="rolando-jimenez-salgado">									 <LABEL class="likeAlink" for="s_rolandojimenezsalgado">Rolando 
+Jimenez Salgado</LABEL><INPUT name="s" id="s_romitgirdhar" type="checkbox" 
+value="romit-girdhar">									 <LABEL class="likeAlink" 
+for="s_romitgirdhar">Romit Girdhar</LABEL><INPUT name="s" id="s_rossgardlermsopentech" 
+type="checkbox" value="ross-gardler-ms-open-tech">									 <LABEL class="likeAlink" 
+for="s_rossgardlermsopentech">Ross Gardler (MS OPEN TECH)</LABEL><INPUT name="s" 
+id="s_rowanmiller" type="checkbox" value="rowan-miller">									 <LABEL class="likeAlink" 
+for="s_rowanmiller">Rowan Miller</LABEL><INPUT name="s" id="s_rubenrios" type="checkbox" 
+value="ruben-rios">									 <LABEL class="likeAlink" for="s_rubenrios">Ruben 
+Rios</LABEL><INPUT name="s" id="s_russalexander" type="checkbox" value="russ-alexander">
+									 <LABEL class="likeAlink" for="s_russalexander">Russ 
+Alexander</LABEL><INPUT name="s" id="s_RyanDemopoulos" type="checkbox" value="Ryan-Demopoulos">
+									 <LABEL class="likeAlink" for="s_RyanDemopoulos">Ryan 
+Demopoulos</LABEL><INPUT name="s" id="s_RyanGalgon" type="checkbox" value="Ryan-Galgon">
+									 <LABEL class="likeAlink" for="s_RyanGalgon">Ryan Galgon</LABEL><INPUT 
+name="s" id="s_ryanhaning" type="checkbox" value="ryan-haning">									 <LABEL 
+class="likeAlink" for="s_ryanhaning">Ryan Haning</LABEL><INPUT name="s" id="s_ryansalva" 
+type="checkbox" value="ryan-salva">									 <LABEL class="likeAlink" for="s_ryansalva">Ryan 
+Salva</LABEL><INPUT name="s" id="s_SalmaanAhmed" type="checkbox" value="Salmaan-Ahmed">
+									 <LABEL class="likeAlink" for="s_SalmaanAhmed">Salmaan 
+Ahmed</LABEL><INPUT name="s" id="s_samchandrashekar" type="checkbox" value="sam-chandrashekar">
+									 <LABEL class="likeAlink" for="s_samchandrashekar">Sam 
+Chandrashekar</LABEL><INPUT name="s" id="s_samgeorge" type="checkbox" value="sam-george">
+									 <LABEL class="likeAlink" for="s_samgeorge">Sam George</LABEL><INPUT 
+name="s" id="s_samkaufmann" type="checkbox" value="sam-kaufmann">
+									 <LABEL class="likeAlink" for="s_samkaufmann">Sam 
+Kaufmann</LABEL><INPUT name="s" id="s_sanjeevdwivedi" type="checkbox" value="sanjeev-dwivedi">
+									 <LABEL class="likeAlink" for="s_sanjeevdwivedi">Sanjeev 
+Dwivedi</LABEL><INPUT name="s" id="s_saraitani" type="checkbox" value="sara-itani">
+									 <LABEL class="likeAlink" for="s_saraitani">Sara Itani</LABEL><INPUT 
+name="s" id="s_sauryadas" type="checkbox" value="saurya-das">									 <LABEL 
+class="likeAlink" for="s_sauryadas">Saurya Das</LABEL><INPUT name="s" id="s_scotthanselman" 
+type="checkbox" value="scott-hanselman">									 <LABEL class="likeAlink" for="s_scotthanselman">Scott 
+Hanselman</LABEL><INPUT name="s" id="s_ScottHunter" type="checkbox" value="Scott-Hunter">
+									 <LABEL class="likeAlink" for="s_ScottHunter">Scott 
+Hunter</LABEL><INPUT name="s" id="s_scottstacey" type="checkbox" value="scott-stacey">
+									 <LABEL class="likeAlink" for="s_scottstacey">Scott 
+Stacey</LABEL><INPUT name="s" id="s_seanlyndersay" type="checkbox" value="sean-lyndersay">
+									 <LABEL class="likeAlink" for="s_seanlyndersay">Sean 
+Lyndersay</LABEL><INPUT name="s" id="s_sethjuarez" type="checkbox" value="seth-juarez">
+									 <LABEL class="likeAlink" for="s_sethjuarez">Seth Juarez</LABEL><INPUT 
+name="s" id="s_shawnbice" type="checkbox" value="shawn-bice">									 <LABEL 
+class="likeAlink" for="s_shawnbice">Shawn Bice</LABEL><INPUT name="s" id="s_shawnhenry" 
+type="checkbox" value="shawn-henry">									 <LABEL class="likeAlink" for="s_shawnhenry">Shawn 
+Henry</LABEL><INPUT name="s" id="s_shivakumarseetharaman" type="checkbox" value="shivakumar-seetharaman">
+									 <LABEL class="likeAlink" for="s_shivakumarseetharaman">Shivakumar 
+Seetharaman</LABEL><INPUT name="s" id="s_siminapasat" type="checkbox" value="simina-pasat">
+									 <LABEL class="likeAlink" for="s_siminapasat">Simina 
+Pasat</LABEL><INPUT name="s" id="s_simonmichael" type="checkbox" value="simon-michael">
+									 <LABEL class="likeAlink" for="s_simonmichael">Simon 
+Michael</LABEL><INPUT name="s" id="s_sonalpardeshi" type="checkbox" value="sonal-pardeshi">
+									 <LABEL class="likeAlink" for="s_sonalpardeshi">Sonal 
+Pardeshi</LABEL><INPUT name="s" id="s_sonyakoptyev" type="checkbox" value="sonya-koptyev">
+									 <LABEL class="likeAlink" for="s_sonyakoptyev">Sonya 
+Koptyev</LABEL><INPUT name="s" id="s_sourabhshirhatti" type="checkbox" value="sourabh-shirhatti">
+									 <LABEL class="likeAlink" for="s_sourabhshirhatti">Sourabh 
+Shirhatti</LABEL><INPUT name="s" id="s_stefanwick" type="checkbox" value="stefan-wick">
+									 <LABEL class="likeAlink" for="s_stefanwick">Stefan Wick</LABEL><INPUT 
+name="s" id="s_stephenmalone" type="checkbox" value="stephen-malone">
+									 <LABEL class="likeAlink" for="s_stephenmalone">Stephen 
+Malone</LABEL><INPUT name="s" id="s_stevejones" type="checkbox" value="steve-jones">
+									 <LABEL class="likeAlink" for="s_stevejones">Steve Jones</LABEL><INPUT 
+name="s" id="s_stevenguggenheimer" type="checkbox" value="steven-guggenheimer">
+									 <LABEL class="likeAlink" for="s_stevenguggenheimer">Steven 
+Guggenheimer</LABEL><INPUT name="s" id="s_stevenwilssens" type="checkbox" value="steven-wilssens">
+									 <LABEL class="likeAlink" for="s_stevenwilssens">Steven 
+Wilssens</LABEL><INPUT name="s" id="s_stuartkwan" type="checkbox" value="stuart-kwan">
+									 <LABEL class="likeAlink" for="s_stuartkwan">Stuart Kwan</LABEL><INPUT 
+name="s" id="s_tarashankarjana" type="checkbox" value="tara-shankar-jana">
+									 <LABEL class="likeAlink" for="s_tarashankarjana">Tara Shankar 
+Jana</LABEL><INPUT name="s" id="s_TaylorBrown" type="checkbox" value="Taylor-Brown">
+									 <LABEL class="likeAlink" for="s_TaylorBrown">Taylor 
+Brown</LABEL><INPUT name="s" id="s_tedmiller" type="checkbox" 
+value="ted-miller">									 <LABEL class="likeAlink" for="s_tedmiller">Ted 
+Miller</LABEL><INPUT name="s" id="s_TejasPatel" type="checkbox" value="Tejas-Patel">
+									 <LABEL class="likeAlink" for="s_TejasPatel">Tejas Patel</LABEL><INPUT 
+name="s" id="s_ThiagoAlmeida" type="checkbox" value="Thiago-Almeida">
+									 <LABEL class="likeAlink" for="s_ThiagoAlmeida">Thiago 
+Almeida</LABEL><INPUT name="s" id="s_thomasconte" type="checkbox" value="thomas-conte">
+									 <LABEL class="likeAlink" for="s_thomasconte">Thomas 
+Conte</LABEL><INPUT name="s" id="s_thomasdohmke" type="checkbox" value="thomas-dohmke">
+									 <LABEL class="likeAlink" for="s_thomasdohmke">Thomas 
+Dohmke</LABEL><INPUT name="s" id="s_thomasfennel" type="checkbox" value="thomas-fennel">
+									 <LABEL class="likeAlink" for="s_thomasfennel">Thomas 
+Fennel</LABEL><INPUT name="s" id="s_TimHeuer" type="checkbox" value="Tim-Heuer">
+									 <LABEL class="likeAlink" for="s_TimHeuer">Tim Heuer</LABEL><INPUT 
+name="s" id="s_timmallalieu" type="checkbox" value="tim-mallalieu">
+									 <LABEL class="likeAlink" for="s_timmallalieu">Tim 
+Mallalieu</LABEL><INPUT name="s" id="s_TobiasTernstrom" type="checkbox" value="Tobias-Ternstrom">
+									 <LABEL class="likeAlink" for="s_TobiasTernstrom">Tobias 
+Ternstrom</LABEL><INPUT name="s" id="s_tomlairdmcconnell" type="checkbox" value="tom-laird-mcconnell">
+									 <LABEL class="likeAlink" for="s_tomlairdmcconnell">Tom 
+Laird-McConnell</LABEL><INPUT name="s" id="s_tonyguidici" type="checkbox" value="tony-guidici">
+									 <LABEL class="likeAlink" for="s_tonyguidici">Tony 
+Guidici</LABEL><INPUT name="s" id="s_TonyPetrossian" type="checkbox" value="Tony-Petrossian">
+									 <LABEL class="likeAlink" for="s_TonyPetrossian">Tony 
+Petrossian</LABEL><INPUT name="s" id="s_tristandavis" type="checkbox" value="tristan-davis">
+									 <LABEL class="likeAlink" for="s_tristandavis">Tristan 
+Davis</LABEL><INPUT name="s" id="s_UnniRavindranathan" type="checkbox" value="Unni-Ravindranathan">
+									 <LABEL class="likeAlink" for="s_UnniRavindranathan">Unni 
+Ravindranathan</LABEL><INPUT name="s" id="s_vamshidharkommineni" type="checkbox" 
+value="vamshidhar-kommineni">									 <LABEL class="likeAlink" for="s_vamshidharkommineni">Vamshidhar 
+Kommineni</LABEL><INPUT name="s" id="s_vanessaarnauld" type="checkbox" value="vanessa-arnauld">
+									 <LABEL class="likeAlink" for="s_vanessaarnauld">Vanessa 
+Arnauld</LABEL><INPUT name="s" id="s_varunguptadtg" type="checkbox" value="varun-gupta-dtg">
+									 <LABEL class="likeAlink" for="s_varunguptadtg">Varun Gupta 
+(DTG)</LABEL><INPUT name="s" id="s_vijayrajagopalan" type="checkbox" value="vijay-rajagopalan">
+									 <LABEL class="likeAlink" for="s_vijayrajagopalan">Vijay 
+Rajagopalan</LABEL><INPUT name="s" id="s_vikasbhatia" type="checkbox" value="vikas-bhatia">
+									 <LABEL class="likeAlink" for="s_vikasbhatia">Vikas 
+Bhatia</LABEL><INPUT name="s" id="s_vittoriobertocci" type="checkbox" value="vittorio-bertocci">
+									 <LABEL class="likeAlink" for="s_vittoriobertocci">Vittorio 
+Bertocci</LABEL><INPUT name="s" id="s_vivekgupta" type="checkbox" value="vivek-gupta">
+									 <LABEL class="likeAlink" for="s_vivekgupta">Vivek Gupta</LABEL><INPUT 
+name="s" id="s_wadeanderson" type="checkbox" value="wade-anderson">
+									 <LABEL class="likeAlink" for="s_wadeanderson">Wade 
+Anderson</LABEL><INPUT name="s" id="s_weymaina" type="checkbox" value="wey-maina">
+									 <LABEL class="likeAlink" for="s_weymaina">Wey Maina</LABEL><INPUT 
+name="s" id="s_xiaotu" type="checkbox" value="xiao-tu">									 <LABEL class="likeAlink" 
+for="s_xiaotu">Xiao Tu</LABEL><INPUT name="s" id="s_yasminkhan" type="checkbox" 
+value="yasmin-khan">									 <LABEL class="likeAlink" for="s_yasminkhan">Yasmin 
+Khan</LABEL><INPUT name="s" id="s_yinaarenas" type="checkbox" value="yina-arenas">
+									 <LABEL class="likeAlink" for="s_yinaarenas">Yina Arenas</LABEL><INPUT 
+name="s" id="s_YochayKiriaty" type="checkbox" value="Yochay-Kiriaty">
+									 <LABEL class="likeAlink" for="s_YochayKiriaty">Yochay 
+Kiriaty</LABEL></DIV></FIELDSET>
+<FIELDSET class="level default checkboxSet"><LEGEND><SPAN 
+class="title">Level:</SPAN>							 </LEGEND>							 
+<DIV><INPUT name="l" id="l_200Intermediate" type="checkbox" value="200 - Intermediate">
+									 <LABEL class="likeAlink" for="l_200Intermediate">200 - 
+Intermediate</LABEL><INPUT name="l" id="l_300Experienced" type="checkbox" value="300 - Experienced">
+									 <LABEL class="likeAlink" for="l_300Experienced">300 - 
+Experienced</LABEL></DIV></FIELDSET>
+<FIELDSET class="level default checkboxSet"><LEGEND><SPAN 
+class="title">Day:</SPAN>							 </LEGEND>							 
+<DIV><INPUT name="d" id="d_0" type="checkbox" value="0">									 <LABEL class="likeAlink" 
+for="d_0">										Day 0									 </LABEL><INPUT name="d" id="d_1" type="checkbox" 
+value="1">									 <LABEL class="likeAlink" for="d_1">										Day 1
+									 </LABEL><INPUT name="d" id="d_2" type="checkbox" value="2">
+									 <LABEL class="likeAlink" for="d_2">										Day 2
+									 </LABEL><INPUT name="d" id="d_3" type="checkbox" value="3">
+									 <LABEL class="likeAlink" for="d_3">										Day 3
+									 </LABEL></DIV></FIELDSET>
+<FIELDSET class="media default checkboxSet"><LEGEND><SPAN class="title">Sessions 
+With:</SPAN>							 </LEGEND>							 
+<DIV><INPUT name="Media" id="Media" type="checkbox" value="true">								 <LABEL 
+class="likeAlink" for="Media">Media</LABEL><INPUT name="Slides" id="Slides" 
+type="checkbox" value="true">								 <LABEL class="likeAlink" 
+for="Slides">Slides</LABEL></DIV></FIELDSET></DIV>
+<DIV 
+class="submitHolder"><INPUT class="clearAllFilters likeAlink" type="reset" value="Clear all filters"><A 
+class="hideFilters download button" href="https://channel9.msdn.com/Events/Build/2016?sort=status&amp;direction=asc&amp;page=2#">Hide 
+Filters</A>						 <INPUT class="filterSessions" type="submit" value="Filter Sessions">
+					 </DIV></FORM></DIV></DIV></DIV></DIV>
+<DIV class="footer">
+<DIV class="container"><A class="ccl" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/" 
+rel="license"><IMG alt="Creative Commons License" src="Build2016_Channel9_2_files/somerights20.png"> 
+</A> 
+<P class="copyright">© 2016 Microsoft. <A 
+href="https://channel9.msdn.com/info">Except where designated</A> as licensed 
+by<BR><A href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/" rel="license">Creative 
+Commons Attribution-Noncommercial-No Derivative Works 3.0 
+License</A>,<BR>Microsoft reserves all rights associated with the materials on 
+this site.<BR></P>
+<UL class="footerNav">
+  <LI class="subscribe site"><A 
+  href="https://channel9.msdn.com/Feeds/RSS">Subscribe to Channel 9</A></LI>
+  <LI class="followus"><A href="https://twitter.com/ch9">Follow us @ch9</A></LI>
+  <LI class="feedback"><A 
+  href="https://channel9.msdn.com/Forums/Feedback">Feedback</A></LI>
+  <LI class="locale"><A href="https://channel9.msdn.com/localization/chrome?returnUrl=%252fEvents%252fBuild%252f2016%253fsort%253dstatus%2526direction%253dasc%2526page%253d2">English</A></LI>
+  <LI class="privacy"><A href="http://www.microsoft.com/privacystatement/en-us/Channel9App/Default.aspx">Privacy 
+  Statement</A></LI>
+  <LI class="termsofuse"><A href="http://go.microsoft.com/?linkid=4412892">Terms 
+  of Service</A></LI>
+  <LI class="codeofconduct"><A 
+  href="https://channel9.msdn.com/CodeOfConduct">Code of Conduct</A></LI>
+  <LI class="contactus"><A href="https://channel9.msdn.com/ContactUs">Contact 
+  Us</A></LI></UL></DIV></DIV>
+<SCRIPT src="https://s.ch9.ms/scripts/event-schedule.js?v=XQoHdvOP1ie46IDoKbXjojkC02I1"></SCRIPT>
+   
+<SCRIPT src="https://s.ch9.ms/scripts/jqueryUI-core_widget.js?v=kRFVVb8qrjVsyxSXF9t5VXaJkyK6774LSuvcMMY27eI1"></SCRIPT>
+<!-- START OF SmartSource Data Collector TAG --> <!-- Copyright (c) 1996-2009 WebTrends Inc.  All rights reserved. --> <!-- Warning: The two script blocks below must remain inline. Moving them to an external --> <!-- JavaScript include file can cause serious problems with cross-domain tracking.      --> 
+<SCRIPT type="text/javascript">
+var _tag=new WebTrends();
+_tag.dcsid="dcs1wotjh10000w0irc493s0e_6x1g";
+_tag.fpcdom=".channel9.msdn.com";
+_tag.dcsGetId();
+_tag.trackevents=true;
+
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+_tag.dcsCollect();
+</SCRIPT>
+   <NOSCRIPT>    &lt;div&gt;      &lt;img alt="DCSIMG" id="DCSIMG" width="1" 
+height="1" 
+src="https://m.webtrends.com/dcs1wotjh10000w0irc493s0e_6x1g/njs.gif?dcsuri=/nojavascript&amp;amp;WT.js=No&amp;amp;WT.tv=MS.3.0.0"/&gt; 
+   &lt;/div&gt;   </NOSCRIPT> <!-- END OF SmartSource Data Collector TAG -->   <!-- Host Location: North Central US --> 
+</BODY></HTML>

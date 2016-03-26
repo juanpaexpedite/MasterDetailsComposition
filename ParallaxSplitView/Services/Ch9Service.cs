@@ -13,10 +13,10 @@ namespace ParallaxSplitView.Services
     {
         public static async Task<List<Session>> GetBuild2015Sessions()
         {
-            var uriPath = "Data/Build2015_Channel9_1.htm";
+            var uriPath = "Data/Build2016_Channel9_1.htm";
             var sessions = await GetBuild2015Sessions(uriPath);
 
-            uriPath = "Data/Build2015_Channel9_2.htm";
+            uriPath = "Data/Build2016_Channel9_2.htm";
             sessions.AddRange(await GetBuild2015Sessions(uriPath));
 
             return sessions;
@@ -37,7 +37,7 @@ namespace ParallaxSplitView.Services
 
                 var divSessions = allsesionsdiv.Descendants("div").Where(d => d.Attributes.Contains("class") && d.Attributes["class"].Value == "entry-meta");
 
-                Func<string, string> Clean = (s) => { return System.Net.WebUtility.HtmlDecode(s).Replace("\r\n", "").Replace("\t", ""); };
+                Func<string, string> Clean = (s) => { return System.Net.WebUtility.HtmlDecode(s).Replace("\r\n", "").Replace("\t", "").TrimEnd(' '); };
 
                 foreach (var div in divSessions)
                 {
@@ -47,6 +47,12 @@ namespace ParallaxSplitView.Services
 
                         var titleTag = div.ChildNodes.First(n => n.Name == "a");
                         session.Title = Clean(titleTag.InnerText);
+
+                        if (titleTag.Attributes.Contains("href"))
+                        {
+                            session.WebUri = titleTag.Attributes["href"].Value;
+                            string k = "";
+                        }
 
                         var detailsTag = div.Descendants("ul").First();
                         var speakerTag = detailsTag.Descendants("li").FirstOrDefault(li => li.Attributes.Contains("class") && li.Attributes["class"].Value == "grouping speaker");
@@ -67,8 +73,11 @@ namespace ParallaxSplitView.Services
                         {
                             var uri = link.Attributes[0].Value;
                             session.VideoUri = uri;
-                            sessions.Add(session);
                         }
+
+
+
+                        sessions.Add(session);
 
                     }
                     catch (Exception ex)
