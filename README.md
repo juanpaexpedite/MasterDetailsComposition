@@ -1,4 +1,15 @@
-# MasterDetailsComposition
+<h2>News</h2>
+
+01/07/2016: <b>Busy Indicator - MS Productivity Future Vision Style</b>
+
+After learning about the great library from <a href="https://github.com/ratishphilip">ratishphilip</a>, <a href="https://github.com/ratishphilip/CompositionExpressionToolkit">CompositionExpressionToolkit</a> now it is possible to create custom shapes and animations just using the Visual Layer.
+
+<img src="https://github.com/juanpaexpedite/MasterDetailsComposition/blob/master/busyindicator_capture.jpg"/>
+
+In this case I created an outlined ellipsed masks with the exclusion of two ellipses, then I create four of them and I create several animations in order to add into a Busy Indicator control that animates really smooth using Composition. You can play with it in the AnimatedControls project.
+
+<h2>MasterDetailsComposition</h2>
+
 Single Page Master Details Full Example using compositon
 
 <img src="https://github.com/juanpaexpedite/MasterDetailsComposition/blob/master/MasterDetailsComposition/readme0.jpg"/>
