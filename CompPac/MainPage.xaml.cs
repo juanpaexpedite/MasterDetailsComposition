@@ -31,9 +31,13 @@ namespace CompPac
 
         public MainPage()
         {
-            this.InitializeComponent();
 
             game = new GameManager();
+            MapManager.CreateMap();
+
+            this.InitializeComponent();
+
+            MapManager.DrawMap(GameGrid);
 
             Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;
 

@@ -1,0 +1,209 @@
+
+/* Head section
+-------------------------------------------------- */
+.event .mainContent>.admin .button {
+	position: absolute;
+	right: 0;
+	top: -2em;
+}
+
+.event .item-data {
+	display: table;
+	width: 100%;
+}
+
+.event .item-data>li {
+	color: #878787;
+	display: table-cell;
+	line-height: 1.3;
+	vertical-align: top;
+}
+
+/* Session List
+-------------------------------------------------- */
+.sessionList>li {
+	position: relative;
+}
+
+.event .sessionList > li .title {
+	display: block;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.sessionList .details {
+	position: static;
+	overflow: hidden;
+	width: 100%;
+}
+
+.sessionList .details a {
+	white-space: nowrap;
+}
+
+.keynotes .details>li.date,
+.sessionList .details>li,
+.sessionList .downloads>li ul li {
+	color: #6b6b6b;
+}
+
+.sessionList .details>li,
+.sessionList .downloads>li ul li {
+	border-left: 1px solid #C7C7C7;
+	margin-top: 2px;
+	padding-left: 10px;
+	width: auto;
+}
+
+.sessionList .details>li {
+	float: left;
+	margin-left: -11px;
+	margin-right: 21px;
+}
+
+.sessionList .downloads>li ul li {
+	margin-left: 10px;
+}
+
+.sessionList .details>li:first-child,
+.sessionList .details>li.grouping+.timing,
+.sessionList .details>li.grouping+.c9interaction,
+.sessionList .details>li.timing+.c9interaction,
+.sessionList .description {
+	clear: both;
+}
+
+.sessionList li a.commentJump {
+    color: #878787;
+}
+
+.sessionList .details>li.c9interaction {
+	border-left: 0px solid #C7C7C7;
+}
+
+.sessionList .downloads {
+	bottom: 15px; /* same at .speaker-page .sessions>li {padding} */
+	font-size: 115%;
+	position: absolute;
+	right: 5px; /* same at .speaker-page .sessions>li {padding} - .speaker-page .downloads .presentation li{padding-right} */
+	text-align: center;
+}
+
+.sessionList .downloads>li {
+	float: none;
+}
+
+.sessionList .downloads>li ul li:first-child {
+	border-left: 0px solid #C7C7C7;
+	clear: both;
+	margin-left: 0px;
+	padding-left: 0px;	
+}
+
+.sessionList .downloads>li>ul {
+	display: table;
+	margin: 0px auto;
+}
+
+.sessionList .downloads>li>ul li {
+	display: table-cell !important;
+	float: none;
+	padding-right: 10px;
+}
+
+.sessionList .entry-image .scheduleAndEval {
+	margin-top: 10px;
+}
+
+/* sidebar
+-------------------------------------------------- */
+.sidebar .eventHome img {
+	display: block;
+	margin: 0px auto;
+	max-width: 188px;
+}
+
+
+/* evaluate
+-------------------------------------------------- */
+.evaluateHolder a {
+	background-color: #712214;
+	color: white;
+	display: inline-block;
+	padding: 5px 10px;
+}
+.evaluateHolder a:hover {
+	background-color: #96331D;
+	text-decoration: none;
+}
+.scheduleAndEval .evaluateHolder {
+	float: left;
+	margin-top: -5px;
+}
+
+.addToSchedule {
+	display: inline-block;
+	min-width: 110px;
+}
+.session-page .scheduleAndEval .star,
+.sessions .star {
+	background: url(images/scheduleStarsAnim.gif) no-repeat 0 0;
+	float: left;
+	height: 16px;
+	width: 17px;
+	margin-right: 4px;
+}
+.session-page .scheduleAndEval .pending .star,
+.sessions .pending .star {
+	background: url(images/scheduleStarsAnim.gif) no-repeat 0 -64px !important;
+}
+.session-page .scheduleAndEval a:hover .star,
+.sessions a:hover .star {
+	background: url(images/scheduleStarsAnim.gif) no-repeat 0 -16px;
+}
+.session-page .scheduleAndEval .user-schedule .star,
+.sessions .user-schedule .star {
+	background: url(images/scheduleStarsAnim.gif) no-repeat 0 -32px;
+}
+.session-page .scheduleAndEval .user-schedule a:hover .star,
+.sessions .user-schedule a:hover .star {
+	background: url(images/scheduleStarsAnim.gif) no-repeat 0 -48px;
+}
+.session-page .scheduleAndEval .remove-text,
+.session-page .scheduleAndEval .user-schedule .add-text,
+.sessions .remove-text,
+.sessions .user-schedule .add-text {
+	display: none;
+}
+.session-page .scheduleAndEval .add-text,
+.session-page .scheduleAndEval .user-schedule .remove-text,
+.sessions .add-text,
+.sessions .user-schedule .remove-text {
+	display: inline;
+}
+
+/* Event Countdown
+-------------------------------------------------- */
+.event-page .eventCountdown.alert,
+.eventCountdown {
+	font-size: 110%;
+	font-weight: bold;
+	padding: 20px;
+}
+
+.eventCountdown .player-text,
+.eventCountdown .liveLink {
+	white-space: nowrap;
+}
+
+.eventCountdown .player-text,
+.eventCountdown .player-text .countdown {
+	display: inline;
+}
+
+
+/* Time info
+-------------------------------------------------- */
+.hasTimeHelper .timeHelperDialog {
+	font-size: 16px;
+}

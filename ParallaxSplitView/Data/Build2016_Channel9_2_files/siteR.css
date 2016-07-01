@@ -1,0 +1,2598 @@
+html {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+body {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+div {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+span {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+applet {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+object {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+iframe {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+h1 {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+h2 {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+h3 {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+h4 {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+h5 {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+h6 {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+p {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+blockquote {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+pre {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+a {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+abbr {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+acronym {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+address {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+big {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+cite {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+code {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+del {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+dfn {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+em {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+font {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+img {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+ins {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+kbd {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+q {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+s {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+samp {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+small {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+strike {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+strong {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+sub {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+sup {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+tt {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+var {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+b {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+u {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+i {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+center {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+dl {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+dt {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+dd {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+ol {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+ul {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+li {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+fieldset {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+form {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+label {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+legend {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+table {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+caption {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+tbody {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+tfoot {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+thead {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+tr {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+th {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+td {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol {
+	list-style: none;
+}
+ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+q {
+	quotes: none;
+}
+blockquote::before {
+	content: none;
+}
+blockquote::after {
+	content: none;
+}
+q::before {
+	content: none;
+}
+q::after {
+	content: none;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+a {
+	color: rgb(210, 115, 13); text-decoration: none;
+}
+.likeAlink {
+	color: rgb(210, 115, 13); text-decoration: none;
+}
+.pageNav li a:hover {
+	color: rgb(210, 115, 13); text-decoration: none;
+}
+.pageNav li a:active {
+	color: rgb(210, 115, 13); text-decoration: none;
+}
+.likeAhover {
+	color: rgb(1, 119, 137); text-decoration: underline;
+}
+.likeAlink:hover {
+	color: rgb(1, 119, 137); text-decoration: underline;
+}
+.likeAlink:focus {
+	color: rgb(1, 119, 137); text-decoration: underline;
+}
+a:hover {
+	color: rgb(1, 119, 137); text-decoration: underline;
+}
+a:focus {
+	color: rgb(1, 119, 137); text-decoration: underline;
+}
+.likeAlink {
+	cursor: pointer;
+}
+html {
+	height: 100%; -ms-overflow-y: scroll; -ms-overflow-style: scrollbar; overflow-style: scrollbar;
+}
+body {
+	background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial,Helvetica,sans-serif;
+}
+h1 {
+	font-family: Calibri,"Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Arial,Sans-Serif;
+}
+h2 {
+	font-family: Calibri,"Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Arial,Sans-Serif;
+}
+h3 {
+	font-family: Calibri,"Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Arial,Sans-Serif;
+}
+h1 {
+	margin: 0px 0px 1.2em; font-style: normal;
+}
+h2 {
+	margin: 0px 0px 1.2em; font-style: normal;
+}
+h3 {
+	margin: 0px 0px 1.2em; font-style: normal;
+}
+h4 {
+	margin: 0px 0px 1.2em; font-style: normal;
+}
+h5 {
+	margin: 0px 0px 1.2em; font-style: normal;
+}
+h6 {
+	margin: 0px 0px 1.2em; font-style: normal;
+}
+p {
+	margin: 0px 0px 1.2em; font-style: normal;
+}
+address {
+	margin: 0px 0px 1.2em; font-style: normal;
+}
+h1 {
+	margin: 0px 0px 0.2em; line-height: 0.9; font-size: 200%;
+}
+h2 {
+	line-height: 0.9; font-size: 120%;
+}
+h3 {
+	margin: 0px 0px 0.2em; line-height: 0.9; font-size: 150%;
+}
+blockquote {
+	margin: 0px 0px 0.5em; padding: 6px 6px 0px; border: 1px solid rgb(222, 219, 209); border-image: none;
+}
+ul.default {
+	margin: 1.12em 0px 1.12em 40px;
+}
+ol.default {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.section .entries li .entry-meta ul {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.section .entries li .entry-meta ol {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.event-page .mainContent .description ul {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.event-page .mainContent .description ol {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.mainContent .entry #entry-body ul {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.mainContent .entry #entry-body ol {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.mainContent .entries .description ul {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.mainContent .entries .description ol {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.mceContentBody ul {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.mceContentBody ol {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.mainContent .post .post-content ul {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.mainContent .post .post-content ol {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.mainContent .user .bio ul {
+	margin: 1.12em 0px 1.12em 40px;
+}
+.mainContent .user .bio ol {
+	margin: 1.12em 0px 1.12em 40px;
+}
+ul.default li {
+	
+}
+ol.default li {
+	
+}
+.section .entries li .entry-meta ul li {
+	
+}
+.section .entries li .entry-meta ol li {
+	
+}
+.event-page .mainContent .description ul li {
+	
+}
+.event-page .mainContent .description ol li {
+	
+}
+.mainContent .entry #entry-body ul li {
+	
+}
+.mainContent .entry #entry-body ol li {
+	
+}
+.mainContent .entries .description ul li {
+	
+}
+.mainContent .entries .description ol li {
+	
+}
+.mceContentBody ul li {
+	
+}
+.mceContentBody ol li {
+	
+}
+.mainContent .post .post-content ul li {
+	
+}
+.mainContent .post .post-content ol li {
+	
+}
+.mainContent .user .bio ul li {
+	
+}
+.mainContent .user .bio ol li {
+	
+}
+ol.default li {
+	list-style-type: decimal;
+}
+.section .entries li .entry-meta ol li {
+	list-style-type: decimal;
+}
+.event-page .mainContent .description ol li {
+	list-style-type: decimal;
+}
+.mainContent .entry #entry-body ol li {
+	list-style-type: decimal;
+}
+.mainContent .entries .description ol li {
+	list-style-type: decimal;
+}
+.mceContentBody ol li {
+	list-style-type: decimal;
+}
+.mainContent .post .post-content ol li {
+	list-style-type: decimal;
+}
+.mainContent .user .bio ol li {
+	list-style-type: decimal;
+}
+.alert {
+	border-width: 4px 1px 1px; border-style: solid; border-color: rgb(215, 51, 48) rgb(212, 117, 117) rgb(212, 117, 117); padding: 10px 10px 0px; border-image: none; clear: both; margin-bottom: 1.2em; background-color: rgb(248, 232, 232);
+}
+.info {
+	border-color: rgb(249, 202, 57); background-color: rgb(253, 241, 205);
+}
+.noresults {
+	clear: both;
+}
+.text {
+	line-height: 1.4; font-size: 81%;
+}
+.hidden {
+	display: none;
+}
+.container {
+	margin: 0px auto; width: 960px; position: relative;
+}
+.ch9Template {
+	display: none;
+}
+.screenReader {
+	margin: -1px; padding: 0px; border: 0px currentColor; border-image: none; width: 1px; height: 1px; overflow: hidden; position: absolute; clip: rect(0px, 0px, 0px, 0px);
+}
+.ch9_mockHover > .ch9_chSub.screenReader {
+	margin: 0px; width: auto; height: auto; overflow: auto; clip: auto;
+}
+.centerContents {
+	text-align: center;
+}
+.livePlayerHolder {
+	margin: 0px auto; width: 960px; padding-right: 0px; padding-left: 0px; clear: both;
+}
+.firstContent {
+	margin: 0px auto; width: 960px; padding-right: 0px; padding-left: 0px; clear: both;
+}
+.mainHolder {
+	margin: 0px auto; width: 960px; padding-right: 0px; padding-left: 0px; clear: both;
+}
+.hasSidebar .mainHolder {
+	width: 720px; padding-right: 240px;
+}
+.hasPageNav .mainHolder {
+	width: 780px; padding-left: 180px;
+}
+.hasSidebar.hasPageNav .mainHolder {
+	width: 540px;
+}
+.mainContent {
+	margin-top: 35px;
+}
+.sidebar {
+	margin-top: 35px;
+}
+.pageNav {
+	margin-top: 35px;
+}
+.hasTopContent .mainContent {
+	margin-top: 25px;
+}
+.hasTopContent .sidebar {
+	margin-top: 25px;
+}
+.hasTopContent .pageNav {
+	margin-top: 25px;
+}
+.mainHolder .mainContent {
+	float: left; position: relative;
+}
+.mainHolder .pageNavHolder {
+	float: left; position: relative;
+}
+.mainHolder .sidebarHolder {
+	float: left; position: relative;
+}
+.mainContent {
+	margin-bottom: 35px;
+}
+.pageNav {
+	margin-bottom: 35px;
+}
+.mainContent {
+	width: 100%;
+}
+.firstContent {
+	display: none;
+}
+.mainHolder .sidebarHolder {
+	display: none;
+}
+.mainHolder .pageNavHolder {
+	display: none;
+}
+.hasSidebar .mainHolder .sidebarHolder {
+	left: 20px; width: 220px; margin-right: -220px; display: block;
+}
+.hasPageNav .mainHolder .pageNavHolder {
+	left: -180px; width: 160px; margin-left: -100%; display: block;
+}
+.hasTopContent .firstContent {
+	display: block;
+}
+.feedback a {
+	padding-left: 24px;
+}
+.subscribe a {
+	padding-left: 24px;
+}
+.followus a {
+	padding-left: 24px;
+}
+.feeds a {
+	padding-left: 19px;
+}
+.feeds a {
+	background: url("/styles/images/icon-rss.png") no-repeat -5px -17px;
+}
+.subscribe a {
+	background: url("/styles/images/icon-rss.png") no-repeat 0px -17px;
+}
+.followus a {
+	background: url("/styles/images/icon-twitter.png") no-repeat 0px -17px;
+}
+.feedback a {
+	background: url("/styles/images/icon-feedback.png") no-repeat 0px -17px;
+}
+.branding .toolbar li.locale a {
+	padding-left: 30px; margin-left: 0px; position: relative;
+}
+li.locale a {
+	padding-left: 30px; margin-left: 0px; position: relative;
+}
+li.locale a::before {
+	background: url("/styles/player/segoePlayerIcons_30.png?v=1") no-repeat 0px -46px; left: 6px; top: 0px; width: 21px; height: 21px; display: block; position: absolute; content: "";
+}
+.branding .navigation .search.bing {
+	margin-top: 20px; float: right;
+}
+.search.bing {
+	padding: 3px; border-radius: 5px; border: 1px solid rgb(228, 225, 215); border-image: none; display: inline-block; position: relative; box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.03); -moz-border-radius: 5px; -webkit-border-radius: 5px; -web-kitbox-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .03); -moz-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .03);
+}
+.search.bing input.text {
+	float: left;
+}
+.search.bing .theSubmit {
+	float: left;
+}
+.search.bing form {
+	float: left;
+}
+.search.bing form {
+	border: 1px solid rgb(222, 219, 209); border-image: none; background-color: rgb(255, 255, 255);
+}
+.search.bing input.text {
+	margin: 1px 1px 0px 0px; padding: 0px 6px; outline: rgb(255, 255, 255) solid 0px; border: 0px currentColor; border-image: none; width: 169px; height: 24px; line-height: 23px; font-size: 87%;
+}
+.search.bing input.text.inactive {
+	color: rgb(187, 187, 187); font-style: italic;
+}
+.search.bing .theSubmit {
+	background: url("/styles/images/BingSearchSprite.png?v=2") no-repeat -49px 0px rgb(255, 255, 255); margin: 2px; padding: 0px; border: 0px currentColor; border-image: none; width: 22px; height: 22px; color: rgb(253, 152, 23); font-size: 0px; cursor: pointer;
+}
+.siteSearchSuggestHolder {
+	background: 0px 0px rgb(255, 255, 255); padding: 5px 20px 5px 15px; border-radius: 0px 6px 6px; border: 1px solid rgb(231, 230, 225); border-image: none; top: 100%; display: none; position: absolute; z-index: 9999; min-width: 115px;
+}
+.siteSearchSuggestHolder a {
+	padding: 5px 0px; line-height: 1.3; display: block; white-space: nowrap;
+}
+.followHolder .follow {
+	padding: 1px 5px 1px 0px; border-radius: 4px; border: 1px solid rgb(0, 0, 0); border-image: none; width: auto; height: auto; color: rgb(255, 255, 255); text-decoration: none; display: inline-block; min-height: 16px; background-image: none; background-color: rgb(210, 115, 13);
+}
+.followHolder .follow:hover {
+	background-color: rgb(1, 119, 137);
+}
+.followHolder .follow:focus {
+	background-color: rgb(1, 119, 137);
+}
+.followHolder .follow span {
+	font-size: 90%; vertical-align: bottom; display: inline;
+}
+.follow > span::before {
+	width: 13px; text-align: center; display: inline-block; position: relative; content: "+";
+}
+body.signedIn .followHolder.state_watching .follow > span::before {
+	top: -1px; content: "-";
+}
+body.signedIn .followHolder.state_errorTryAgain .follow > span::before {
+	animation:spin 0.75s linear infinite; content: "~"; -webkit-animation: spin .75s linear infinite; -moz-animation: spin .75s linear infinite;
+}
+body.signedIn .followHolder.state_error .follow > span::before {
+	animation:spin 0.75s linear infinite; content: "~"; -webkit-animation: spin .75s linear infinite; -moz-animation: spin .75s linear infinite;
+}
+body.signedIn .followHolder.state_initializing .follow > span::before {
+	animation:spin 0.75s linear infinite; content: "~"; -webkit-animation: spin .75s linear infinite; -moz-animation: spin .75s linear infinite;
+}
+body.signedIn .followHolder.state_subscribing .follow > span::before {
+	animation:spin 0.75s linear infinite; content: "~"; -webkit-animation: spin .75s linear infinite; -moz-animation: spin .75s linear infinite;
+}
+body.signedIn .followHolder.state_removing .follow > span::before {
+	animation:spin 0.75s linear infinite; content: "~"; -webkit-animation: spin .75s linear infinite; -moz-animation: spin .75s linear infinite;
+}
+.followHolder {
+	position: relative;
+}
+.followHolder .followTypes {
+	padding: 15px 15px 5px; border: 1px solid rgb(231, 230, 225); border-image: none; right: 0px; display: none; position: absolute; z-index: 999; background-color: rgb(255, 255, 255);
+}
+.followHolder.ch9_mockHover .followTypes {
+	display: block;
+}
+.followHolder.ch9_mockHover > .ch9_chSub.screenReader {
+	overflow: visible;
+}
+.followHolder .followStates > div {
+	margin-bottom: 10px; white-space: nowrap;
+}
+.followHolder .followStates > div div {
+	white-space: normal;
+}
+.followHolder .followStates > div > p {
+	margin: 0px;
+}
+.followHolder .followStates .help {
+	width: 16px; height: 12px; display: inline-block; position: relative;
+}
+.followHolder .followStates .help > img {
+	top: -2px; position: absolute;
+}
+.followHolder .followStates .help .popup {
+	left: auto; right: 0px; min-width: 150px;
+}
+.followHolder .followStates .help:hover .popup {
+	left: auto; right: 0px; min-width: 150px;
+}
+.followHolder .followStates .error {
+	display: none;
+}
+.followHolder .followStates .tryAgain {
+	display: none;
+}
+.followHolder .followStates .manage {
+	display: none;
+}
+.followHolder .followStates .settingUpFollow {
+	display: none;
+}
+.followHolder .followStates .removingFollow {
+	display: none;
+}
+.followHolder .followStates .startWatching {
+	display: none;
+}
+.followHolder .followStates .stopWatching {
+	display: none;
+}
+.followHolder .followStates .gettingInformation {
+	display: none;
+}
+.followHolder .followStates .signUp {
+	display: none;
+}
+body.signedIn .followHolder.state_initializing .followStates .manage {
+	display: none;
+}
+body.signedIn .followHolder.getsEmail.state_initializing .followStates .signUp {
+	display: none;
+}
+body.signedIn .followHolder.getsEmail .followStates .signUp {
+	display: none;
+}
+body.signedIn .followHolder .followStates .signIn {
+	display: none;
+}
+.followHolder .followStates .signIn {
+	display: block;
+}
+body.signedIn .followHolder .followStates .manage {
+	display: block;
+}
+body.signedIn .followHolder .followStates .signUp {
+	display: block;
+}
+body.signedIn .followHolder.state_initializing .followStates .gettingInformation {
+	display: block;
+}
+body.signedIn .followHolder.state_watching .followStates .stopWatching {
+	display: block;
+}
+body.signedIn .followHolder.state_notWatching .followStates .startWatching {
+	display: block;
+}
+body.signedIn .followHolder.state_removing .followStates .removingFollow {
+	display: block;
+}
+body.signedIn .followHolder.state_subscribing .followStates .settingUpFollow {
+	display: block;
+}
+body.signedIn .followHolder.state_errorTryAgain .followStates .tryAgain {
+	display: block;
+}
+body.signedIn .followHolder.state_errorTryAgain .followStates .error {
+	display: block;
+}
+body.signedIn .followHolder.state_error .followStates .error {
+	display: block;
+}
+.followHolder .followStates .help .ch9_chSub {
+	display: none;
+}
+.followHolder .followStates .help.ch9_mockHover > .ch9_chSub {
+	display: block;
+}
+.followHolder .follow {
+	cursor: default;
+}
+.followHolder .rssHolder {
+	padding-top: 10px; border-top-color: rgb(231, 230, 225); border-top-width: 1px; border-top-style: solid; position: relative;
+}
+ul.rss li.followHolder a {
+	line-height: normal; white-space: nowrap;
+}
+ul.rss .followHolder li {
+	padding-left: 0px; margin-bottom: 5px; margin-left: 0px; float: none; position: static;
+}
+.followHolder .rounded a {
+	border-radius: 0px;
+}
+ul.rss {
+	margin-top: -2.5em; float: right;
+}
+ul.rss li {
+	padding-left: 0.25em; margin-left: 0.1em; float: left; position: relative;
+}
+ul.rss li a {
+	line-height: 18px; white-space: nowrap;
+}
+ul.rss li ul.alternate {
+	padding: 0px 10px 5px 0px; border: 1px solid rgb(231, 230, 225); border-image: none; position: absolute; z-index: 1000; background-color: rgb(255, 255, 255);
+}
+ul.rss li.subscribe:hover ul.alternate {
+	left: -1px;
+}
+ul.rss li ul.alternate li {
+	margin: 5px 0px 0px;
+}
+ul.rss li ul.alternate a {
+	white-space: nowrap;
+}
+.firstContent h1 {
+	padding: 0px 0px 0.1em; font-size: 250%; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.mainContent h1 {
+	padding: 0px 0px 0.1em; font-size: 250%; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.firstContent h1 a {
+	color: rgb(0, 0, 0); display: block;
+}
+.mainContent h1 a {
+	color: rgb(0, 0, 0); display: block;
+}
+.firstContent h1 a:hover {
+	color: rgb(0, 0, 0); text-decoration: none; cursor: text;
+}
+.mainContent h1 a:hover {
+	color: rgb(0, 0, 0); text-decoration: none; cursor: text;
+}
+.firstContent {
+	min-height: 35px;
+}
+.pageNav {
+	background: url("/styles/images/bg-toolbar.gif") repeat-x rgb(1, 131, 150); padding: 40px 0px 40px 15px; border-bottom-color: rgb(24, 78, 88); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.pageNav h2 {
+	color: rgb(255, 255, 255); text-transform: uppercase; margin-top: -1.2em;
+}
+.pageNav h2 {
+	font-size: 105%;
+}
+.pageNav li span {
+	font-size: 105%;
+}
+.pageNav li a {
+	font-size: 105%;
+}
+.pageNav ul {
+	text-align: right; border-top-color: rgb(24, 78, 88); border-bottom-color: rgb(24, 78, 88); border-left-color: rgb(24, 78, 88); border-top-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+.pageNav li a {
+	padding: 10px 14px; line-height: 1; font-weight: bold; text-decoration: none; border-top-color: rgb(222, 219, 209); border-top-width: 1px; border-top-style: solid; display: block; background-color: rgb(232, 247, 249);
+}
+.pageNav li span {
+	padding: 10px 14px; line-height: 1; font-weight: bold; text-decoration: none; border-top-color: rgb(222, 219, 209); border-top-width: 1px; border-top-style: solid; display: block; background-color: rgb(232, 247, 249);
+}
+.pageNav li.first a {
+	border-top-color: rgb(222, 219, 209); border-top-width: 0px; border-top-style: solid;
+}
+.pageNav li.selected a {
+	background-color: rgb(246, 241, 208);
+}
+.pageNav li.selected span {
+	background-color: rgb(246, 241, 208);
+}
+.pageNav li a:hover {
+	background-color: rgb(218, 242, 245);
+}
+.pageNav li a:active {
+	background-color: rgb(218, 242, 245);
+}
+.sidebar {
+	background: url("/styles/images/bg-sidebar.gif") repeat-x left bottom rgb(232, 247, 249); padding-bottom: 20px; border-top-color: rgb(81, 152, 161); border-top-width: 4px; border-top-style: solid; float: left;
+}
+.sidebar div {
+	background: url("/styles/images/bg-sidebar-separator.gif") no-repeat top; padding: 26px 16px; width: 188px; line-height: 1.4; font-size: 81%; float: left;
+}
+.sidebar div:first-child {
+	background: rgb(218, 242, 245);
+}
+.sidebar div:last-child {
+	background-color: transparent;
+}
+.sidebar .subscribe form input {
+	font-size: 90%; margin-right: 5px;
+}
+.sidebar .subscribe form select {
+	font-size: 90%; margin-right: 5px;
+}
+.sidebar ul li {
+	width: 100%; clear: left; float: left;
+}
+.sidebar .team li {
+	margin-bottom: 10px;
+}
+.sidebar .related li {
+	margin-bottom: 10px;
+}
+.sidebar .team li .avatarHolder {
+	margin: 0px 10px 0px 0px; width: 64px; height: 64px; float: left; display: block;
+}
+.sidebar .team li .avatar {
+	margin: 0px auto; display: block; max-height: 64px; max-width: 64px;
+}
+.sidebar .team li a.button.author {
+	padding: 0px;
+}
+.sidebar .team li .name {
+	line-height: 1; font-family: "Calibri",Verdana,Arial,Helvetica,sans-serif; font-size: 150%; font-weight: bold; display: block;
+}
+.sidebar .team li .title {
+	color: rgb(51, 51, 51);
+}
+.sidebar .related > ul > li {
+	overflow: hidden; min-height: 6em;
+}
+.sidebar .metadata p {
+	margin-bottom: 0px; min-height: 0px;
+}
+.sidebar .metadata ul li {
+	margin-bottom: 0px; min-height: 0px;
+}
+.sidebar .related > ul > li a {
+	width: 100%; display: block;
+}
+.sidebar .related > ul > li span.title {
+	width: auto; margin-left: 107px; display: block;
+}
+.sidebar .related > ul > li img.thumb {
+	background: rgb(51, 51, 51); border: 1px solid rgb(204, 204, 204); border-image: none; width: 100px; overflow: hidden; margin-right: 5px; vertical-align: top; float: left;
+}
+.sidebar .related > ul > li .title {
+	width: 100%;
+}
+.sidebar .related p.more {
+	clear: left; margin-top: 10px; float: right; display: block;
+}
+.sidebar .related a.azureMLLink {
+	background-position: 0px 0px; width: 176px; height: 24px; text-indent: -9999em; overflow: hidden; clear: left; margin-top: 10px; display: block; background-image: url("/styles/images/azure_ml.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.sidebar .search {
+	margin-bottom: 35px;
+}
+.sidebar .search .term input {
+	width: 182px;
+}
+.sidebar .clearAllFilters {
+	margin-bottom: 15px; display: block;
+}
+.sidebar .search fieldset {
+	border: currentColor; border-image: none; margin-bottom: 35px; position: relative;
+}
+.sidebar .search h3 + fieldset {
+	margin-top: 25px;
+}
+.sidebar .search fieldset + input {
+	margin-top: -15px;
+}
+.alert .clearAllFilters {
+	padding: 0px; border: 0px solid rgb(255, 255, 255); border-image: none; background-color: transparent;
+}
+.sidebar .search input.clearAllFilters:focus {
+	padding: 0px; border: 0px solid rgb(255, 255, 255); border-image: none; background-color: transparent;
+}
+.sidebar .search input.clearAllFilters {
+	padding: 0px; border: 0px solid rgb(255, 255, 255); border-image: none; background-color: transparent;
+}
+.sidebar .search legend {
+	width: 100%; bottom: 100%; font-size: 105%; font-weight: bold; white-space: normal;
+}
+.sidebar .search fieldset > div {
+	padding: 0px 4px 7px; border: 1px solid rgb(182, 182, 182); border-image: none; width: auto; line-height: normal; font-size: inherit; margin-top: 2px; float: none; -ms-overflow-y: auto; max-height: 135px; background-image: none; background-color: rgb(255, 255, 255);
+}
+.sidebar .search fieldset > div input {
+	margin: 12px 0px 0px; padding: 0px; float: left;
+}
+.sidebar .search label {
+	padding: 0px; width: auto; text-align: left; line-height: normal; font-weight: normal; margin-top: 10px; margin-left: 25px; vertical-align: top; display: block;
+}
+.sidebar .search legend .filteredBy {
+	line-height: 1.2; font-size: 90%; font-weight: normal; margin-top: 5px; margin-left: 1em; display: block;
+}
+.sidebar .currentlyFilteredBy .currentFilters {
+	margin-top: 15px;
+}
+.sidebar .currentlyFilteredBy .currentFilters ul {
+	margin-right: 16px;
+}
+.sidebar div.filterHolder {
+	background: none; padding: 0px; width: auto; line-height: 1.4; font-size: 100%; float: none;
+}
+.sidebar div.submitHolder {
+	background: none; padding: 0px; width: auto; line-height: 1.4; font-size: 100%; float: none;
+}
+.filterStatus.hasFilters {
+	padding-bottom: 15px; clear: both; margin-top: 20px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.search .hideFilters {
+	display: none;
+}
+.filterStatus .showFilters {
+	display: none;
+}
+.clearAndStart {
+	display: block;
+}
+.alert .clearAndStart {
+	margin-top: 10px;
+}
+.clearAndSubmit {
+	display: none;
+}
+.alert ul.currentFilters li {
+	font-weight: bold;
+}
+.sidebar ul.currentFilters li {
+	font-weight: bold;
+}
+.alert ul.currentFilters li li {
+	font-weight: normal; margin-left: 15px;
+}
+.sidebar ul.currentFilters li li {
+	font-weight: normal; margin-left: 15px;
+}
+.breadcrumbs {
+	padding-bottom: 12px; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; text-size-adjust: none;
+}
+.breadcrumbs ul {
+	display: inline;
+}
+.breadcrumbs ul li {
+	margin: 0px 0px 0px 0.5em; padding: 0px 0px 0px 0.5em; border-left-color: rgb(51, 51, 51); border-left-width: 1px; border-left-style: solid; display: inline;
+}
+.breadcrumbs ul li.first {
+	margin: 0px; padding: 0px; border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.tabs {
+	font-family: "Calibri",Verdana,Arial,Helvetica,sans-serif; font-size: 115%;
+}
+.tabs > li {
+	background: url("/styles/images/bg-sortOptions-a.gif") no-repeat right bottom rgb(243, 243, 243); margin-right: 10px; border-top-color: rgb(51, 51, 51); border-right-color: rgb(51, 51, 51); border-left-color: rgb(51, 51, 51); border-top-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-left-style: solid; float: left;
+}
+.tabs > li > span {
+	padding: 6px 27px 8px; color: rgb(64, 64, 64); font-weight: bold; display: block;
+}
+.tabs > li a {
+	padding: 6px 27px 8px; color: rgb(64, 64, 64); font-weight: bold; display: block;
+}
+.tabs > li a:hover {
+	background: rgb(246, 241, 208); text-decoration: none;
+}
+.tabs > li a:active {
+	background: rgb(246, 241, 208); text-decoration: none;
+}
+.tabs > li.selected {
+	background: rgb(255, 255, 255); margin-top: -3px; margin-bottom: -1px;
+}
+.tabs > li.selected > span {
+	padding-top: 9px; padding-bottom: 9px;
+}
+.tabs > li.selected a {
+	padding-top: 9px; padding-bottom: 9px;
+}
+.tabs > li.selected a:hover {
+	background: rgb(255, 255, 255);
+}
+.tabs > li.selected a:active {
+	background: rgb(255, 255, 255);
+}
+.tab-content {
+	clear: both; border-top-color: rgb(217, 217, 217); border-top-width: 1px; border-top-style: solid;
+}
+.tab-content ul.default {
+	margin-left: 20px;
+}
+.tab-content ol.default {
+	margin-left: 20px;
+}
+.tabbedContent.loading {
+	background-position: center; outline: rgb(204, 204, 204) solid 1px; background-image: url("/styles/images/ui-anim_basic_16x16.gif"); background-repeat: no-repeat; background-color: rgb(245, 245, 245);
+}
+.tabbedContent.loading.noLoading {
+	background-position: inherit; outline: rgb(255, 255, 255) solid 0px; background-image: none; background-repeat: inherit; background-color: inherit;
+}
+form input {
+	font-family: inherit;
+}
+form select {
+	font-family: inherit;
+}
+.rounded {
+	border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;
+}
+.rounded a {
+	border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;
+}
+.rounded span {
+	border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;
+}
+.button {
+	border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;
+}
+.button a {
+	border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;
+}
+.button span {
+	border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;
+}
+a.button {
+	border-width: 0px; padding: 3px 9px; text-decoration: none; display: block; cursor: pointer;
+}
+form input.submit.button {
+	border-width: 0px; padding: 3px 9px; text-decoration: none; display: block; cursor: pointer;
+}
+span.markedSpam {
+	border-width: 0px; padding: 3px 9px; text-decoration: none; display: block; cursor: pointer;
+}
+@media not all
+{
+form input.submit.button {
+	padding: 2px 8px;
+}
+}
+a.add.button {
+	background: rgb(233, 248, 250); color: rgb(51, 51, 51);
+}
+form.add input.submit.button {
+	background: rgb(233, 248, 250); color: rgb(51, 51, 51);
+}
+a.add.button:hover {
+	background-color: rgb(155, 215, 223);
+}
+form.add input.submit.button:hover {
+	background-color: rgb(155, 215, 223);
+}
+a.add.button:focus {
+	background-color: rgb(155, 215, 223);
+}
+form.add input.submit.button:focus {
+	background-color: rgb(155, 215, 223);
+}
+a.edit.button {
+	background: rgb(253, 241, 205); color: rgb(51, 51, 51);
+}
+form.edit input.submit.button {
+	background: rgb(253, 241, 205); color: rgb(51, 51, 51);
+}
+a.edit.button:hover {
+	background-color: rgb(249, 202, 57);
+}
+form.edit input.submit.button:hover {
+	background-color: rgb(249, 202, 57);
+}
+a.edit.button:focus {
+	background-color: rgb(249, 202, 57);
+}
+a.edit.button.selected {
+	background-color: rgb(249, 202, 57);
+}
+form.edit input.submit.button:focus {
+	background-color: rgb(249, 202, 57);
+}
+a.quote.button {
+	background: rgb(246, 245, 233); color: rgb(51, 51, 51);
+}
+form.quote input.submit.button {
+	background: rgb(246, 245, 233); color: rgb(51, 51, 51);
+}
+blockquote {
+	background: rgb(246, 245, 233); color: rgb(51, 51, 51);
+}
+a.quote.button:hover {
+	background-color: rgb(210, 207, 170);
+}
+form.quote input.submit.button:hover {
+	background-color: rgb(210, 207, 170);
+}
+a.quote.button:focus {
+	background-color: rgb(210, 207, 170);
+}
+form.quote input.submit.button:focus {
+	background-color: rgb(210, 207, 170);
+}
+a.lock.button {
+	background: rgb(252, 220, 204); color: rgb(212, 74, 7);
+}
+a.remove.button {
+	background: rgb(252, 220, 204); color: rgb(212, 74, 7);
+}
+form.remove input.submit.button {
+	background: rgb(252, 220, 204); color: rgb(212, 74, 7);
+}
+a.lock.button:hover {
+	color: rgb(252, 220, 204); background-color: rgb(212, 74, 7);
+}
+a.remove.button:hover {
+	color: rgb(252, 220, 204); background-color: rgb(212, 74, 7);
+}
+form.remove input.submit.button:hover {
+	color: rgb(252, 220, 204); background-color: rgb(212, 74, 7);
+}
+a.remove.button:focus {
+	color: rgb(252, 220, 204); background-color: rgb(212, 74, 7);
+}
+form.remove input.submit.button:focus {
+	color: rgb(252, 220, 204); background-color: rgb(212, 74, 7);
+}
+a.spam.button {
+	padding: 5px 9px; color: rgb(135, 135, 135); font-size: 88%;
+}
+form.spam input.submit.button {
+	padding: 5px 9px; color: rgb(135, 135, 135); font-size: 88%;
+}
+span.markedSpam {
+	padding: 5px 9px; color: rgb(135, 135, 135); font-size: 88%;
+}
+a.spam.button:hover {
+	background-color: rgb(221, 221, 221);
+}
+form.spam input.submit.button:hover {
+	background-color: rgb(221, 221, 221);
+}
+a.spam.button:focus {
+	background-color: rgb(221, 221, 221);
+}
+form.spam input.submit.button:focus {
+	background-color: rgb(221, 221, 221);
+}
+a.reload.button {
+	color: rgb(255, 255, 255); background-color: rgb(210, 115, 13);
+}
+a.download.button {
+	color: rgb(255, 255, 255); background-color: rgb(210, 115, 13);
+}
+a.reload.button:hover {
+	background-color: rgb(1, 119, 137);
+}
+a.reload.button:focus {
+	background-color: rgb(1, 119, 137);
+}
+a.download.button:hover {
+	background-color: rgb(1, 119, 137);
+}
+a.download.button:focus {
+	background-color: rgb(1, 119, 137);
+}
+a.big.download.button {
+	padding: 5px 100px; border-radius: 10px; border: 2px solid rgb(160, 85, 11); border-image: none; font-family: "Calibri","Lucida Grande",Helvetica,Arial,sans-serif; font-size: 175%; font-weight: bold; display: inline; box-shadow: inset 4px 4px 4px #bc670d, 0px 3px 3px rgba(0,0,0,0.6);
+}
+a.big.download.button:hover {
+	border: 2px solid rgb(1, 97, 111); border-image: none; box-shadow: inset 4px 4px 4px #016473, 0px 3px 3px rgba(0,0,0,0.6);
+}
+a.big.download.button:focus {
+	border: 2px solid rgb(1, 97, 111); border-image: none; box-shadow: inset 4px 4px 4px #016473, 0px 3px 3px rgba(0,0,0,0.6);
+}
+.field-validation-valid {
+	display: none;
+}
+#validationSummary .error {
+	color: rgb(215, 51, 48); margin-left: 124px; display: block;
+}
+.validation-summary-errors {
+	color: rgb(215, 51, 48); margin-left: 124px; display: block;
+}
+.field-validation-error {
+	color: rgb(215, 51, 48); margin-left: 124px; display: block;
+}
+form.mini .field-validation-error {
+	margin-left: 0px;
+}
+.input-validation-error {
+	background: url("/styles/images/bg-form-input-error.gif") repeat-x left top rgb(255, 255, 255) !important; border: 1px solid rgb(215, 51, 48); border-image: none;
+}
+.input-validation-error + .mce-tinymce {
+	background: url("/styles/images/bg-form-input-error.gif") repeat-x left top rgb(255, 255, 255) !important; border: 1px solid rgb(215, 51, 48); border-image: none;
+}
+fieldset {
+	font-size: 115%;
+}
+fieldset li {
+	padding: 5px 0px;
+}
+fieldset label {
+	padding: 0px 10px 0px 0px; width: 116px; text-align: right; color: rgb(51, 51, 51); line-height: 1.8; font-weight: bold; vertical-align: top; display: inline-block;
+}
+fieldset li.checkbox label {
+	width: auto; text-align: left; padding-left: 2px; font-size: 81%; font-weight: normal;
+}
+fieldset label .optional {
+	color: rgb(160, 160, 160); font-size: 85%; font-weight: normal;
+}
+fieldset li input[type='text'] {
+	background: url("/styles/images/bg-form-input.gif") repeat-x left top rgb(255, 255, 255); padding: 5px 3px 3px; border: 1px solid rgb(160, 160, 160); border-image: none; width: 580px; line-height: 1.4;
+}
+fieldset li input[type='password'] {
+	background: url("/styles/images/bg-form-input.gif") repeat-x left top rgb(255, 255, 255); padding: 5px 3px 3px; border: 1px solid rgb(160, 160, 160); border-image: none; width: 580px; line-height: 1.4;
+}
+fieldset li textarea {
+	background: url("/styles/images/bg-form-input.gif") repeat-x left top rgb(255, 255, 255); padding: 5px 3px 3px; border: 1px solid rgb(160, 160, 160); border-image: none; width: 580px; line-height: 1.4;
+}
+form button.cancel {
+	padding-top: 4px; padding-bottom: 4px;
+}
+form input[type='submit'] {
+	padding-top: 4px; padding-bottom: 4px;
+}
+.mce-tinymce {
+	border: 1px solid rgb(160, 160, 160) !important; border-image: none !important;
+}
+form p.submit {
+	float: right;
+}
+.add-comment .author {
+	width: 120px; overflow: hidden;
+}
+.communityMembers .communityMember {
+	width: 120px; overflow: hidden;
+}
+.posts .author {
+	width: 120px; overflow: hidden;
+}
+.aside .author {
+	width: 120px; overflow: hidden;
+}
+.add-comment .author img.avatar {
+	max-width: 110px;
+}
+.communityMembers .communityMember img.avatar {
+	max-width: 110px;
+}
+.posts .author img.avatar {
+	max-width: 110px;
+}
+.aside .author img.avatar {
+	max-width: 110px;
+}
+.achievement .author a.button {
+	background: rgb(243, 243, 243); padding: 6px 0px 0px; color: rgb(51, 51, 51); display: block;
+}
+.featuredSpeaker .author a.button {
+	background: rgb(243, 243, 243); padding: 6px 0px 0px; color: rgb(51, 51, 51); display: block;
+}
+.communityMembers .communityMember a.button {
+	background: rgb(243, 243, 243); padding: 6px 0px 0px; color: rgb(51, 51, 51); display: block;
+}
+.authors .author a.button {
+	background: rgb(243, 243, 243); padding: 6px 0px 0px; color: rgb(51, 51, 51); display: block;
+}
+.posts .author a.button {
+	background: rgb(243, 243, 243); padding: 6px 0px 0px; color: rgb(51, 51, 51); display: block;
+}
+.achievement .author span.button {
+	padding: 6px 0px 0px; display: block;
+}
+.featuredSpeaker .author span.button {
+	padding: 6px 0px 0px; display: block;
+}
+.communityMembers .communityMember span.button {
+	padding: 6px 0px 0px; display: block;
+}
+.authors .author span.button {
+	padding: 6px 0px 0px; display: block;
+}
+.posts .author span.button {
+	padding: 6px 0px 0px; display: block;
+}
+.achievement .author a.button:hover {
+	background: rgb(210, 115, 13); color: rgb(255, 255, 255);
+}
+.featuredSpeaker .author a.button:hover {
+	background: rgb(210, 115, 13); color: rgb(255, 255, 255);
+}
+.communityMembers .communityMember a.button:hover {
+	background: rgb(210, 115, 13); color: rgb(255, 255, 255);
+}
+.authors .author a.button:hover {
+	background: rgb(210, 115, 13); color: rgb(255, 255, 255);
+}
+.posts .author a.button:hover {
+	background: rgb(210, 115, 13); color: rgb(255, 255, 255);
+}
+.achievement .author a.button img {
+	margin: 0px auto; display: block;
+}
+.achievement .author span.button {
+	margin: 0px auto; display: block;
+}
+.featuredSpeaker .author a.button img {
+	margin: 0px auto; display: block;
+}
+.featuredSpeaker .author span.button {
+	margin: 0px auto; display: block;
+}
+.authors .author a.button img {
+	margin: 0px auto; display: block;
+}
+.authors .author span.button {
+	margin: 0px auto; display: block;
+}
+.communityMembers .communityMember span.button {
+	margin: 0px auto; display: block;
+}
+.communityMembers .communityMember a.button img {
+	margin: 0px auto; display: block;
+}
+.posts .author a.button img {
+	margin: 0px auto; display: block;
+}
+.posts .author span.button img {
+	margin: 0px auto; display: block;
+}
+.achievement .author .name {
+	padding: 3px 6px 6px; text-align: center; display: block;
+}
+.featuredSpeaker .author .name {
+	padding: 3px 6px 6px; text-align: center; display: block;
+}
+.authors .author .name {
+	padding: 3px 6px 6px; text-align: center; display: block;
+}
+.communityMembers .communityMember .name {
+	padding: 3px 6px 6px; text-align: center; display: block;
+}
+.posts .author .name {
+	padding: 3px 6px 6px; text-align: center; display: block;
+}
+.aside .author .name {
+	padding: 3px 6px 6px; text-align: center; display: block;
+}
+.achievement .author .caption {
+	color: rgb(135, 135, 135); font-size: 81%; margin-top: 0.5em; display: block;
+}
+.featuredSpeaker .author .caption {
+	color: rgb(135, 135, 135); font-size: 81%; margin-top: 0.5em; display: block;
+}
+.authors .author .caption {
+	color: rgb(135, 135, 135); font-size: 81%; margin-top: 0.5em; display: block;
+}
+.communityMembers .communityMember .caption {
+	color: rgb(135, 135, 135); font-size: 81%; margin-top: 0.5em; display: block;
+}
+.posts .author .caption {
+	color: rgb(135, 135, 135); font-size: 81%; margin-top: 0.5em; display: block;
+}
+.aside .author .caption {
+	color: rgb(135, 135, 135); font-size: 81%; margin-top: 0.5em; display: block;
+}
+.help {
+	display: block;
+}
+.help img {
+	width: 16px; height: 16px;
+}
+.help img:hover {
+	background: rgb(255, 255, 255); cursor: pointer;
+}
+.help .popup {
+	background: rgb(255, 255, 255); padding: 10px; border: 1px solid rgb(135, 135, 135); border-image: none; left: -9999em; width: 220px; font-size: 90%; position: absolute; z-index: 9999;
+}
+.help .popup:hover {
+	background: rgb(255, 255, 255); left: auto;
+}
+.help:hover .popup {
+	background: rgb(255, 255, 255); left: auto;
+}
+.help .popup ul.default {
+	margin-left: 20px;
+}
+.help .popup ol.default {
+	margin-left: 20px;
+}
+dl.twoCol {
+	width: 100%; display: block;
+}
+dl.twoCol dt {
+	width: 49%; clear: both; float: left; display: block;
+}
+dl.twoCol dd {
+	width: 49%; float: right; display: block;
+}
+dl.twoCol + * {
+	clear: both;
+}
+table.tabular tr th {
+	border-top-color: rgb(249, 202, 57); border-top-width: 4px; border-top-style: solid; background-color: rgb(253, 241, 205);
+}
+table.tabular th {
+	padding: 5px; border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+table.tabular td {
+	padding: 5px; border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+.hasTimeHelper time.timeHelper {
+	padding-right: 11px; position: relative; cursor: help;
+}
+.hasTimeHelper time.timeHelper.minClick > * {
+	cursor: pointer;
+}
+.hasTimeHelper time.timeHelper::after {
+	background: url("/styles/images/q.png") no-repeat right; width: 11px; height: 11px; right: 0px; bottom: 4px; display: block; position: absolute; cursor: help; content: "";
+}
+.hasTimeHelper .timeHelperBG {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: fixed; z-index: 9996; cursor: pointer; opacity: 0.7; background-color: rgb(0, 0, 0);
+}
+.hasTimeHelper .timeHelperDialog {
+	padding: 3%; border-radius: 10px; border: 2px solid rgb(0, 0, 0); border-image: none; left: 15%; top: 15%; right: 15%; position: fixed; z-index: 9996; cursor: pointer; box-shadow: inset 0px 0px 5px gray; background-color: rgb(255, 255, 255);
+}
+.hasTimeHelper .timeHelperDialog > div {
+	margin-top: 3%;
+}
+.hasTimeHelper .timeHelperDialog > div button {
+	float: right;
+}
+.hasTimeHelper .timeHelperDialog > div:first-child {
+	line-height: 1.5; margin-top: 0%;
+}
+.hasTimeHelper .timeHelperDialog span {
+	white-space: nowrap;
+}
+.theme-birthday .branding .navigation .logo a:hover {
+	background-position: left bottom;
+}
+.theme-birthday .branding .navigation .logo a:active {
+	background-position: left bottom;
+}
+.theme-mask .branding .navigation .logo a:hover {
+	background-position: left bottom;
+}
+.theme-mask .branding .navigation .logo a:active {
+	background-position: left bottom;
+}
+.theme-event .branding .navigation .logo a:hover {
+	background-position: left bottom;
+}
+.theme-event .branding .navigation .logo a:active {
+	background-position: left bottom;
+}
+.theme-party .branding .navigation .logo a:hover {
+	background-position: left bottom;
+}
+.theme-party .branding .navigation .logo a:active {
+	background-position: left bottom;
+}
+.theme-winter .branding .toolbar {
+	background: url("/styles/images/themes/winter/bg-toolbar.png") repeat-x 0px 0px rgb(1, 131, 150);
+}
+.theme-winter .branding .navigation .logo a {
+	background: url("/styles/images/themes/winter/channel-9-logo.png") no-repeat; top: -49px; height: 145px;
+}
+.theme-winter .footer {
+	background: url("/styles/images/themes/winter/bg-footer.png") no-repeat center 1px rgb(77, 82, 89);
+}
+.theme-birthday .branding .navigation .logo a {
+	background: url("/styles/images/themes/birthday/channel-9-logo.png") no-repeat;
+}
+.theme-mask .branding .navigation .logo a {
+	background: url("/styles/images/themes/mask/channel-9-logo.png") no-repeat;
+}
+.theme-party .branding .navigation .logo a {
+	background: url("/styles/images/themes/party/channel-9-logo.png") no-repeat;
+}
+.theme-build2015 .branding .navigation .logo a {
+	background: url("/styles/images/themes/build2015/channel-9-logo.png") no-repeat;
+}
+.theme-event .branding .navigation .logo a {
+	background: url("/styles/images/themes/event/channel-9-logo.png") no-repeat;
+}
+.theme-eyes .branding .navigation .logo a {
+	background: url("/styles/images/themes/eyes/channel-9-logo.png") no-repeat;
+}
+.theme-eyes .branding .navigation .logo a .eye {
+	display: none;
+}
+.theme-eyes.tracking .branding .navigation .logo a .eye {
+	display: block;
+}
+.theme-eyes.glasses .branding .navigation .logo a .eye {
+	display: none;
+}
+.theme-eyes .branding .navigation .logo a:hover {
+	background-position: left -134px;
+}
+.theme-eyes .branding .navigation .logo a:active {
+	background-position: left -134px;
+}
+.theme-eyes.tracking .branding .navigation .logo a {
+	background-position: left -268px;
+}
+.theme-eyes.tracking .branding .navigation .logo a:hover {
+	background-position: left -402px;
+}
+.theme-eyes.tracking .branding .navigation .logo a:active {
+	background-position: left -402px;
+}
+.theme-eyes.glasses .branding .navigation .logo a {
+	background-position: left -536px;
+}
+.theme-eyes.glasses .branding .navigation .logo a:hover {
+	background-position: left -670px;
+}
+.theme-eyes.glasses .branding .navigation .logo a:active {
+	background-position: left -670px;
+}
+.register-techEdNA {
+	display: none;
+}
+#reallyNothing {
+	background-color: transparent;
+}
+.branding {
+	font-size: 16px;
+}
+.branding a:focus {
+	text-decoration: underline;
+}
+.branding a:hover {
+	text-decoration: underline;
+}
+.branding .toolbar {
+	background: url("/styles/images/bg-toolbar.gif") repeat-x rgb(1, 131, 150); padding-top: 38px; padding-bottom: 5px; border-bottom-color: rgb(24, 78, 88); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.embeded .branding .toolbar {
+	padding-top: 10px; padding-bottom: 6px;
+}
+.branding .toolbar ul li {
+	text-align: center; line-height: 24px;
+}
+.branding .navigation ul li {
+	text-align: center; line-height: 24px;
+}
+.branding .toolbar ul li a {
+	color: rgb(255, 255, 255);
+}
+.branding .subNav {
+	display: none;
+}
+.branding .toolbar .subscribe.site {
+	display: none;
+}
+.branding .toolbar .followus {
+	display: none;
+}
+.branding .toolbar .region {
+	display: none;
+}
+.branding .toolbar .region a {
+	background: url("/styles/images/world.png") no-repeat 0px 0px;
+}
+.branding .navigation .container {
+	text-align: center; position: static;
+}
+.branding .navigation .container > ul {
+	margin: 0px auto; padding-bottom: 6px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; display: inline-block; position: relative;
+}
+.branding .navigation .container > ul > li {
+	height: 24px; margin-top: 6px; margin-right: 15px; float: left;
+}
+.branding .navigation .container > ul > li:last-child {
+	margin-right: 0px;
+}
+.branding .navigation .container > ul > li > a {
+	height: 30px; display: inline-block;
+}
+.adminHomeHolder > ul {
+	left: 50%; top: 30px; display: none; position: absolute; z-index: 9999;
+}
+.branding .navigation .container > ul > li > ul {
+	left: 50%; top: 30px; display: none; position: absolute; z-index: 9999;
+}
+.adminHomeHolder > ul > li {
+	background: rgb(255, 255, 255); padding: 0px 20px 0px 15px; left: -50%; border-right-color: rgb(231, 230, 225); border-left-color: rgb(231, 230, 225); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; position: relative; min-width: 115px;
+}
+.branding .navigation .container > ul > li > ul > li {
+	background: rgb(255, 255, 255); padding: 0px 20px 0px 15px; left: -50%; border-right-color: rgb(231, 230, 225); border-left-color: rgb(231, 230, 225); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; position: relative; min-width: 115px;
+}
+.branding .navigation .container > ul > li:last-child > ul > li {
+	left: 0px;
+}
+.branding .navigation .container > ul > li:first-child > ul > li {
+	left: 0px;
+}
+.branding .navigation .container > ul > li:first-child > ul {
+	left: 0px;
+}
+.branding .navigation .container > ul > li:last-child > ul {
+	left: auto; right: 0px;
+}
+.adminHomeHolder > ul > li:first-child {
+	border-top-color: rgb(231, 230, 225); border-top-width: 1px; border-top-style: solid; border-top-left-radius: 6px; border-top-right-radius: 6px;
+}
+.branding .navigation .container > ul > li > ul > li:first-child {
+	border-top-color: rgb(231, 230, 225); border-top-width: 1px; border-top-style: solid; border-top-left-radius: 6px; border-top-right-radius: 6px;
+}
+.adminHomeHolder > ul > li:last-child {
+	border-bottom-color: rgb(231, 230, 225); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px;
+}
+.branding .navigation .container > ul > li > ul > li:last-child {
+	border-bottom-color: rgb(231, 230, 225); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px;
+}
+.adminHomeHolder.ch9_mockHover > ul {
+	display: block;
+}
+.branding .navigation .container > ul > li.ch9_mockHover > ul {
+	display: block;
+}
+.adminHomeHolder li a {
+	line-height: 2; font-size: 100%;
+}
+.branding .navigation .container > ul > li > ul a span {
+	color: rgb(135, 135, 135); font-weight: bold;
+}
+.branding .navigation .container > ul > li > ul > li {
+	text-align: left;
+}
+.branding .navigation .container > ul > li > ul > li > a {
+	padding: 5px 0px; line-height: 1.3; display: block; white-space: nowrap;
+}
+.branding .navigation .logo a {
+	background: url("/styles/images/channel-9-logo-mini.png") no-repeat; left: 50%; top: 10px; width: 95px; height: 24px; text-indent: -9999em; margin-left: -47px; display: block; position: absolute; z-index: 9995;
+}
+.branding .navigation .search.bing {
+	margin: 6px auto 0px; top: 1px; width: 210px; height: 28px; right: 0px; float: none; display: block;
+}
+@media screen and (min-width:550px)
+{
+.branding .navigation .logo a {
+	background: url("/styles/images/channel-9-logo-sm.png") no-repeat; left: 18px; top: 10px; width: 95px; height: 125px; text-indent: -9999em; margin-left: auto; display: block; position: absolute; z-index: 9995;
+}
+.branding .toolbar {
+	padding-top: 6px;
+}
+.embeded .branding .toolbar {
+	padding: 10px 0px 6px;
+}
+.branding .toolbar .container > ul {
+	margin-left: 100px;
+}
+.branding .navigation .container {
+	padding-left: 100px;
+}
+.header > .holder > h1 {
+	padding-left: 100px;
+}
+}
+@media screen and (min-width:960px)
+{
+.branding {
+	width: 100%; min-height: 127px;
+}
+.hasTopContent .branding {
+	margin-bottom: 35px;
+}
+.header {
+	padding: 1em 0px 0px;
+}
+.branding .toolbar {
+	padding: 10px 0px 6px; width: 100%; float: left; min-height: 44px;
+}
+.branding .navigation {
+	box-sizing: border-box;
+}
+.branding .toolbar {
+	box-sizing: border-box;
+}
+.branding .toolbar ul {
+	font-size: 81%; float: right;
+}
+.branding .toolbar ul li {
+	line-height: 2em; float: left;
+}
+.branding .toolbar ul li a {
+	line-height: 18px; padding-right: 10px; margin-left: 10px; border-right-color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid;
+}
+.branding .toolbar .region {
+	display: list-item;
+}
+.branding .toolbar .followus {
+	display: list-item;
+}
+.branding .toolbar .subscribe.site {
+	display: list-item;
+}
+.feedback a {
+	margin-left: 4px !important;
+}
+.subscribe a {
+	margin-left: 4px !important;
+}
+.followus a {
+	margin-left: 4px !important;
+}
+.branding .toolbar .region {
+	line-height: 16px; margin-top: 4px;
+}
+.branding .toolbar .region a {
+	width: 16px; height: 16px; display: inline-block; position: relative; cursor: pointer;
+}
+.branding .toolbar .region .globe:hover .datacenter {
+	left: auto; top: -4px; right: 28px; z-index: 9999;
+}
+.branding .toolbar .region .globe .datacenter {
+	background: rgb(255, 255, 255); padding: 6px; border: 1px solid rgb(217, 217, 217); border-image: none; left: -9999em; color: rgb(51, 51, 51); line-height: 1; font-size: 81%; display: block; white-space: nowrap; position: absolute;
+}
+.branding .toolbar .signIn a {
+	padding-right: 0px; font-weight: bold; border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.branding .logo {
+	width: 193px; height: 62px; float: left;
+}
+.header > .holder > h1 {
+	padding-left: 0px;
+}
+.branding .toolbar > .container {
+	padding-left: 102px; max-width: 960px; box-sizing: border-box;
+}
+.branding .toolbar .container > ul {
+	margin-left: auto; float: left; position: relative; z-index: 9996;
+}
+.branding .toolbar .subscribe a {
+	margin-left: 4px !important;
+}
+.branding .toolbar .followus a {
+	margin-left: 4px !important;
+}
+.branding .logo {
+	width: auto; height: auto; float: none;
+}
+.branding .navigation .logo a {
+	background: url("/styles/images/channel-9-logo.png") no-repeat; left: 0px; top: -55px; width: 283px; height: 134px;
+}
+.branding .navigation .logo a:hover {
+	background-position: left bottom;
+}
+.branding .navigation .logo a:active {
+	background-position: left bottom;
+}
+.branding .navigation {
+	background: url("/styles/images/bg-navigation.gif") repeat-x rgb(246, 245, 233); width: 100%; height: 83px; font-size: 90%; border-bottom-color: rgb(222, 219, 209); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.branding .navigation > .container {
+	height: 62px; padding-left: 282px; position: relative; max-width: 960px; box-sizing: border-box;
+}
+.branding .navigation .container > ul {
+	margin: 19px auto 0px; padding-bottom: inherit; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 0px; border-bottom-style: solid; display: table;
+}
+.branding .navigation .container > ul.mainNav {
+	margin: 19px auto 0px;
+}
+.branding .navigation .container > ul > li {
+	margin-top: auto; margin-right: auto; display: table-cell; position: relative;
+}
+.branding .navigation .container > ul > li {
+	background: url("/styles/images/bg-navigation-a.gif") no-repeat; height: 44px; padding-left: 1px; float: left; min-height: 44px;
+}
+.branding .navigation .container > ul > li:first-child {
+	background: none;
+}
+.branding .navigation .container > ul > li > span {
+	padding: 0px 14px; border: 1px solid transparent; border-image: none; height: auto; color: rgb(51, 51, 51); text-transform: uppercase; line-height: 41px; letter-spacing: 0.05em; font-size: 111%; text-decoration: none; display: block;
+}
+.branding .navigation .container > ul > li > a {
+	padding: 0px 14px; border: 1px solid transparent; border-image: none; height: auto; color: rgb(51, 51, 51); text-transform: uppercase; line-height: 41px; letter-spacing: 0.05em; font-size: 111%; text-decoration: none; display: block;
+}
+.branding .navigation .container > ul > li.active > span {
+	background: url("/styles/images/bg-navigation-a.gif") repeat-x left bottom; border: 1px solid rgb(231, 230, 225); border-image: none;
+}
+.branding .navigation .container > ul > li.active > a {
+	background: url("/styles/images/bg-navigation-a.gif") repeat-x left bottom; border: 1px solid rgb(231, 230, 225); border-image: none;
+}
+.branding .navigation .container > ul > li.ch9_mockHover > span {
+	background: url("/styles/images/bg-navigation-a.gif") repeat-x left bottom; border: 1px solid rgb(231, 230, 225); border-image: none;
+}
+.branding .navigation .container > ul > li.ch9_mockHover > a {
+	background: url("/styles/images/bg-navigation-a.gif") repeat-x left bottom; border: 1px solid rgb(231, 230, 225); border-image: none;
+}
+.branding .navigation .container > ul > li > ul {
+	left: 1px !important; top: 43px;
+}
+.branding .navigation .container > ul > li > ul > li {
+	left: 0px;
+}
+.branding .navigation .container > ul > li > ul > li:first-child {
+	padding-top: 5px;
+}
+.branding .navigation .container > ul > li > ul > li:last-child {
+	padding-bottom: 5px;
+}
+.branding .navigation .container > ul > li:last-child > ul {
+	left: auto !important; right: 0px;
+}
+.branding .navigation .container > ul > li > ul > li:first-child {
+	border-top-left-radius: 0px;
+}
+.branding .navigation .container > ul > li:last-child > ul > li:first-child {
+	border-top-left-radius: 6px; border-top-right-radius: 0px;
+}
+.branding a {
+	color: rgb(210, 115, 13); text-decoration: none;
+}
+.branding .likeAlink {
+	color: rgb(210, 115, 13); text-decoration: none;
+}
+.branding .pageNav li a:hover {
+	color: rgb(210, 115, 13); text-decoration: none;
+}
+.branding .pageNav li a:active {
+	color: rgb(210, 115, 13); text-decoration: none;
+}
+.branding .likeAlink:hover {
+	color: rgb(1, 119, 137); text-decoration: underline;
+}
+.branding .likeAlink:focus {
+	color: rgb(1, 119, 137); text-decoration: underline;
+}
+.branding a:hover {
+	color: rgb(1, 119, 137); text-decoration: underline;
+}
+.branding a:focus {
+	color: rgb(1, 119, 137); text-decoration: underline;
+}
+.branding .mainNav .rounded li {
+	text-align: left;
+}
+.branding .navigation .search.bing {
+	top: 1px; width: auto; height: auto; right: 0px; margin-top: 0px; display: inline-block; position: absolute;
+}
+.branding .search.bing input.text {
+	width: 169px;
+}
+.branding .navigation .search.bing {
+	top: -59px; right: 0px; margin-top: 0px; float: none; position: absolute;
+}
+.branding .navigation .search.bing {
+	border-color: rgb(80, 171, 180);
+}
+.branding .navigation .search.bing form {
+	border-color: rgb(80, 171, 180);
+}
+.search.bing .theSubmit {
+	background-color: transparent;
+}
+.branding .navigation .search.bing form {
+	background-color: transparent;
+}
+.branding .navigation .search.bing input.text {
+	background-color: transparent;
+}
+.navigation .search.bing input.text {
+	color: rgb(255, 255, 255);
+}
+.navigation .search.bing input.text.inactive {
+	color: rgb(255, 255, 255);
+}
+.liveEventHomepage .branding .search.bing input.text {
+	width: 41px;
+}
+.lang-hy .userIsAdmin .branding .search.bing input.text {
+	width: 41px;
+}
+.lang-hu .signedIn .branding .search.bing input.text {
+	width: 41px;
+}
+.lang-ru .signedIn .branding .search.bing input.text {
+	width: 41px;
+}
+.lang-pl .signedIn .branding .search.bing input.text {
+	width: 41px;
+}
+.lang-hu .liveEventHomepage.signedIn .search.bing {
+	display: none;
+}
+.lang-ru .liveEventHomepage.signedIn .search.bing {
+	display: none;
+}
+.lang-hy .liveEventHomepage.signedIn .branding .subscribe {
+	display: none;
+}
+.lang-uk .liveEventHomepage.signedIn .branding .subscribe {
+	display: none;
+}
+.lang-bg .liveEventHomepage.signedIn .branding .subscribe {
+	display: none;
+}
+.lang-el .liveEventHomepage.signedIn .branding .subscribe {
+	display: none;
+}
+.lang-sl .liveEventHomepage.signedIn .branding .subscribe {
+	display: none;
+}
+.lang-sk .liveEventHomepage.signedIn .branding .subscribe {
+	display: none;
+}
+.lang-hr .liveEventHomepage.signedIn .branding .subscribe {
+	display: none;
+}
+.lang-pl .liveEventHomepage .branding .subscribe {
+	display: none;
+}
+.adminHomeHolder li a {
+	font-size: 123%;
+}
+}
+@media screen and (min-width:1085px)
+{
+.branding .subNav {
+	display: block;
+}
+}
+.branding .toolbar .adminHomeHolder {
+	position: relative;
+}
+.branding .toolbar .adminHomeHolder > ul {
+	top: 20px;
+}
+.branding .toolbar .adminHomeHolder > ul > li {
+	text-align: left; line-height: 24px !important; float: none;
+}
+.adminHomeHolder li a {
+	color: rgb(210, 115, 13) !important; white-space: nowrap;
+}
+.adminHomeHolder li:hover a {
+	color: rgb(1, 119, 137) !important;
+}
+@media screen and (max-width:549px)
+{
+.branding .navigation .container > ul {
+	padding-top: 6px;
+}
+.branding .navigation .container > ul > li {
+	margin: 0px 7px; float: none; display: inline;
+}
+.branding .navigation .container > ul > li:first-child {
+	margin: 0px 7px; position: relative;
+}
+.branding .navigation .container > ul > li:last-child {
+	margin: 0px 7px; position: relative;
+}
+.branding .navigation .container > ul > li > ul {
+	top: 28px;
+}
+.branding .navigation .container > ul > li:first-child > ul {
+	top: auto;
+}
+.branding .navigation .container > ul > li:last-child > ul {
+	top: auto;
+}
+.branding .navigation .container > ul > li:first-child > ul > li:first-child {
+	margin-top: -7px;
+}
+.branding .navigation .container > ul > li:last-child > ul > li:first-child {
+	margin-top: -7px;
+}
+.branding .navigation .container > ul > li > ul > li > a {
+	white-space: normal;
+}
+}
+@media screen and (max-width:899px) and (min-width:780px)
+{
+.theme-build2015 .branding .navigation .logo a {
+	background-image: url("/styles/images/themes/build2015/channel-9-logo-med.png");
+}
+}
+@media screen and (max-width:779px) and (min-width:550px)
+{
+.theme-build2015 .branding .navigation .logo a {
+	height: 140px; background-image: url("/styles/images/themes/build2015/channel-9-logo-sm.png");
+}
+}
+@media screen and (max-width:959px) and (min-width:550px)
+{
+.theme-mask .branding .navigation .logo a {
+	background-image: url("/styles/images/themes/mask/channel-9-logo-sm.png");
+}
+}
+@media screen and (max-width:549px)
+{
+.theme-build2015 .branding .navigation .logo a {
+	width: 113px; background-image: url("/styles/images/themes/build2015/channel-9-logo-mini.png");
+}
+.theme-mask .branding .navigation .logo a {
+	background-image: url("/styles/images/themes/mask/channel-9-logo-mini.png");
+}
+}
+.footer {
+	background: url("/styles/images/bg-footer.gif") no-repeat center 1px rgb(77, 82, 89); width: 100%; text-align: center; color: rgb(255, 255, 255); line-height: normal; padding-top: 25px; padding-bottom: 25px; clear: both; font-size: 12.96px; float: left;
+}
+.hasSidebar .footer {
+	margin-top: 60px;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+.footer a:active {
+	text-decoration: underline;
+}
+.footer .copyright {
+	margin-bottom: 1.5em;
+}
+.footer .copyright a {
+	color: rgb(191, 191, 191);
+}
+.footer .footerNav li {
+	margin-bottom: 3px;
+}
+.footer ul li a {
+	color: rgb(255, 255, 255);
+}
+.footer .locale a {
+	padding-left: 0px; background-image: none;
+}
+.footer .feedback a {
+	padding-left: 0px; background-image: none;
+}
+.footer .subscribe a {
+	padding-left: 0px; background-image: none;
+}
+.footer .followus a {
+	padding-left: 0px; background-image: none;
+}
+.footer .locale a::before {
+	background-position: 0px -1px; margin: auto 5px 2px 0px; width: 19px; height: 14px; vertical-align: bottom; display: inline-block; content: "";
+}
+.footer .feedback a::before {
+	background-position: 0px -1px; margin: auto 5px 2px 0px; width: 19px; height: 14px; vertical-align: bottom; display: inline-block; content: "";
+}
+.footer .subscribe a::before {
+	background-position: 0px -1px; margin: auto 5px 2px 0px; width: 19px; height: 14px; vertical-align: bottom; display: inline-block; content: "";
+}
+.footer .followus a::before {
+	background-position: 0px -1px; margin: auto 5px 2px 0px; width: 19px; height: 14px; vertical-align: bottom; display: inline-block; content: "";
+}
+.footer .feedback a:hover::before {
+	background-position: 0px -18px;
+}
+.footer .subscribe a:hover::before {
+	background-position: 0px -18px;
+}
+.footer .followus a:hover::before {
+	background-position: 0px -18px;
+}
+.footer ul li.locale a::before {
+	background-position: 0px -46px; position: static; background-image: url("/styles/player/segoePlayerIcons_30.png?v=1");
+}
+.footer ul li.locale a:hover::before {
+	background-position: 0px -32px;
+}
+.footer ul li.locale a:focus::before {
+	background-position: 0px -32px;
+}
+.footer ul li.feedback a::before {
+	background-image: url("/styles/images/icon-feedback.png");
+}
+.footer ul li.subscribe a::before {
+	background-image: url("/styles/images/icon-rss.png");
+}
+.footer ul li.followus a::before {
+	background-image: url("/styles/images/icon-twitter-14.png");
+}
+.footer ul li.feedback a {
+	background-position: -4px 0px; margin-left: 0px;
+}
+.footer ul li.subscribe a {
+	background-position: -4px 0px; margin-left: 0px;
+}
+.footer ul li.followus a {
+	background-position: -4px 0px; margin-left: 0px;
+}
+.footer ul li.feedback a:hover {
+	background-position: -4px -17px;
+}
+.footer ul li.feedback a:focus {
+	background-position: -4px -17px;
+}
+.footer ul li.subscribe a:hover {
+	background-position: -4px -17px;
+}
+.footer ul li.subscribe a:focus {
+	background-position: -4px -17px;
+}
+.footer ul li.followus a:hover {
+	background-position: -4px -17px;
+}
+.footer ul li.followus a:focus {
+	background-position: -4px -17px;
+}
+@media screen and (min-width:780px)
+{
+.footer ul {
+	display: inline-block;
+}
+.footer ul li {
+	display: inline-block;
+}
+.footer ul li {
+	margin-top: 0.4em;
+}
+.footer .footerNav li {
+	margin-bottom: inherit; margin-left: 10px;
+}
+.footer .footerNav li:first-child {
+	margin-left: 0px;
+}
+.footer ul li.locale {
+	margin-top: 0px;
+}
+.footer ul li.feedback {
+	margin-top: 0px;
+}
+.footer ul li.subscribe {
+	margin-top: 0px;
+}
+.footer ul li.followus {
+	margin-top: 0px;
+}
+.footer ul li.subscribe a {
+	padding-right: 0px; border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.footer ul li.privacy a {
+	padding-right: 0px; border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.footer ul li.privacy {
+	clear: both;
+}
+}
+@media screen and (min-width:960px)
+{
+.footer {
+	padding: 40px 0px; font-size: 81%; min-width: 960px;
+}
+.footer .container {
+	margin: 0px auto; flex-flow:row-reverse wrap; width: 960px; overflow: hidden; display: flex; position: relative; justify-content: space-between; -webkit-flex-direction: row-reverse; -webkit-flex-wrap: wrap; -webkit-justify-content: space-between;
+}
+.footer .ccl {
+	width: 88px; height: 31px; margin-bottom: 10px; display: block; order: 1; align-self: flex-end; -webkit-align-self: flex-end; -webkit-order: 1;
+}
+.footer .ccl img {
+	display: block;
+}
+.footer .copyright {
+	flex:1 1 0px; text-align: left; font-size: 88%; margin-bottom: 1.2em; display: block; min-width: 51%; -ms-text-size-adjust: none; order: 2; -webkit-order: 2; -webkit-flex: 1;
+}
+.footer .copyright a {
+	white-space: nowrap;
+}
+.footer ul {
+	margin-bottom: 10px; display: block; min-width: 51%; order: 0; -webkit-order: 0;
+}
+.footer ul li {
+	float: right;
+}
+.footer .footerNav li {
+	margin-bottom: 0px; margin-left: 0px;
+}
+.footer ul li a {
+	color: rgb(255, 255, 255); line-height: 18px; padding-right: 10px; margin-left: 10px; vertical-align: bottom; border-right-color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid;
+}
+.footer ul li {
+	margin-top: 0.4em;
+}
+.footer ul li.locale {
+	margin-top: 0px;
+}
+.footer ul li.feedback {
+	margin-top: 0px;
+}
+.footer ul li.subscribe {
+	margin-top: 0px;
+}
+.footer ul li.followus {
+	margin-top: 0px;
+}
+.footer ul li.subscribe a {
+	padding-right: 0px; border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.footer ul li.privacy a {
+	padding-right: 0px; border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.footer ul li.privacy {
+	clear: both;
+}
+.footer .locale a {
+	margin-left: 4px !important;
+}
+.footer .feedback a {
+	margin-left: 4px !important;
+}
+.footer .subscribe a {
+	margin-left: 4px !important;
+}
+.footer .followus a {
+	margin-left: 4px !important;
+}
+.footer ul li.locale a {
+	background-position: 0px 0px; margin-left: 0px;
+}
+.footer ul li.feedback a {
+	background-position: 0px 0px; margin-left: 0px;
+}
+.footer ul li.subscribe a {
+	background-position: 0px 0px; margin-left: 0px;
+}
+.footer ul li.followus a {
+	background-position: 0px 0px; margin-left: 0px;
+}
+.footer ul li.feedback a:hover {
+	background-position: 0px -17px;
+}
+.footer ul li.feedback a:focus {
+	background-position: 0px -17px;
+}
+.footer ul li.subscribe a:hover {
+	background-position: 0px -17px;
+}
+.footer ul li.subscribe a:focus {
+	background-position: 0px -17px;
+}
+.footer ul li.followus a:hover {
+	background-position: 0px -17px;
+}
+.footer ul li.followus a:focus {
+	background-position: 0px -17px;
+}
+}
+.mce-tinymce .mce-btn .mce-i-c9codeblock {
+	background: url("/scripts/tiny_mce/plugins/c9codeblock/images/icon.gif") no-repeat left top; width: 18px; height: 18px; margin-top: -2px;
+}
+.c9codeblockBody {
+	padding: 15px 25px 25px !important;
+}
+.c9codeblockBody .mce-form {
+	display: none; position: absolute;
+}
+.c9codeblockBody .selectLang label {
+	top: 5px; margin-right: 10px; position: relative;
+}
+.c9codeblockBody .selectLang .selectHolder {
+	display: inline;
+}
+.c9codeblockBody .selectLang .selectHolder select {
+	padding: 3px;
+}
+.c9codeblockBody .selectLang .selectHolder option {
+	padding-right: 10px;
+}
+.c9codeblockBody .textareaHolder {
+	width: 350px; margin-top: 15px; float: left;
+}
+.c9codeblockBody .thePreviewHolder {
+	margin-left: 10px;
+}
+.c9codeblockBody .textareaHolder label {
+	display: block;
+}
+.c9codeblockBody .selectLang .selectHolder select {
+	border-width: 1px; border-style: solid; border-color: rgb(197, 197, 197) rgba(0, 0, 0, 0.15) rgb(197, 197, 197) rgb(197, 197, 197); border-image: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; -o-border-image: none; -webkit-border-image: none;
+}
+.c9codeblockBody .textareaHolder div {
+	border-width: 1px; border-style: solid; border-color: rgb(197, 197, 197) rgba(0, 0, 0, 0.15) rgb(197, 197, 197) rgb(197, 197, 197); border-image: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; -o-border-image: none; -webkit-border-image: none;
+}
+.c9codeblockBody .textareaHolder textarea {
+	border-width: 1px; border-style: solid; border-color: rgb(197, 197, 197) rgba(0, 0, 0, 0.15) rgb(197, 197, 197) rgb(197, 197, 197); border-image: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; -o-border-image: none; -webkit-border-image: none;
+}
+.c9codeblockBody .textareaHolder div {
+	width: 100%; height: 300px; overflow: auto; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; resize: none;
+}
+.c9codeblockBody .textareaHolder textarea {
+	width: 100%; height: 300px; overflow: auto; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; resize: none;
+}
+.c9codeblockBody .textareaHolder div {
+	white-space: normal;
+}
+.c9codeblockBody .textareaHolder div pre {
+	white-space: pre;
+}
+.c9codeblockFoot .doPreview {
+	left: 10px; top: 10px;
+}
+span.c9emoticon {
+	background: url("/styles/images/c9emoticons.png") no-repeat 0px 21px; width: 19px; height: 21px; text-indent: -9999em; display: inline-block;
+}
+span.c9emoticon_angel {
+	background-position: 0px 0px;
+}
+span.c9emoticon_devil {
+	background-position: 0px -105px;
+}
+span.c9emoticon_smiley {
+	background-position: 0px -273px;
+}
+span.c9emoticon_big_smile {
+	background-position: 0px -21px;
+}
+span.c9emoticon_scared {
+	background-position: 0px -231px;
+}
+span.c9emoticon_tongue_out {
+	background-position: 0px -294px;
+}
+span.c9emoticon_wink {
+	background-position: 0px -315px;
+}
+span.c9emoticon_perplexed {
+	background-position: 0px -189px;
+}
+span.c9emoticon_expressionless {
+	background-position: 0px -126px;
+}
+span.c9emoticon_sad {
+	background-position: 0px -210px;
+}
+span.c9emoticon_crying {
+	background-position: 0px -84px;
+}
+span.c9emoticon_blushing {
+	background-position: 0px -42px;
+}
+span.c9emoticon_cool {
+	background-position: 0px -63px;
+}
+span.c9emoticon_mad {
+	background-position: 0px -168px;
+}
+span.c9emoticon_hmmmmm {
+	background-position: 0px -147px;
+}
+span.c9emoticon_sleepy {
+	background-position: 0px -252px;
+}
+.item-header ul.item-data li.sharelinks {
+	float: right;
+}
+.item-header ul.item-data li.sharelinks iframe {
+	float: left;
+}
+.sharingPositioner {
+	position: absolute;
+}
+.facebookLikeHolder {
+	height: 20px; display: inline-block; min-width: 85px;
+}
+.facebookLikeHolder iframe {
+	position: relative;
+}
+.twitterHolder {
+	height: 20px; display: inline-block; min-width: 61px;
+}
+.twitterHolder a.twitter-share-button {
+	visibility: hidden;
+}
+.redditHolder {
+	height: 20px; display: inline-block; min-width: 62px;
+}
+.redditHolder .redditButton {
+	background: url("/styles/images/reddit_button.png") no-repeat 0px rgb(255, 255, 255); padding: 1px 0px 0px 20px; border-radius: 4px; border: 1px solid rgb(199, 222, 247); border-image: none; height: 17px; text-align: center; color: gray; font-family: Verdana,arial,helvetica,sans-serif; font-size: 11px; text-decoration: none; vertical-align: top; display: inline-block; white-space: nowrap; min-width: 40px;
+}
+.redditHolder .redditButton:hover {
+	border-color: rgb(76, 158, 245); text-decoration: none;
+}
+.redditHolder .redditButton:active {
+	border-color: rgb(76, 158, 245); text-decoration: none;
+}
+body {
+	-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.container {
+	width: auto;
+}
+@media all and (max-width:959px)
+{
+body {
+	-ms-word-wrap: break-word; -ms-hyphens: auto; overflow-wrap: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;
+}
+h1 {
+	line-height: 1.1;
+}
+.hasSidebar .mainContent {
+	margin-bottom: 0px;
+}
+.firstContent {
+	padding: 0px 5px !important; width: 100% !important; box-sizing: border-box;
+}
+.mainHolder {
+	padding: 0px 5px !important; width: 100% !important; box-sizing: border-box;
+}
+.mainHolder .sidebarHolder {
+	left: auto; margin-right: 0px; float: none;
+}
+.breadcrumbs {
+	padding: 6px 0px; text-align: center; font-size: 87%; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; -ms-text-size-adjust: 100%;
+}
+.breadcrumbs ul li.first {
+	margin: 0px 15px 0px 0px; padding: 0px; border-left-color: rgb(204, 204, 204); border-left-width: 0px; border-left-style: solid;
+}
+.breadcrumbs ul li {
+	margin: 0px 15px 0px 0px; padding: 0px; border-left-color: rgb(204, 204, 204); border-left-width: 0px; border-left-style: solid;
+}
+.breadcrumbs ul li:last-child {
+	margin: 0px;
+}
+html.hasTimeHelper .timeHelperDialog {
+	left: 1%; right: 1%;
+}
+.item-header .rss {
+	display: none;
+}
+.redditHolder {
+	display: none;
+}
+.twitterHolder {
+	display: none;
+}
+.facebookLikeHolder {
+	display: none;
+}
+.firstContent h1 {
+	font-size: 150%;
+}
+.mainContent h1 {
+	font-size: 150%;
+}
+h2 {
+	font-size: 140%;
+}
+.mainHolder h2 {
+	margin-top: 30px; margin-bottom: 0px;
+}
+.text {
+	font-size: 115%;
+}
+.livePlayerHolder {
+	display: none;
+}
+body.hasLivePlayer .firstContent {
+	margin-top: 0px;
+}
+.livePlayerHolder {
+	width: auto;
+}
+.firstContent {
+	width: auto;
+}
+.mainHolder {
+	width: auto;
+}
+fieldset li input[type='text'] {
+	width: 100%; box-sizing: border-box;
+}
+fieldset li input[type='password'] {
+	width: 100%; box-sizing: border-box;
+}
+fieldset li textarea {
+	width: 100%; box-sizing: border-box;
+}
+.tabs {
+	font-family: Arial,Helvetica,sans-serif !important;
+}
+.hasSidebar .mainHolder .sidebar {
+	padding-top: 0px;
+}
+.hasSidebar .mainHolder .sidebarHolder {
+	margin: 0px; left: 0px; width: 100% !important;
+}
+.hasSidebar .mainHolder .sidebar {
+	background: rgb(255, 255, 255); width: 100%; margin-top: 0px; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid;
+}
+.sidebarHolder .sidebar div:first-child {
+	background: 0px 0px rgb(255, 255, 255); padding: 0px;
+}
+.sidebarHolder .sidebar div {
+	background: 0px 0px rgb(255, 255, 255); padding: 0px;
+}
+.sidebar div {
+	width: 100%; font-size: 115%; box-sizing: border-box;
+}
+.hasSidebar .mainHolder .sidebar {
+	border: 0px solid rgb(255, 255, 255); border-image: none;
+}
+.mainHolder .sidebar h3 {
+	padding-bottom: 0.2em; margin-top: 60px; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.mainHolder .sidebar h2 {
+	padding-bottom: 0.2em; margin-top: 60px; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.entry .followHolder {
+	padding-left: 0px;
+}
+.followHolder .follow {
+	padding: 1px 7px 2px 4px; border-radius: 6px;
+}
+body .ch9_mockHover > .ch9_chSub.screenReader {
+	padding: 20px 45px 2px 20px; border: 0px solid rgb(0, 0, 0); border-image: none; left: 0px; top: 0px; width: 100%; height: 100%; right: auto; position: fixed; z-index: 10000; box-sizing: border-box; background-color: rgb(51, 51, 51);
+}
+.followHolder .followTypes .help .popup::after {
+	top: 2px; width: 40px; height: 40px; right: 4px; text-indent: -9999em; display: block; position: absolute; cursor: pointer; content: ""; background-image: url("/styles/images/wp7/Dark/close.png"); background-repeat: no-repeat; background-size: 40px 40px;
+}
+.followHolder .followTypes::after {
+	top: 2px; width: 40px; height: 40px; right: 4px; text-indent: -9999em; display: block; position: absolute; cursor: pointer; content: ""; background-image: url("/styles/images/wp7/Dark/close.png"); background-repeat: no-repeat; background-size: 40px 40px;
+}
+.followHolder .followTypes {
+	border-radius: 0px; color: rgb(255, 255, 255);
+}
+.followHolder .followTypes .help {
+	margin-left: 7px;
+}
+.followHolder .followTypes .help img:hover {
+	background: none;
+}
+ul.rss li.followHolder .rssHolder a {
+	white-space: normal;
+}
+ul.rss li.followHolder .followStates a {
+	white-space: normal;
+}
+.followHolder .followStates > div {
+	white-space: normal;
+}
+ul.rss li.followHolder .rssHolder .feeds a {
+	background-position: -5px -15px;
+}
+}
+@media all and (max-width:959px) and (min-width:550px)
+{
+.breadcrumbs {
+	padding-left: 100px;
+}
+}
+@media all and (max-width:549px)
+{
+.breadcrumbs ul {
+	display: inline-block; overlflow: hidden;
+}
+.breadcrumbs li {
+	float: left;
+}
+.breadcrumbs a {
+	white-space: nowrap;
+}
+}

@@ -9,7 +9,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="c:PacmanCharacter">
-                    <Image x:Name="PacCanvas" Width="60" Height="60" Source="ms-appx:///Assets/pacman.png" Stretch="Fill"/>
+                    <Image x:Name="PacCanvas" Width="42" Height="42" Source="ms-appx:///Assets/pacman.png" Stretch="Fill"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

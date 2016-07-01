@@ -40,9 +40,14 @@ namespace CompPac.Characters
         private float halfPi = (float)Math.PI / 2.0f;
         private float size = 0;
         private float angle = 0f;
+
         private float x = 0f;
         private float y = 0f;
+
         private float displacement = 5f;
+
+        private float dx = 0;
+        private float dy = 0;
         public void ChangeTo(Directions newdirection)
         {
             direction = newdirection;
@@ -55,38 +60,63 @@ namespace CompPac.Characters
         {
             if (direction == Directions.Up)
             {
-                y = y - displacement;
+                dx = 0;
+                dy = -displacement;
+                
             }
             else if (direction == Directions.Down)
             {
-                y = y + displacement;
+                dx = 0;
+                dy = displacement;
+
             }
             else if (direction == Directions.Left)
             {
-                x = x - displacement;
+                dx = -displacement;
+                dy = 0;
             }
             else if (direction == Directions.Right)
             {
-                x = x + displacement;
+                dx =displacement;
+                dy = 0;
             }
 
-            if(x < -size)
+            if (CheckBounds(bounds))
             {
-                x = bounds.X;
+                y = y + dy;
+                x = x + dx;
             }
-            else if(x > bounds.X)
+        }
+
+        private bool CheckBounds(Vector2 bounds)
+        {
+            foreach(var rect in MapManager.Map)
             {
-                x = 0;
+                var rectPac = new Rect(x + dx, y + dy, size, size);
+                rectPac.Intersect(rect);
+                if(!rectPac.IsEmpty)
+                    return false;
             }
 
-            if(y < -size)
-            {
-                y = bounds.Y;
-            }
-            else if(y > bounds.Y)
-            {
-                y = 0;
-            }
+            return true;
+
+            //if (x < -size)
+            //{
+            //    x = bounds.X;
+            //}
+            //else if (x > bounds.X)
+            //{
+            //    x = 0;
+            //}
+
+            //if (y < -size)
+            //{
+            //    y = bounds.Y;
+            //}
+            //else if (y > bounds.Y)
+            //{
+            //    y = 0;
+            //}
         }
 
         public override void UpdateComposition(Vector2 bounds)

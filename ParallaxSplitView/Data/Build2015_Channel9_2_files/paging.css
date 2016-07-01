@@ -1,0 +1,60 @@
+﻿/* Pagination defaults
+-------------------------------------------------- */
+.paging {
+	float:right;
+}
+
+.paging li {
+	display:block;
+	float:left;
+	line-height:19px;
+	margin:8px 1px;
+}
+
+.paging a {
+	display:block;
+	float:left;
+	padding:0 4px;
+	text-transform:lowercase;
+}
+
+.paging .current {
+	background:#017789;
+	color:#fff;
+	font-weight:bold;
+	padding:0 4px;
+}
+
+.paging .prev a {
+	background:url(images/arrows.png) 0 4px no-repeat;
+	padding-left:11px;
+}
+
+.paging .next a {
+	background:url(images/arrows.png) 100% -44px no-repeat;
+	padding-right:11px;
+}
+
+.paging .prev a:hover {
+	background-position:0 -20px;
+}
+
+.paging .next a:hover {
+	background-position:100% -68px;
+}
+
+.paging .prev {
+	margin-right:0;
+}
+
+.paging .next {
+	margin-left:0;
+}
+
+.paging .prev.selected {
+	background:url(images/arrows.png) 0 -18px no-repeat;
+}
+
+.paging .next.selected {
+	background:url(images/arrows.png) 100% -66px no-repeat;
+}

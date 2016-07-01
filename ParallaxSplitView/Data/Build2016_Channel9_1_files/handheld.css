@@ -1,0 +1,54 @@
+html {
+	font-size: 1em;
+}
+body {
+	margin: 0px; padding: 0px; line-height: 1.2em; font-family: sans-serif; font-size: 1em;
+}
+h1 {
+	margin: 0px 0px 1.2em; padding: 0px; font-style: normal; font-weight: normal;
+}
+h2 {
+	margin: 0px 0px 1.2em; padding: 0px; font-style: normal; font-weight: normal;
+}
+h3 {
+	margin: 0px 0px 1.2em; padding: 0px; font-style: normal; font-weight: normal;
+}
+h4 {
+	margin: 0px 0px 1.2em; padding: 0px; font-style: normal; font-weight: normal;
+}
+h5 {
+	margin: 0px 0px 1.2em; padding: 0px; font-style: normal; font-weight: normal;
+}
+h6 {
+	margin: 0px 0px 1.2em; padding: 0px; font-style: normal; font-weight: normal;
+}
+p {
+	margin: 0px 0px 1.2em; padding: 0px; font-style: normal; font-weight: normal;
+}
+address {
+	margin: 0px 0px 1.2em; padding: 0px; font-style: normal; font-weight: normal;
+}
+ul {
+	padding-top: 0px; padding-bottom: 1.2em; margin-top: 0px; margin-bottom: 0px;
+}
+ol {
+	padding-top: 0px; padding-bottom: 1.2em; margin-top: 0px; margin-bottom: 0px;
+}
+.content a {
+	color: rgb(0, 0, 0);
+}
+.content a:link {
+	color: rgb(0, 0, 0);
+}
+.content a:visited {
+	color: rgb(0, 0, 0);
+}
+.content a:hover {
+	color: rgb(0, 0, 0);
+}
+.content a:focus {
+	color: rgb(0, 0, 0);
+}
+.content a:active {
+	color: rgb(0, 0, 0);
+}

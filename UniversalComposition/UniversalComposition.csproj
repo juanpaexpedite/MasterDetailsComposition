@@ -116,7 +116,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.UI.Composition.Toolkit, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\JuanPablo\Downloads\c2\composition-master\SDK10586_NOV_UPDATE_RTM\Microsoft.UI.Composition.Toolkit\ARM\Debug\Microsoft.UI.Composition.Toolkit\Microsoft.UI.Composition.Toolkit.winmd</HintPath>
+      <HintPath>C:\Users\JuanPablo\Downloads\c2\composition-master\SDK10586_NOV_UPDATE_RTM\Microsoft.UI.Composition.Toolkit\Debug\Microsoft.UI.Composition.Toolkit\Microsoft.UI.Composition.Toolkit.winmd</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

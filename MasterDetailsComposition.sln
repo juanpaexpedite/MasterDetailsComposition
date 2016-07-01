@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterDetailsComposition", "MasterDetailsComposition\MasterDetailsComposition.csproj", "{11829E3E-22CD-47D1-8400-8C27212D35F9}"
 EndProject
@@ -14,6 +14,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Particles2D", "Particles2D\Particles2D.csproj", "{3D377E8C-EF96-4E46-BE43-BDAC59DA54CA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompPac", "CompPac\CompPac.csproj", "{068B58E0-BFF4-4515-80E2-3DA620CACFF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceTransform3D", "DiceTransform3D\DiceTransform3D.csproj", "{454B4BFC-9921-4A61-B536-CD6F87EDB853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedControls", "AnimatedControls\AnimatedControls.csproj", "{3F19F99B-4C2E-418D-BF98-1A6234C20558}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +147,46 @@ Global
 		{068B58E0-BFF4-4515-80E2-3DA620CACFF2}.Release|x86.ActiveCfg = Release|x86
 		{068B58E0-BFF4-4515-80E2-3DA620CACFF2}.Release|x86.Build.0 = Release|x86
 		{068B58E0-BFF4-4515-80E2-3DA620CACFF2}.Release|x86.Deploy.0 = Release|x86
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Debug|ARM.ActiveCfg = Debug|ARM
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Debug|ARM.Build.0 = Debug|ARM
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Debug|ARM.Deploy.0 = Debug|ARM
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Debug|x64.ActiveCfg = Debug|x64
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Debug|x64.Build.0 = Debug|x64
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Debug|x64.Deploy.0 = Debug|x64
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Debug|x86.ActiveCfg = Debug|x86
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Debug|x86.Build.0 = Debug|x86
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Debug|x86.Deploy.0 = Debug|x86
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Release|Any CPU.ActiveCfg = Release|x86
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Release|ARM.ActiveCfg = Release|ARM
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Release|ARM.Build.0 = Release|ARM
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Release|ARM.Deploy.0 = Release|ARM
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Release|x64.ActiveCfg = Release|x64
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Release|x64.Build.0 = Release|x64
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Release|x64.Deploy.0 = Release|x64
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Release|x86.ActiveCfg = Release|x86
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Release|x86.Build.0 = Release|x86
+		{454B4BFC-9921-4A61-B536-CD6F87EDB853}.Release|x86.Deploy.0 = Release|x86
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Debug|ARM.ActiveCfg = Debug|ARM
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Debug|ARM.Build.0 = Debug|ARM
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Debug|ARM.Deploy.0 = Debug|ARM
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Debug|x64.ActiveCfg = Debug|x64
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Debug|x64.Build.0 = Debug|x64
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Debug|x64.Deploy.0 = Debug|x64
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Debug|x86.ActiveCfg = Debug|x86
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Debug|x86.Build.0 = Debug|x86
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Debug|x86.Deploy.0 = Debug|x86
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Release|Any CPU.ActiveCfg = Release|x86
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Release|ARM.ActiveCfg = Release|ARM
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Release|ARM.Build.0 = Release|ARM
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Release|ARM.Deploy.0 = Release|ARM
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Release|x64.ActiveCfg = Release|x64
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Release|x64.Build.0 = Release|x64
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Release|x64.Deploy.0 = Release|x64
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Release|x86.ActiveCfg = Release|x86
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Release|x86.Build.0 = Release|x86
+		{3F19F99B-4C2E-418D-BF98-1A6234C20558}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

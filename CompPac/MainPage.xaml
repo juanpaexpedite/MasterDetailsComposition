@@ -8,7 +8,9 @@
     xmlns:characters="using:CompPac.Characters"
     mc:Ignorable="d">
 
-    <Grid x:Name="GameGrid" Background="Black" >
+    <Viewbox>
+    <Canvas x:Name="GameGrid" Background="Black" Width="1280" Height="1280">
         <characters:PacmanCharacter x:Name="Pacman" VerticalAlignment="Top" HorizontalAlignment="Left" />
-    </Grid>
+    </Canvas>
+    </Viewbox>
 </Page>

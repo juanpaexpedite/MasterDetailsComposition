@@ -1,0 +1,171 @@
+.event .mainContent > .admin .button {
+	top: -2em; right: 0px; position: absolute;
+}
+.event .item-data {
+	width: 100%; display: table;
+}
+.event .item-data > li {
+	color: rgb(135, 135, 135); line-height: 1.3; vertical-align: top; display: table-cell;
+}
+.sessionList > li {
+	position: relative;
+}
+.event .sessionList > li .title {
+	font-size: 150%; font-weight: bold; display: block;
+}
+.sessionList .details {
+	width: 100%; overflow: hidden; position: static;
+}
+.sessionList .details a {
+	white-space: nowrap;
+}
+.keynotes .details > li.date {
+	color: rgb(107, 107, 107);
+}
+.sessionList .details > li {
+	color: rgb(107, 107, 107);
+}
+.sessionList .downloads > li ul li {
+	color: rgb(107, 107, 107);
+}
+.sessionList .details > li {
+	width: auto; padding-left: 10px; margin-top: 2px; border-left-color: rgb(199, 199, 199); border-left-width: 1px; border-left-style: solid;
+}
+.sessionList .downloads > li ul li {
+	width: auto; padding-left: 10px; margin-top: 2px; border-left-color: rgb(199, 199, 199); border-left-width: 1px; border-left-style: solid;
+}
+.sessionList .details > li {
+	margin-right: 21px; margin-left: -11px; float: left;
+}
+.sessionList .downloads > li ul li {
+	margin-left: 10px;
+}
+.sessionList .details > li:first-child {
+	clear: both;
+}
+.sessionList .details > li.grouping + .timing {
+	clear: both;
+}
+.sessionList .details > li.grouping + .c9interaction {
+	clear: both;
+}
+.sessionList .details > li.timing + .c9interaction {
+	clear: both;
+}
+.sessionList .description {
+	clear: both;
+}
+.sessionList li a.commentJump {
+	color: rgb(135, 135, 135);
+}
+.sessionList .details > li.c9interaction {
+	border-left-color: rgb(199, 199, 199); border-left-width: 0px; border-left-style: solid;
+}
+.sessionList .downloads {
+	text-align: center; right: 5px; bottom: 15px; font-size: 115%; position: absolute;
+}
+.sessionList .downloads > li {
+	float: none;
+}
+.sessionList .downloads > li ul li:first-child {
+	padding-left: 0px; clear: both; margin-left: 0px; border-left-color: rgb(199, 199, 199); border-left-width: 0px; border-left-style: solid;
+}
+.sessionList .downloads > li > ul {
+	margin: 0px auto; display: table;
+}
+.sessionList .downloads > li > ul li {
+	padding-right: 10px; float: none; display: table-cell !important;
+}
+.sessionList .entry-image .scheduleAndEval {
+	margin-top: 10px;
+}
+.sidebar .eventHome img {
+	margin: 0px auto; display: block; max-width: 188px;
+}
+.evaluateHolder a {
+	padding: 5px 10px; color: white; display: inline-block; background-color: rgb(113, 34, 20);
+}
+.evaluateHolder a:hover {
+	text-decoration: none; background-color: rgb(150, 51, 29);
+}
+.scheduleAndEval .evaluateHolder {
+	margin-top: -5px; float: left;
+}
+.addToSchedule {
+	display: inline-block; min-width: 110px;
+}
+.session-page .scheduleAndEval .star {
+	background: url("images/scheduleStarsAnim.gif") no-repeat 0px 0px; width: 17px; height: 16px; margin-right: 4px; float: left;
+}
+.sessions .star {
+	background: url("images/scheduleStarsAnim.gif") no-repeat 0px 0px; width: 17px; height: 16px; margin-right: 4px; float: left;
+}
+.session-page .scheduleAndEval .pending .star {
+	background: url("images/scheduleStarsAnim.gif") no-repeat 0px -64px !important;
+}
+.sessions .pending .star {
+	background: url("images/scheduleStarsAnim.gif") no-repeat 0px -64px !important;
+}
+.session-page .scheduleAndEval a:hover .star {
+	background: url("images/scheduleStarsAnim.gif") no-repeat 0px -16px;
+}
+.sessions a:hover .star {
+	background: url("images/scheduleStarsAnim.gif") no-repeat 0px -16px;
+}
+.session-page .scheduleAndEval .user-schedule .star {
+	background: url("images/scheduleStarsAnim.gif") no-repeat 0px -32px;
+}
+.sessions .user-schedule .star {
+	background: url("images/scheduleStarsAnim.gif") no-repeat 0px -32px;
+}
+.session-page .scheduleAndEval .user-schedule a:hover .star {
+	background: url("images/scheduleStarsAnim.gif") no-repeat 0px -48px;
+}
+.sessions .user-schedule a:hover .star {
+	background: url("images/scheduleStarsAnim.gif") no-repeat 0px -48px;
+}
+.session-page .scheduleAndEval .remove-text {
+	display: none;
+}
+.session-page .scheduleAndEval .user-schedule .add-text {
+	display: none;
+}
+.sessions .remove-text {
+	display: none;
+}
+.sessions .user-schedule .add-text {
+	display: none;
+}
+.session-page .scheduleAndEval .add-text {
+	display: inline;
+}
+.session-page .scheduleAndEval .user-schedule .remove-text {
+	display: inline;
+}
+.sessions .add-text {
+	display: inline;
+}
+.sessions .user-schedule .remove-text {
+	display: inline;
+}
+.event-page .eventCountdown.alert {
+	padding: 20px; font-size: 110%; font-weight: bold;
+}
+.eventCountdown {
+	padding: 20px; font-size: 110%; font-weight: bold;
+}
+.eventCountdown .player-text {
+	white-space: nowrap;
+}
+.eventCountdown .liveLink {
+	white-space: nowrap;
+}
+.eventCountdown .player-text {
+	display: inline;
+}
+.eventCountdown .player-text .countdown {
+	display: inline;
+}
+.hasTimeHelper .timeHelperDialog {
+	font-size: 16px;
+}

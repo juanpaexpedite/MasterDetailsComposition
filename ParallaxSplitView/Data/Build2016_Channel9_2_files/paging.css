@@ -1,0 +1,36 @@
+.paging {
+	float: right;
+}
+.paging li {
+	margin: 8px 1px; line-height: 19px; float: left; display: block;
+}
+.paging a {
+	padding: 0px 4px; text-transform: lowercase; float: left; display: block;
+}
+.paging .current {
+	background: rgb(1, 119, 137); padding: 0px 4px; color: rgb(255, 255, 255); font-weight: bold;
+}
+.paging .prev a {
+	background: url("images/arrows.png") no-repeat 0px 4px; padding-left: 11px;
+}
+.paging .next a {
+	background: url("images/arrows.png") no-repeat 100% -44px; padding-right: 11px;
+}
+.paging .prev a:hover {
+	background-position: 0px -20px;
+}
+.paging .next a:hover {
+	background-position: 100% -68px;
+}
+.paging .prev {
+	margin-right: 0px;
+}
+.paging .next {
+	margin-left: 0px;
+}
+.paging .prev.selected {
+	background: url("images/arrows.png") no-repeat 0px -18px;
+}
+.paging .next.selected {
+	background: url("images/arrows.png") no-repeat 100% -66px;
+}

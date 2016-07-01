@@ -1,0 +1,966 @@
+.entries > li {
+	width: 100%; float: left;
+}
+.entries > li .entry-image {
+	width: 102px; height: auto; overflow: hidden; clear: left; margin-right: 10px; float: left; display: block; position: relative;
+}
+.entries > li .entry-image .thumb {
+	margin: auto; border: 1px solid rgb(204, 204, 204); border-image: none; display: block; max-width: 100px;
+}
+.entry-caption {
+	background: url("/styles/images/bg-translucent-black.png") 0px 0px; padding: 8px 0px; left: 0px; width: 100%; text-align: center; bottom: 0px; color: rgb(255, 255, 255); font-family: "Calibri","Lucida Grande",Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; position: absolute;
+}
+.entries > li .entry-meta {
+	width: 68%; line-height: 1.3; float: left;
+}
+.entries > li .title {
+	font-size: 110%; font-weight: bold; display: block;
+}
+.entries > li a.commentJump {
+	color: rgb(135, 135, 135);
+}
+.entries > li .views {
+	color: rgb(135, 135, 135); font-size: 91%;
+}
+.entries > li .data {
+	color: rgb(135, 135, 135); font-size: 91%;
+}
+.entries > li .views {
+	margin-left: 5px; float: left;
+}
+.entries > li .views .viewsCount {
+	margin-left: 5px;
+}
+.entries > li .rating {
+	margin-right: 5px; float: left;
+}
+.entries > li .description {
+	clear: both;
+}
+.entries > li .data .area {
+	display: block;
+}
+.entries > li .data .comments {
+	margin-left: 6px;
+}
+.entries > li .data .comments img {
+	height: 12px;
+}
+.entries > li .data .commentsAndRatings .comments {
+	left: 3px; top: 3px; position: relative;
+}
+.entries > li .data .commentsAndRatings .rating-count {
+	font-size: 100%;
+}
+.rating .avg-rating {
+	display: none;
+}
+.area-header {
+	margin-bottom: 20px;
+}
+.mainContent > .edit.button {
+	top: -2em; right: 0px; position: absolute;
+}
+.area-header h1 {
+	padding-right: 165px;
+}
+.area-data li {
+	color: rgb(135, 135, 135); line-height: 1.3;
+}
+.area-header .area-data {
+	overflow: hidden; margin-bottom: 1.2em;
+}
+.area-header .area-data li {
+	display: inline;
+}
+.area-header .area-data li.episodes {
+	float: left;
+}
+.entries > li {
+	padding: 24px 0px 1.2em; border-top-color: rgb(217, 217, 217); border-top-width: 1px; border-top-style: solid;
+}
+.entries > li:first-child {
+	border: currentColor; border-image: none;
+}
+.entries > li .entry-image {
+	width: 222px; height: auto;
+}
+.entries > li .entry-image .thumb {
+	max-width: 220px;
+}
+.entries > li .title {
+	font-size: 160%;
+}
+.entries > li .entry-meta {
+	width: 65%;
+}
+.entries > li .description {
+	margin: 1em 0px;
+}
+.video-options {
+	clear: both; margin-top: -20px; float: right;
+}
+.filters {
+	margin-top: 20px; float: right;
+}
+.filters li {
+	border-left-color: rgb(51, 51, 51); border-left-width: 1px; border-left-style: solid; float: left;
+}
+.filters li:first-child {
+	border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+.filters li a {
+	padding: 0px 10px; display: block;
+}
+.filters li span {
+	padding: 0px 10px; display: block;
+}
+.filters li.selected span {
+	font-weight: bold;
+}
+.liveVideo {
+	width: 100%; padding-top: 56.25%; margin-bottom: 1.2em; position: relative;
+}
+.liveVideo > * {
+	top: 0px; width: 100%; height: 100%; right: 0px; position: absolute;
+}
+.liveEmbed .text {
+	font-size: 75%;
+}
+.liveEmbed .mainContent h1 {
+	text-align: center; padding-right: 0px; font-size: 350%; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 0px; border-bottom-style: solid;
+}
+.liveEmbed .area-header {
+	margin-bottom: 20px;
+}
+.liveEmbed .item-header h1 a {
+	color: rgb(210, 115, 13); font-weight: 300; text-decoration: none; display: inline; cursor: pointer;
+}
+.liveEmbed .item-header h1 a:hover {
+	color: rgb(1, 119, 137); text-decoration: underline;
+}
+.liveEmbed .item-header h1 a:focus {
+	color: rgb(1, 119, 137); text-decoration: underline;
+}
+.liveEmbed .item-header h1 .status {
+	background: 0px 0px rgb(187, 229, 32); padding: 0.25em 0.75em; top: -0.5em; color: rgb(35, 35, 35); text-transform: uppercase; font-size: 0.4em; font-weight: bold; margin-left: 1em; position: relative; -moz-appearance: none;
+}
+.liveEmbed .alert.info {
+	margin: 0px auto; padding: 20px; width: 60%; text-align: center; font-size: 150%;
+}
+.event .mainContent > .admin .button {
+	top: -2em; right: 0px; position: absolute;
+}
+.event .item-data {
+	width: 100%; display: table;
+}
+.event .item-data > li {
+	color: rgb(135, 135, 135); line-height: 1.3; vertical-align: top; display: table-cell;
+}
+.sessionList > li {
+	position: relative;
+}
+.event .sessionList > li .title {
+	font-size: 150%; font-weight: bold; display: block;
+}
+.sessionList .details {
+	width: 100%; overflow: hidden; position: static;
+}
+.sessionList .details a {
+	white-space: nowrap;
+}
+.keynotes .details > li.date {
+	color: rgb(107, 107, 107);
+}
+.sessionList .details > li {
+	color: rgb(107, 107, 107);
+}
+.sessionList .downloads > li ul li {
+	color: rgb(107, 107, 107);
+}
+.sessionList .details > li {
+	width: auto; padding-left: 10px; margin-top: 2px; border-left-color: rgb(199, 199, 199); border-left-width: 1px; border-left-style: solid;
+}
+.sessionList .downloads > li ul li {
+	width: auto; padding-left: 10px; margin-top: 2px; border-left-color: rgb(199, 199, 199); border-left-width: 1px; border-left-style: solid;
+}
+.sessionList .details > li {
+	margin-right: 21px; margin-left: -11px; float: left;
+}
+.sessionList .downloads > li ul li {
+	margin-left: 10px;
+}
+.sessionList .details > li:first-child {
+	clear: both;
+}
+.sessionList .details > li.grouping + .timing {
+	clear: both;
+}
+.sessionList .details > li.grouping + .c9interaction {
+	clear: both;
+}
+.sessionList .details > li.timing + .c9interaction {
+	clear: both;
+}
+.sessionList .description {
+	clear: both;
+}
+.sessionList li a.commentJump {
+	color: rgb(135, 135, 135);
+}
+.sessionList .details > li.c9interaction {
+	border-left-color: rgb(199, 199, 199); border-left-width: 0px; border-left-style: solid;
+}
+.sessionList .downloads {
+	text-align: center; right: 5px; bottom: 15px; font-size: 115%; position: absolute;
+}
+.sessionList .downloads > li {
+	float: none;
+}
+.sessionList .downloads > li ul li:first-child {
+	padding-left: 0px; clear: both; margin-left: 0px; border-left-color: rgb(199, 199, 199); border-left-width: 0px; border-left-style: solid;
+}
+.sessionList .downloads > li > ul {
+	margin: 0px auto; display: table;
+}
+.sessionList .downloads > li > ul li {
+	padding-right: 10px; float: none; display: table-cell !important;
+}
+.sessionList .entry-image .scheduleAndEval {
+	margin-top: 10px;
+}
+.sidebar .eventHome img {
+	margin: 0px auto; display: block; max-width: 188px;
+}
+.evaluateHolder a {
+	padding: 5px 10px; color: rgb(255, 255, 255); display: inline-block; background-color: rgb(113, 34, 20);
+}
+.evaluateHolder a:hover {
+	text-decoration: none; background-color: rgb(150, 51, 29);
+}
+.scheduleAndEval .evaluateHolder {
+	margin-top: -5px; float: left;
+}
+.addToSchedule {
+	display: inline-block; min-width: 110px;
+}
+.session-page .scheduleAndEval .star {
+	background: url("/styles/images/scheduleStarsAnim.gif") no-repeat 0px 0px; width: 17px; height: 16px; margin-right: 4px; float: left;
+}
+.sessions .star {
+	background: url("/styles/images/scheduleStarsAnim.gif") no-repeat 0px 0px; width: 17px; height: 16px; margin-right: 4px; float: left;
+}
+.session-page .scheduleAndEval .pending .star {
+	background: url("/styles/images/scheduleStarsAnim.gif") no-repeat 0px -64px !important;
+}
+.sessions .pending .star {
+	background: url("/styles/images/scheduleStarsAnim.gif") no-repeat 0px -64px !important;
+}
+.session-page .scheduleAndEval a:hover .star {
+	background: url("/styles/images/scheduleStarsAnim.gif") no-repeat 0px -16px;
+}
+.sessions a:hover .star {
+	background: url("/styles/images/scheduleStarsAnim.gif") no-repeat 0px -16px;
+}
+.session-page .scheduleAndEval .user-schedule .star {
+	background: url("/styles/images/scheduleStarsAnim.gif") no-repeat 0px -32px;
+}
+.sessions .user-schedule .star {
+	background: url("/styles/images/scheduleStarsAnim.gif") no-repeat 0px -32px;
+}
+.session-page .scheduleAndEval .user-schedule a:hover .star {
+	background: url("/styles/images/scheduleStarsAnim.gif") no-repeat 0px -48px;
+}
+.sessions .user-schedule a:hover .star {
+	background: url("/styles/images/scheduleStarsAnim.gif") no-repeat 0px -48px;
+}
+.session-page .scheduleAndEval .remove-text {
+	display: none;
+}
+.session-page .scheduleAndEval .user-schedule .add-text {
+	display: none;
+}
+.sessions .remove-text {
+	display: none;
+}
+.sessions .user-schedule .add-text {
+	display: none;
+}
+.session-page .scheduleAndEval .add-text {
+	display: inline;
+}
+.session-page .scheduleAndEval .user-schedule .remove-text {
+	display: inline;
+}
+.sessions .add-text {
+	display: inline;
+}
+.sessions .user-schedule .remove-text {
+	display: inline;
+}
+.event-page .eventCountdown.alert {
+	padding: 20px; font-size: 110%; font-weight: bold;
+}
+.eventCountdown {
+	padding: 20px; font-size: 110%; font-weight: bold;
+}
+.eventCountdown .player-text {
+	white-space: nowrap;
+}
+.eventCountdown .liveLink {
+	white-space: nowrap;
+}
+.eventCountdown .player-text {
+	display: inline;
+}
+.eventCountdown .player-text .countdown {
+	display: inline;
+}
+.hasTimeHelper .timeHelperDialog {
+	font-size: 16px;
+}
+.event-page.hasTopContent .branding {
+	margin-bottom: 0px;
+}
+.event-page.hasTopContent .mainContent {
+	margin-top: 0px;
+}
+.event-page.hasTopContent .sidebarHolder {
+	margin-top: 0px;
+}
+.event-page.hasTopContent .pageNav {
+	margin-top: 0px;
+}
+.event-page .smallLogo {
+	display: none;
+}
+.event-page ul.item-data {
+	display: block;
+}
+.event-page .item-data li {
+	width: auto; color: rgb(107, 107, 107); padding-left: 10px; margin-top: 2px; margin-right: 21px; margin-left: -10px; border-left-color: rgb(199, 199, 199); border-left-width: 1px; border-left-style: solid; float: left;
+}
+.event-page .item-data li.allSpeakers {
+	clear: both;
+}
+.event-page .item-data li.sharelinks + .allSpeakers {
+	clear: none;
+}
+.event-page .item-data li.sharelinks {
+	margin-right: 0px; border-left-color: rgb(199, 199, 199); border-left-width: 0px; border-left-style: solid;
+}
+.event-page .sidebar .eventHome a {
+	font-size: 130%; font-weight: bold;
+}
+.event-page .area-header {
+	margin-bottom: 0px;
+}
+.event-page .mainContent > div.description {
+	margin-bottom: 20px;
+}
+.event-page .mainContent > div.description iframe {
+	margin: 0px auto; display: block;
+}
+.event-page .area-content {
+	padding-top: 30px; clear: both;
+}
+.event-page .mainContent > .admin .button {
+	top: 0px;
+}
+h2 {
+	margin: 10px 0px; padding: 0px 0px 10px; font-size: 170%; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+ul.keynotes {
+	overflow: hidden; margin-bottom: 20px;
+}
+ul.keynotes > li {
+	width: 345px; padding-bottom: 0px; margin-right: 15px; border-top-color: rgb(255, 255, 255); border-top-width: 0px; border-top-style: solid;
+}
+ul.keynotes > li.even {
+	clear: both;
+}
+ul.keynotes > li .entry-image {
+	width: 100px; height: auto; margin-bottom: 10px;
+}
+ul.keynotes .entry-image img.thumb {
+	max-width: 100px;
+}
+ul.keynotes > li .entry-meta {
+	width: auto; float: none;
+}
+ul.keynotes > li .entry-meta .details {
+	width: 230px; margin-left: 112px; position: static;
+}
+ul.keynotes .details a {
+	white-space: nowrap;
+}
+ul.keynotes > li .entry-meta .details li {
+	float: none;
+}
+ul.keynotes > li .entry-meta .details li.timing {
+	display: inline;
+}
+ul.keynotes > li .entry-meta .details li.day + .date {
+	padding-left: 10px; margin-left: 10px; border-left-color: rgb(199, 199, 199); border-left-width: 1px; border-left-style: solid;
+}
+ul.keynotes > li .entry-meta .description {
+	margin-top: 10px; margin-bottom: 0px;
+}
+.event-page .allSessions .entry-meta {
+	width: 100%; float: none;
+}
+.event-page .allSessions .sessionList > li.odd {
+	background-color: rgb(232, 247, 249);
+}
+.event-page .allSessions .sessionList > li {
+	padding: 0px;
+}
+.event-page .allSessions .sessionList > li .entry-meta {
+	margin: 15px; width: auto; overflow: hidden; display: block;
+}
+.event-page .allSessions div.rating {
+	height: auto;
+}
+.event-page .allSessions .sessionList .downloads {
+	right: auto; bottom: auto; float: right; position: static;
+}
+.event-page .allSessions .entry-meta .presentation {
+	padding-right: 10px; padding-left: 0px; font-size: 115%; margin-right: -11px; margin-left: 21px; border-right-color: rgb(199, 199, 199); border-left-color: rgb(255, 255, 255); border-right-width: 1px; border-left-width: 0px; border-right-style: solid; border-left-style: solid; float: right;
+}
+.event-page .allSessions .entry-meta .downloads {
+	margin-right: -10px;
+}
+.event-page .downloads > li {
+	width: auto;
+}
+.signedIn #myschedule-anon {
+	display: none;
+}
+#tab_sortBy_myschedule {
+	display: none;
+}
+.signedIn #tab_sortBy_myschedule {
+	display: list-item;
+}
+#theSessions .entireCal {
+	float: right;
+}
+#theSessions .entireCal {
+	margin: 25px 0px;
+}
+#toggleSessionsOnly {
+	margin: 25px 0px;
+}
+#toggleMySessions {
+	padding-left: 10px; margin-left: 10px; border-left-color: rgb(217, 217, 217); border-left-width: 1px; border-left-style: solid; float: left;
+}
+#toggleSessionsOnly span {
+	font-weight: bold;
+}
+#toggleMySessions > span.toggle {
+	background: url("/styles/images/toggle.png") 0px -19px; width: 50px; height: 19px; vertical-align: middle; display: inline-block; cursor: pointer;
+}
+#toggleSessionsOnly > span.toggle {
+	background: url("/styles/images/toggle.png") 0px -19px; width: 50px; height: 19px; vertical-align: middle; display: inline-block; cursor: pointer;
+}
+#toggleMySessions > span.toggled {
+	background: url("/styles/images/toggle.png") 0px 0px;
+}
+#toggleSessionsOnly > span.toggled {
+	background: url("/styles/images/toggle.png") 0px 0px;
+}
+#toggleMySessions span {
+	color: rgb(210, 115, 13);
+}
+#event-schedule {
+	clear: both;
+}
+.sessions-only#event-schedule .no-sessions {
+	display: none;
+}
+.my-sessions-only#event-schedule .schedule-timeslot {
+	display: none;
+}
+.my-sessions-only#event-schedule .schedule-session {
+	display: none;
+}
+.my-sessions-only#event-schedule .schedule-timeslot.user-timeslot {
+	display: block;
+}
+.my-sessions-only#event-schedule .schedule-session.user-schedule {
+	display: block;
+}
+#event-schedule .schedule-day {
+	margin-bottom: 40px;
+}
+#event-schedule .schedule-timeslot {
+	padding: 15px 0px; clear: left; margin-left: 20px; border-bottom-color: rgb(217, 217, 217); border-bottom-width: 1px; border-bottom-style: solid; position: relative;
+}
+#event-schedule .schedule-timeslot .row {
+	overflow: hidden;
+}
+#event-schedule .schedule-timeslot-times {
+	width: 190px; float: left;
+}
+#event-schedule .schedule-timeslot-name {
+	width: 300px; text-align: center; float: left;
+}
+.schedule-timeslot .loading {
+	margin: 15px auto; width: 16px; display: block;
+}
+#event-schedule li.schedule-session {
+	margin: 5px 0px 5px 20px; padding: 12px; border: 1px solid rgb(222, 219, 209); border-image: none; overflow: hidden; background-color: rgb(246, 244, 233);
+}
+#event-schedule .schedule-session .row {
+	clear: left; position: relative; min-height: 25px;
+}
+#event-schedule .left-column {
+	width: 120px; margin-right: 20px; float: left;
+}
+#event-schedule .left-column.no-button {
+	width: 100px; overflow: hidden; margin-left: 20px; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+#event-schedule .session-expanded .session-code {
+	margin-left: 20px;
+}
+.scheduleAndEval .alert {
+	bottom: 0px; position: absolute;
+}
+.scheduleAndEval .scheduleHolder {
+	margin-right: 10px; float: left;
+}
+.schedule-signin {
+	padding-right: 20px; position: absolute; z-index: 1; max-width: 650px;
+}
+.schedule-error {
+	padding-right: 20px; position: absolute; z-index: 1; max-width: 650px;
+}
+.schedule-signin a.close {
+	background: url("/styles/images/ui-icons_ef8c08_256x240.png") no-repeat -80px -128px; top: 2px; width: 16px; height: 16px; right: 4px; text-indent: -9999em; display: block; position: absolute;
+}
+.schedule-error a.close {
+	background: url("/styles/images/ui-icons_ef8c08_256x240.png") no-repeat -80px -128px; top: 2px; width: 16px; height: 16px; right: 4px; text-indent: -9999em; display: block; position: absolute;
+}
+#event-schedule .title {
+	font-weight: bold; margin-left: 140px; display: block; max-width: 440px;
+}
+#event-schedule .speakers {
+	margin-left: 140px; max-width: 440px;
+}
+#event-schedule .speakers li {
+	display: inline;
+}
+#event-schedule .timeslot-toggle {
+	right: 0px; position: absolute;
+}
+#event-schedule .session-toggle {
+	right: 0px; position: absolute;
+}
+#event-schedule .timeslot-toggle a {
+	cursor: pointer;
+}
+#event-schedule .session-toggle a {
+	cursor: pointer;
+}
+#event-schedule .tag-list {
+	margin-left: 140px;
+}
+#event-schedule .tag-list li {
+	display: inline;
+}
+#event-schedule .comments {
+	padding-left: 20px; float: left;
+}
+.noRating #event-schedule .comments {
+	padding-left: 0px;
+}
+a.add-to-calendar {
+	background: url("/styles/images/calendar.png") no-repeat 0px 0px; padding-left: 20px; display: inline-block; min-height: 16px; max-height: 18px;
+}
+a.add-to-calendar:hover {
+	background: url("/styles/images/calendar.png") no-repeat -18px -18px;
+}
+#event-schedule .description {
+	margin-left: 140px;
+}
+#event-schedule .evaluateHolder {
+	text-align: center;
+}
+.timeslot-expanded .timeslot-expanded-only {
+	display: block;
+}
+.timeslot-collapsed .timeslot-collapsed-only {
+	display: block;
+}
+.session-expanded .session-expanded-only {
+	display: block;
+}
+.session-collapsed .session-collapsed-only {
+	display: block;
+}
+.timeslot-collapsed .timeslot-expanded-only {
+	display: none;
+}
+.timeslot-expanded .timeslot-collapsed-only {
+	display: none;
+}
+.session-collapsed .session-expanded-only {
+	display: none;
+}
+.session-expanded .session-collapsed-only {
+	display: none;
+}
+.event-page .alert {
+	padding-bottom: 10px;
+}
+.event-page .alert ul {
+	margin-bottom: 5px;
+}
+.event-page .alert p {
+	margin-bottom: 5px;
+}
+.event-page .alert p {
+	margin-top: 10px;
+}
+.event-page .evalDashboard {
+	top: 0px; right: 0px; position: absolute;
+}
+.event-page.canEdit .evalDashboard {
+	right: 90px;
+}
+.liveVideo {
+	width: 100%; padding-top: 56.25%; margin-bottom: 1.2em; position: relative;
+}
+.liveVideo > * {
+	top: 0px; width: 100%; height: 100%; right: 0px; position: absolute;
+}
+.microBtn {
+	background: url("/styles/images/admin/bg_button.png") repeat-x 0px 0px rgb(255, 255, 255); padding: 4px 12px; border-radius: 5px; border: 1px solid rgb(150, 150, 150); border-image: none; color: rgb(69, 69, 69); font-size: 12px; font-weight: bold; cursor: pointer; -moz-border-radius: 5px; -webkit-border-radius: 4px;
+}
+.btn {
+	background: url("/styles/images/admin/bg_button.png") repeat-x 0px 0px rgb(255, 255, 255); padding: 4px 12px; border-radius: 5px; border: 1px solid rgb(150, 150, 150); border-image: none; color: rgb(69, 69, 69); font-size: 12px; font-weight: bold; cursor: pointer; -moz-border-radius: 5px; -webkit-border-radius: 4px;
+}
+.microBtn {
+	padding: 0px 4px; cursor: default;
+}
+.c9fileUpload .microBtn {
+	margin-left: 3px;
+}
+.microBtn:hover {
+	color: rgb(69, 69, 69); text-decoration: none; background-color: rgb(245, 245, 245);
+}
+.btn:hover {
+	color: rgb(69, 69, 69); text-decoration: none; background-color: rgb(245, 245, 245);
+}
+.btn {
+	margin: 0px 0px 0px 10px; color: rgb(51, 51, 51) !important;
+}
+.btn.action {
+	color: rgb(255, 255, 255) !important; background-color: rgb(1, 122, 140);
+}
+.btn.action:hover {
+	background-color: rgb(1, 108, 123);
+}
+input.btn {
+	padding: 3px 12px; margin-top: 1px;
+}
+input.btn.action {
+	padding: 3px 12px; margin-top: 1px;
+}
+@media all and (max-width:959px)
+{
+.firstContent {
+	display: none !important;
+}
+.event-page .smallLogo {
+	margin: 10px auto 0px; display: block;
+}
+.breadcrumbs ul li.first {
+	display: none;
+}
+.item-header {
+	margin-top: 25px;
+}
+.area-header h1 {
+	padding-right: 0px;
+}
+.event-page .mainContent > .admin {
+	left: 0px; top: 0px; position: absolute;
+}
+.event-page .mainContent > h2 {
+	font-size: 140%;
+}
+.event-page .mainContent > .admin .button {
+	top: auto; right: auto; position: static;
+}
+.tabs > li {
+	margin-right: 0px; border-left-color: rgb(0, 0, 0); border-left-width: 0px; border-left-style: solid;
+}
+.tabs > li:first-child {
+	margin-right: 0px; border-left-color: rgb(0, 0, 0); border-left-width: 1px; border-left-style: solid;
+}
+.tabs > li.selected {
+	margin-top: 0px;
+}
+.tabs > li.selected span {
+	padding-top: 6px;
+}
+.tabs > li > span {
+	padding: 6px 12px 8px; font-size: 75%; font-weight: normal;
+}
+.tabs > li a {
+	padding: 6px 12px 8px; font-size: 75%; font-weight: normal;
+}
+.canHaveSchedule #tab_sortBy_rating {
+	display: none !important;
+}
+.canHaveSchedule #tab_sortBy_viewed {
+	display: none !important;
+}
+ul.keynotes > li {
+	width: 100%; margin-right: 0px;
+}
+ul.keynotes > li .entry-image {
+	margin: 0px auto; width: 220px;
+}
+ul.keynotes .entry-image img.thumb {
+	max-width: 220px;
+}
+.entries > li .entry-meta {
+	width: 100%;
+}
+ul.keynotes > li .entry-meta .details {
+	margin: 0px; width: auto;
+}
+.event-page .entries > li {
+	margin-top: 30px; margin-bottom: 123px; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid; position: relative;
+}
+.event-page .entries > li:first-child {
+	margin-top: 0px; border-top-color: rgb(0, 0, 0); border-top-width: 0px; border-top-style: solid;
+}
+.entries > li .entry-image {
+	width: 100%; bottom: -123px; float: none; position: absolute;
+}
+.entries > li .title {
+	font-size: 110%; display: inline-block;
+}
+.event .sessionList > li .title {
+	font-size: 110%; display: inline-block;
+}
+.event .sessionList > li {
+	padding-bottom: 2.4em;
+}
+.c9interaction.comments {
+	display: none;
+}
+#theSessions .entireCal {
+	width: 100%; font-size: 85%; margin-bottom: 0px; margin-left: 0px; float: none; box-sizing: border-box;
+}
+#toggleSessionsOnly {
+	font-size: 85%;
+}
+#event-schedule h2 {
+	font-size: 110%;
+}
+#event-schedule h3 {
+	width: auto !important; font-size: 110%; font-weight: normal; float: none !important; display: block;
+}
+#event-schedule h3.schedule-timeslot-name {
+	text-align: left;
+}
+#event-schedule .session-toggle {
+	top: 0px; font-size: 83.25%; display: inline;
+}
+#event-schedule .timeslot-toggle {
+	top: 13px; display: inline;
+}
+#event-schedule .timeslot-toggle a {
+	font-size: 82.25%;
+}
+#event-schedule li.schedule-session {
+	font-size: 100%; margin-left: 0px;
+}
+#event-schedule .left-column {
+	width: 100%; margin-right: 0px;
+}
+#event-schedule .title {
+	width: 100%; margin-left: 0px;
+}
+#event-schedule .tag-list {
+	width: 100%; margin-left: 0px;
+}
+#event-schedule .speakers {
+	width: 100%; margin-left: 0px;
+}
+#event-schedule .description {
+	width: 100%; margin-left: 0px;
+}
+#event-schedule .comments {
+	display: none;
+}
+#event-schedule .session-collapsed-only.addToSchedule {
+	padding: 3px 5px; width: 20px; position: absolute; min-width: 20px;
+}
+.scheduleAndEval .addToSchedule .star {
+	margin-top: 4px;
+}
+#event-schedule .session-expanded-only .addToSchedule .star {
+	margin-top: 4px;
+}
+#event-schedule .session-expanded .session-code {
+	margin-left: 30px; display: block;
+}
+#event-schedule .session-code {
+	margin-left: 30px; display: block;
+}
+#event-schedule .left-column.no-button {
+	width: 100%; overflow: visible; margin-left: 0px; white-space: normal;
+}
+.event-page .allSessions .sessionList > li {
+	margin: 0px; padding: 15px 0px 20px 5px;
+}
+.event-page .allSessions .sessionList > li .entry-meta {
+	margin: 0px;
+}
+.event-page .allSessions .entry-meta .presentation {
+	font-size: 100%; display: inline;
+}
+.event-page .allSessions .entry-meta .downloads {
+	font-size: 100%; display: inline;
+}
+.sessionList .details > li.grouping + .presentation {
+	clear: both;
+}
+.sessionList .details > li.c9interaction + .presentation {
+	clear: both;
+}
+.sessionList .details > li.timing + .presentation {
+	clear: both;
+}
+.event-page .allSessions .entry-meta .presentation {
+	padding-right: 0px; padding-left: 10px; margin-right: 21px; margin-left: -11px; border-right-color: rgb(255, 255, 255); border-left-color: rgb(199, 199, 199); border-right-width: 0px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; float: left;
+}
+.event-page .allSessions .entry-meta .rating-count {
+	margin-top: -3px;
+}
+.event-page .allSessions .entry-meta .downloads {
+	float: left;
+}
+.event-page .allSessions .entry-meta .downloads a {
+	white-space: nowrap;
+}
+.event-page .allSessions .entry-meta .downloads > li > ul li {
+	padding-right: 0px; padding-left: 10px; margin-right: 21px; margin-left: -11px; float: left; dislay: block;
+}
+#theSessions > .tab-content > .alert h2 {
+	font-size: 110%; margin-top: 5px;
+}
+#event-schedule > .alert h2 {
+	font-size: 110%; margin-top: 5px;
+}
+#theSessions > .alert h2 {
+	font-size: 110%; margin-top: 5px;
+}
+.filterStatus {
+	padding-bottom: 10px; clear: both; margin-top: 20px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.filterStatus.hasFilters {
+	padding-bottom: 15px;
+}
+.filterStatus .showFilters {
+	margin-bottom: 10px; display: inline-block;
+}
+.filterStatus h3 {
+	font-size: 110%;
+}
+.filterStatus .currentFilters {
+	font-size: 90%;
+}
+.clearAndStart {
+	display: none;
+}
+.clearAndSubmit {
+	display: block;
+}
+.hasSidebar .sidebar .eventHome {
+	background: rgb(255, 255, 255); padding: 0px; width: 100%;
+}
+.hasSidebar .sidebar .eventHome h3 {
+	font-size: 140%;
+}
+.hasSidebar .sidebar .eventHome a {
+	font-size: 100%; font-weight: normal;
+}
+.hasSidebar .mainHolder .currentlyFilteredBy {
+	display: none;
+}
+.hasSidebar .mainHolder .search {
+	background: 0px 0px rgb(255, 255, 255); margin: 0px; padding: 0px; left: 0px; top: 0px; width: auto; right: 0px; bottom: 0px; overflow: hidden; display: none; position: fixed; z-index: 1100;
+}
+.showFilters.hasSidebar .mainHolder .search .hideFilters {
+	display: block;
+}
+.showFilters.hasSidebar .mainHolder .search {
+	display: block;
+}
+.search .hideFilters {
+	font-size: 100%; margin-top: 2px; float: right; display: inline-block;
+}
+.sidebar .search h3 {
+	padding-bottom: 0px; font-size: 126.8%; margin-top: 0px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 0px; border-bottom-style: solid;
+}
+.sidebar .search legend {
+	font-size: 95.58%;
+}
+.sidebar .search fieldset {
+	margin-right: 50px;
+}
+.sidebar .search label {
+	font-size: 86.1%;
+}
+.sidebar .search .clearAllFilters {
+	font-size: 99%;
+}
+.sidebar .search .filterSessions {
+	font-size: 84.6%;
+}
+.sidebar .search div.filterHolder {
+	left: 0px; top: 0px; right: 0px; bottom: 95px; padding-left: 10px; position: absolute; -ms-overflow-y: scroll;
+}
+.sidebar .search div.submitHolder {
+	padding: 10px; width: 100%; height: 95px; bottom: 0px; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid; position: absolute; box-sizing: border-box; background-color: rgb(244, 244, 244);
+}
+.event-page .eventCountdown.alert {
+	font-size: 100%;
+}
+.eventCountdown {
+	font-size: 100%;
+}
+.event-page .eventCountdown.alert {
+	white-space: normal;
+}
+.eventCountdown .countdown {
+	white-space: normal;
+}
+.event-page .sidebarHolder .promo {
+	display: none;
+}
+.event-page .evaluateHolder {
+	display: inline-block;
+}
+}
+@media all and (max-width:319px)
+{
+.tabs > li > span {
+	font-size: 60%;
+}
+.tabs > li a {
+	font-size: 60%;
+}
+}
+@media screen and (min-width:550px)
+{
+.event-page .smallLogo {
+	left: 50px; position: relative;
+}
+}
