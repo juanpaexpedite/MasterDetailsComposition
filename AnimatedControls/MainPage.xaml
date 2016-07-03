@@ -24,7 +24,7 @@
         <local:BusyIndicator x:Name="Indicator"  HorizontalAlignment="Center" Margin="0,200,0,0"/>
 
 
-
+        <local:Rating Margin="0,300,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" />
 
     </Grid>
 </Page>
