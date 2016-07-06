@@ -64,7 +64,7 @@ namespace AnimatedControls
             var size = new Vector2((float)ForegroundStars.ActualWidth, (float)ForegroundStars.ActualHeight);
 
             starsVisual.Size = size;
-            ForegroundStarsClip = starsVisual.Compositor.CreateInsetClip(0, 0, size.X, size.Y);
+            ForegroundStarsClip = starsVisual.Compositor.CreateInsetClip(0, 0, 0.1f, 0.5f);
             starsVisual.Clip = ForegroundStarsClip;
             
         }

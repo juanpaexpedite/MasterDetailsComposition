@@ -24,7 +24,13 @@
         <local:BusyIndicator x:Name="Indicator"  HorizontalAlignment="Center" Margin="0,200,0,0"/>
 
 
-        <local:Rating Margin="0,300,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Grid Margin="12,300,0,0">
+            <Grid/>
+            <TextBlock FontSize="24" Text="Outlined Text Outlined Text Outlined Text Outlined Text Outlined Text" TextWrapping="Wrap" SizeChanged="TextBlock_SizeChanged"/>
+        </Grid>
+
+
+        <!--<local:Rating Margin="0,300,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" />-->
 
     </Grid>
 </Page>
