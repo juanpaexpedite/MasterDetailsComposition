@@ -2,7 +2,7 @@
 
 06/07/2016: <b>Outlined Text</b>
 
-Created a basic implementation using Composition to outline text, basically creates a textmask from the TextBlock and the draws it like when you create a Shadow. Example in AnimatedControls.MainPage.xaml.cs
+Created a basic implementation using Composition to outline text, basically creates a textmask from the TextBlock and then draws it like when you create a Shadow. Example in AnimatedControls.MainPage.xaml.cs
 
 <img src="https://github.com/juanpaexpedite/MasterDetailsComposition/blob/master/outlinedtext_capture.JPG"/>
 
