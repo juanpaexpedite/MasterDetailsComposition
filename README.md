@@ -4,6 +4,8 @@
 
 Created a basic implementation using Composition to outline text, basically creates a textmask from the TextBlock and the draws it like when you create a Shadow. Example in AnimatedControls.MainPage.xaml.cs
 
+<img src="https://github.com/juanpaexpedite/MasterDetailsComposition/blob/master/outlinedtext_capture.JPG"/>
+
 01/07/2016: <b>Busy Indicator - MS Productivity Future Vision Style</b>
 
 After learning about the great library from <a href="https://github.com/ratishphilip">ratishphilip</a>, <a href="https://github.com/ratishphilip/CompositionExpressionToolkit">CompositionExpressionToolkit</a> now it is possible to create custom shapes and animations just using the Visual Layer.
